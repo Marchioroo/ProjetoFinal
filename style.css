@@ -2,7 +2,7 @@
 /* https://www.youtube.com/watch?v=l0CCiuhEcoE&t=9s */
 :root{
  --white: #fff;
- --black: #000000;
+ --black: #041046;
  --lightBulue: #17a;
  --gradiantBlue: 
 
@@ -199,4 +199,5 @@ text-transform: uppercase;
     transform: rotate(10deg) skewY(40deg);
     transform-origin: bottom right;
     border-bottom: 3px solid var(--black);
-    transition:  1.5s ease;
+    transition:  1.5s ease
+}
