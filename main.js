@@ -1,11 +1,41 @@
-const wrapper = document.querySelector(".wrapper");
-const cadastroLink = document.querySelector(".register-link");
-const loginLink = document.querySelector(".login-link");
+document.addEventListener('DOMContentLoaded', function() {
+    var dateInput = document.getElementById('data');
+    var validaBotao = document.querySelector('.btn__primary');
+    var modal = document.getElementById('modalIdade');
+    var closeBtn = modal.querySelector('.close');
 
-cadastroLink.onclick = () => {
-    wrapper.classList.add("active")
-}
+    validaBotao.addEventListener('click', function(event) {
+        event.preventDefault();
 
-loginLink.onclick = () => {
-    wrapper.classList.remove("active")
-}
+        // Obtém a data de nascimento do input
+        var dataNascimento = new Date(dateInput.value);
+        var hoje = new Date();
+        var idade = hoje.getFullYear() - dataNascimento.getFullYear();
+        var mes = hoje.getMonth() - dataNascimento.getMonth();
+
+        // Verifica se ainda não fez aniversário neste ano
+        if (mes < 0 || (mes === 0 && hoje.getDate() < dataNascimento.getDate())) {
+            idade--;
+        }
+
+        // Se for menor que 18 anos, abre o modal
+        if (idade < 18) {
+            modal.style.display = 'block';
+        } else {
+            // Se for maior ou igual a 18 anos, permite acesso ou exibe outra mensagem
+            alert('Você pode acessar o jogo!');
+        }
+    });
+
+    // Fecha o modal se o usuário clicar no botão de fechar
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    // Fecha o modal se o usuário clicar fora da área do modal
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});

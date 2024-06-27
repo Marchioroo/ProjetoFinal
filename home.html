@@ -4,10 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoderGame | Home</title>
 
+    <title>CoderGame | Home</title>
+    <!-- Nosso icone-->
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="./style/home.css">
+
 </head>
 
 <body>
@@ -95,13 +99,33 @@
 
 
     <!-- Home conteudo -->
-    <section class="home__conteudo">
-        <h2>ESTE PRODUTO PODE CONTER CONTEÚDO NÃO APROPRIADO PARA TODAS AS IDADES OU PARA VISUALIZAÇÃO NO TRABALHO</h2>
-        <h4>Informe sua data de nascimento para continuar:</h4>
-        <input type="date" class="aniversario">
-        <button class="btn__primary">CONFIRMAR MAIORIDADE</button>
-    </section>
+    <form action="#">
+        <section class="home__conteudo">
+            <h2>ESTE PRODUTO PODE CONTER CONTEÚDO NÃO APROPRIADO PARA TODAS AS IDADES OU PARA VISUALIZAÇÃO NO TRABALHO
+            </h2>
 
+            <label for="data">
+                <h4>Informe sua data de nascimento para continuar:</h4>
+            </label>
+            <input type="date" id="data" name="data" class="aniversario" placeholder="DD/MM/AAAA"
+                title="Escolha uma data" required>
+            <button class="btn__primary">CONFIRMAR MAIORIDADE</button>
+
+            <div id="modalIdade" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Você é menor de idade e não pode acessar o jogo.</p>
+                </div>
+            </div>
+
+
+        </section>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
