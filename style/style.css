@@ -140,7 +140,7 @@ body{
 form button{
     width: 100%;
     height: 45px;
-    background-color: var(--black);
+
     color: var(--white);
     outline: none;
     border:none;
@@ -151,8 +151,10 @@ form button{
     transition: .3s;
 }
 
+
 form button:hover{
     box-shadow:  0 0 10px rgba(0,0,0,0.8);
+
 }
 
 form .linkTxt{
@@ -272,6 +274,7 @@ text-transform: uppercase;
 .register {
     padding: 0 40px 0 60px;
     right: 0;
+    
 }
 
 .wrapper.active .form-box.register{
@@ -281,6 +284,7 @@ text-transform: uppercase;
 .wrapper .form-box.register .animation{
     transform: translateX(120%);
     opacity: 0;
+    
     filter: blur(10px);
     transition: .7s ease;
     transition-delay: calc(.1s * var(--j));

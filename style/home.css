@@ -326,3 +326,17 @@ input[type="date"]:focus {
     text-decoration: none;
     transition: .6s ease;
 }
+
+
+/* Inicio de ajuste do botão entrar */
+.usuario__conta .usuario__perfil .ri-shield-user-line{
+    font-size: 250%;
+    margin:4px;
+   
+    
+}
+
+.usuario__perfil .usuario__descricao a {
+    text-decoration: none;
+    color: inherit; 
+}

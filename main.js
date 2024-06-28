@@ -54,14 +54,22 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-const wrapper = document.querySelector(".wrapper");
-const cadastroLink = document.querySelector(".register-link");
-const loginLink = document.querySelector(".login-link");
 
-cadastroLink.onclick = () => {
-    wrapper.classList.add("active")
-}
+    const wrapper = document.querySelector(".wrapper");
+    const cadastroLink = document.querySelector(".register-link");
+    const loginLink = document.querySelector(".login-link");
+   
 
-loginLink.onclick = () => {
-    wrapper.classList.remove("active")
-}
+   
+    cadastroLink.addEventListener('click', () => {
+        wrapper.classList.add("active");
+    });
+
+   
+    loginLink.addEventListener('click', () => {
+        wrapper.classList.remove("active");
+    });
+   
+   
+
+
