@@ -184,6 +184,9 @@ i {
 }
 
 /* Home conteudo */
+
+
+
 .home__conteudo {
     position: relative;
     width: calc(100% - 80px);

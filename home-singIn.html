@@ -90,7 +90,9 @@
             <div class="usuario__perfil">
                 <i class="ri-shield-user-line"></i>
                 <div class="usuario__descricao">
-                   <a href="login.html"><h3>ENTRAR</h3></a> 
+                    <a href="login.html">
+                        <h3>ENTRAR</h3>
+                    </a>
                     <p id="SingUp">Game on, sempre!</p>
                 </div>
             </div>
@@ -99,27 +101,36 @@
 
 
     <!-- Home conteudo -->
-    <form action="#">
-        <section class="home__conteudo">
-            <h2>ESTE PRODUTO PODE CONTER CONTEÚDO NÃO APROPRIADO PARA TODAS AS IDADES OU PARA VISUALIZAÇÃO NO TRABALHO
-            </h2>
+    <div class="content">
 
-            <label for="data">
-                <h4>Informe sua data de nascimento para continuar:</h4>
-            </label>
-            <input type="date" id="data" name="data" class="aniversario" placeholder="DD/MM/AAAA" title="Escolha uma data" required>
-            <button class="btn__primary">CONFIRMAR MAIORIDADE</button>
+        <div class="content-box">
+            <form action="#">
+                <section class="home__conteudo">
+                    <h2>ESTE PRODUTO PODE CONTER CONTEÚDO NÃO APROPRIADO PARA TODAS AS IDADES OU PARA VISUALIZAÇÃO NO
+                        TRABALHO
+                    </h2>
 
-            <div id="modalIdade" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Você é menor de idade e não pode acessar o jogo.</p>
-                </div>
-            </div>
+                    <label for="data">
+                        <h4>Informe sua data de nascimento para continuar:</h4>
+                    </label>
+                    <input type="date" id="data" name="data" class="aniversario" placeholder="DD/MM/AAAA"
+                        title="Escolha uma data" required>
+                    <button class="btn__primary">CONFIRMAR MAIORIDADE</button>
+
+                    <div id="modalIdade" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>Você é menor de idade e não pode acessar o jogo.</p>
+                        </div>
+                    </div>
 
 
-        </section>
-    </form>
+                </section>
+            </form>
+        </div>
+    </div>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
