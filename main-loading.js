@@ -1,6 +1,30 @@
-// ====================Aqui chama o LOADING ao clicar no botão  ENTRAR! ====================
+document.addEventListener("DOMContentLoaded", function() {
 
-document.addEventListener("DOMContentLoaded", function () {
+  // ====================AQUI COMEÇA O LOADING AO CLICAR NO BOTÃO HOME NA PAGINA LOGIN ====================
+  let backhome = document.getElementById('home');
+  if (backhome) {
+    backhome.addEventListener('click', () => {
+      setTimeout(() => {
+        window.location.href = "./home-singin.html";
+      }, 600); // Tempo
+      loadLoadingScreen();
+    });
+  }
+  // ====================AQUI TERMINA O LOADING AO CLICAR NO BOTÃO HOME NA PAGINA LOGIN ====================
+
+  // ====================AQUI COMEÇA O LOADING AO CLICAR NO BOTÃO SingUp ====================
+  let SingUp = document.getElementById('SingUp');
+  if (SingUp) {
+    SingUp.addEventListener('click', () => {
+      setTimeout(() => {
+        window.location.href = "./login.html";
+      }, 600); // Tempo
+      loadLoadingScreen();
+    });
+  }
+  // ====================AQUI TERMINA O LOADING AO CLICAR NO BOTÃO SingUp ====================
+
+  // ====================FUNÇÃO PRINCIPAL PARA CHAMAR O ARQUIVO HTML DE LOADING ====================
   function loadLoadingScreen() {
     fetch('loading.html')
       .then(response => response.text())
@@ -11,22 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .catch(error => console.error('Erro ao carregar a tela de carregamento:', error));
   }
 
-
-  let SingUp = document.getElementById('SingUp');
-  SingUp.addEventListener('click', () => {
-    console.log('oi');
-
-    // Redireciona para a página de login após um certo tempo (exemplo de 2 segundos)
-    setTimeout(() => {
-      window.location.href = "./login.html"; // Substitua com o caminho correto da página login.html
-    }, 600); // Tempo em milissegundos 
-    loadLoadingScreen();
-  });
-
-
   function showContentAfterDelay() {
-
-
     setTimeout(function () {
       var loadingScreen = document.getElementById("loading-screen");
       var content = document.getElementById("content-loading");
@@ -38,10 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (content) {
         content.style.display = "block";
       }
-    }, 1000); // 3 segundos de atraso
-
-
+    }, 1000); // 1 segundo de atraso
   }
-
+  // ====================AQUI TERMINA A FUNÇÃO PRINCIPAL PARA CHAMAR O ARQUIVO HTML DE LOADING ====================
 });
-// ====================Aqui TERMINA o LOADING ao clicar no botão  ENTRAR! ====================

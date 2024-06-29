@@ -12,6 +12,7 @@
     --gradient-light: linear-gradient(225deg, #5390E3 8.12%, #1357B3 92.21%);
     --gradient-dark: linear-gradient(225deg, #1B69D2 0%, #07346F 100%);
     --gradient-black: linear-gradient(225deg, #0f131b 0%, rgb(8, 52, 109) 100%);
+    --gradient-bemblack:linear-gradient(225deg, #151B26 0%, rgb(27, 27, 36) 100%);
 }
 
 
@@ -28,7 +29,44 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: var( --gradient-black);
+    background: var( --gradient-bemblack);
+}
+
+.back-home{
+    position: absolute;
+    left:0;
+    top:0;
+    margin:20px;
+    white-space: nowrap;
+
+   
+}
+
+#home{
+    color:white;
+    
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 90%;
+        left: 0%;
+        width: 0px;
+        height: 2.5px;
+        background: var(--gradient-light);
+        transition: .5s ease;
+    }
+    &:hover {
+        &::after {
+            width: 100%;
+        }
+    }
+    
+}
+
+#home a{
+    text-decoration: none;
+    color:white;
 }
 
 .wrapper{
@@ -184,6 +222,9 @@ margin: 20px 0 10px;
     opacity: 0;
     filter: blur(10px);
     transition-delay: calc(.1s * var(--i));
+}
+button.btn.animation{
+    color:white;
 }
 
 
