@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
         dateInput.showPicker();
         validaBotao.addEventListener('click', function(event) {
             event.preventDefault();
-            
     
             // Obtém a data de nascimento do input
             var dataNascimento = new Date(dateInput.value);
@@ -47,29 +46,25 @@ document.addEventListener('DOMContentLoaded', function() {
         
     });
 
-   
-        
-   
 
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
 
-    const wrapper = document.querySelector(".wrapper");
-    const cadastroLink = document.querySelector(".register-link");
-    const loginLink = document.querySelector(".login-link");
-   
-
-   
-    cadastroLink.addEventListener('click', () => {
-        wrapper.classList.add("active");
-    });
-
-   
-    loginLink.addEventListener('click', () => {
-        wrapper.classList.remove("active");
-    });
-   
-   
+const wrapper = document.querySelector(".wrapper");
+const cadastroLink = document.querySelector(".register-link");
+const loginLink = document.querySelector(".login-link");
 
 
+
+cadastroLink.addEventListener('click', () => {
+    wrapper.classList.add("active");
+});
+
+
+loginLink.addEventListener('click', () => {
+    wrapper.classList.remove("active");
+});
+
+ });
