@@ -88,4 +88,12 @@
     border-radius: .5rem;
 }
 
+.swiper a {
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.swiper a:hover {
+    transform: scale(1.01);
+}
 
