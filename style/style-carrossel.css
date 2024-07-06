@@ -9,9 +9,31 @@
     overflow: hidden;
 }
 
+.swiper-title {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.swiper-navagation {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-next, .btn-prev {
+    font-size: 1.5rem;
+    padding: .5rem;
+    color: var(--white);
+    background: var(--gradient-light);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 .swiper h2 {
     color: var(--blue);
-    margin-bottom: 2rem;
 }
 
 .swiper-slide {
@@ -22,8 +44,6 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    transition: all .3s ease;
-    
 }
 
 .swiper-slide img {
