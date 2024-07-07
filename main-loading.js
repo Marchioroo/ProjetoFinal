@@ -10,10 +10,12 @@ document.addEventListener("DOMContentLoaded", function() {
       loadLoadingScreen();
     });
   }
+  
   // ====================AQUI TERMINA O LOADING AO CLICAR NO BOTÃO HOME NA PAGINA LOGIN ====================
 
   // ====================AQUI COMEÇA O LOADING AO CLICAR NO BOTÃO SingUp ====================
   let SingUp = document.getElementById('SingUp');
+
   if (SingUp) {
     SingUp.addEventListener('click', () => {
       setTimeout(() => {
@@ -23,6 +25,21 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
   // ====================AQUI TERMINA O LOADING AO CLICAR NO BOTÃO SingUp ====================
+   // ====================AQUI COMEÇA O LOADING AO CLICAR NO BOTÃO BOTAOHOME ====================
+
+
+  let botaoHome = document.getElementById('botaoHome')
+  if(botaoHome) {
+    botaoHome.addEventListener('click', () => {
+        setTimeout(() => {
+          window.location.href = "./home-singin.html";
+        }, 600); // Tempo
+        loadLoadingScreen();
+      });
+    }
+
+   // ====================AQUI TERMINA  O LOADING AO CLICAR NO BOTÃO BOTAOHOME ====================
+
 
   // ====================FUNÇÃO PRINCIPAL PARA CHAMAR O ARQUIVO HTML DE LOADING ====================
   function loadLoadingScreen() {
@@ -51,3 +68,8 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   // ====================AQUI TERMINA A FUNÇÃO PRINCIPAL PARA CHAMAR O ARQUIVO HTML DE LOADING ====================
 });
+
+
+
+
+
