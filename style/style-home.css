@@ -508,3 +508,32 @@ input[type="date"]:focus {
     background-image: url(../images/allan-wake.avif);
     background-position: center;
 }
+
+.container__card {
+    position: relative;
+    width: calc(100% - 80px);
+    height: 100%;
+    left: 80px;
+    margin: 5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    color: var(--white);
+}
+
+.content__card {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.content__card img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.content__card h4 {
+    font-size: 1.5rem;
+}

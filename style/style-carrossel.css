@@ -2,14 +2,13 @@
     position: relative;
     width: calc(100% - 80px);
     left: 60px;
-    top:-80px;
+    /* top:-80px; */
     margin: 4rem auto;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-   
-   
+    margin-bottom: 8rem;
 }
 
 .swiper-title {
@@ -95,7 +94,6 @@
 .swiper-slide a{
     color: inherit; 
     text-decoration: none;
-
 }
 
 
