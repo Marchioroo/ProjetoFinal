@@ -1,13 +1,15 @@
 .swiper {
     position: relative;
     width: calc(100% - 80px);
-    left: 80px;
-    top:-50px;
-    margin: 5rem auto;
+    left: 60px;
+    top:-80px;
+    margin: 4rem auto;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+   
+   
 }
 
 .swiper-title {
@@ -15,7 +17,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
+    padding: 1rem 0;
+  
 }
 
 .swiper-navagation {
@@ -45,6 +48,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    
 }
 
 .swiper-slide img {
@@ -89,4 +93,16 @@
     border-radius: .5rem;
 }
 
+/* INICIA O SWIPER BIG DE DESTAQUE */
+
+
+#slide-big{
+    max-width: 65%;
+    bottom:0;
+    
+}
+#slide-big img{
+    
+    height: 550px;
+}
 
