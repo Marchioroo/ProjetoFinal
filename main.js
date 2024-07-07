@@ -1,6 +1,6 @@
 
-
 document.addEventListener('DOMContentLoaded', function() {
+   
     
     var dateInput = document.getElementById('data');
     var validaBotao = document.querySelector('.btn__primary');
@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         setTimeout(() => {
                             window.location.href = "./descricao-jogos.html";
                           }, 600);
+                          
                     }
                 });
             
@@ -53,6 +54,10 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     }
+
+    
+    
+
 });
 
 
@@ -77,4 +82,60 @@ document.addEventListener('DOMContentLoaded', function() {
             wrapper.classList.remove("active");
         });
     }
+});
+
+
+// =========================================================FUNÕES PARA CHAMAR O ID DO CARD E TENTAR FAZER A TELA DE LOADING FUNCIONAR=============================================================================
+// =========================================================FUNÕES PARA CHAMAR O ID DO CARD E TENTAR FAZER A TELA DE LOADING FUNCIONAR=============================================================================
+
+
+
+function loadLoadingScreen() {
+    fetch('loading.html')
+      .then(response => response.text())
+      .then(data => {
+        document.body.insertAdjacentHTML('afterbegin', data);
+        showContentAfterDelay();
+      })
+      .catch(error => console.error('Erro ao carregar a tela de carregamento:', error));
+  }
+  
+
+  function showContentAfterDelay() {
+    setTimeout(function () {
+      var loadingScreen = document.getElementById("loading-screen");
+      var content = document.getElementById("content-loading");
+
+      if (loadingScreen) {
+        loadingScreen.style.display = "none";
+      }
+
+      if (content) {
+        content.style.display = "block";
+      }
+    }, 1000); // 1 segundo de atraso
+  }
+  
+
+  document.querySelectorAll('.swiper-slide').forEach(element => {
+    element.addEventListener('click', function() {
+        const id = this.getAttribute('data-id');
+        const idMaior18 = this.getAttribute('data-id-maior18');
+
+        // Só verifica se o iudmaior nao esta vazio e nem nulo, se isso for verade, acessa
+        if (idMaior18 !== null && idMaior18 !== '') {
+            setTimeout(() => {
+                window.location.href = "home-maior18.html";
+            }, 600); // Tempo
+            loadLoadingScreen(); 
+        }
+        
+        // Só verifica se o id nao esta vazio e nem nulo, se isso for verade, acessa
+        if (id !== null && id !== '') {
+            setTimeout(() => {
+                window.location.href = "descricao-jogos.html";
+            }, 600); // Tempo
+            loadLoadingScreen(); 
+        }
+    });
 });

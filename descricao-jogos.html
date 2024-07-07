@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>CoderGame | Home</title>
     <!-- Nosso icone-->
-    <link rel="icon" type="image/x-icon" href="/images/logo.png" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/style/style-home.css">
+    <link rel="stylesheet" href="/style/descricao-jogo.css">
+</head>
 
-    <link rel="stylesheet" href="./style/style-home.css" />
-    <link rel="stylesheet" href="./style/descricao-jogo.css" />
-  </head>
-
-  <body>
+<body>
     <div id="content-loading">
 
         <aside class="sidebar">
             <div class="sidebar__header">
-                <img src="./images/logo.png" alt="logo CoderGame">
+                <img src="/images/logo.png" alt="logo CoderGame">
                 <h2>CoderGAME</h2>
             </div>
 
@@ -84,7 +81,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="sidebar__link">
+                    <a href="#" class="sidebar__link" id="botaoSobrenos">
                         <i class="ri-team-fill"></i>
                         Sobre nós
                     </a>
@@ -128,129 +125,49 @@
                 </section>
             </form>
         </div>
-
-        <ul class="sidebar__lista">
-          <h4></h4>
-          <li>
-            <a href="./index.html" class="sidebar__link">
-              <i class="ri-home-fill"></i>
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#" class="sidebar__link">
-              <i class="ri-heart-fill"></i>
-              Favoritos
-            </a>
-          </li>
-          <li>
-            <a href="#" class="sidebar__link">
-              <i class="ri-shopping-cart-fill"></i>
-              Loja
-            </a>
-          </li>
-          <h4>
-            <span>Explorar</span>
-          </h4>
-          <li>
-            <a href="#" class="sidebar__link">
-              <i class="ri-search-line"></i>
-              Pesquisar
-            </a>
-          </li>
-          <li>
-            <a href="#" class="sidebar__link">
-              <i class="ri-discord-fill"></i>
-              Discord
-            </a>
-          </li>
-          <li>
-            <a href="#" class="sidebar__link">
-              <i class="ri-layout-grid-fill"></i>
-              Categorias
-            </a>
-          </li>
-          <li>
-            <a href="#" class="sidebar__link">
-              <i class="ri-bar-chart-2-fill"></i>
-              Mais vendidos
-            </a>
-          </li>
-
-          <h4>
-            <span>Equipe CoderGAME</span>
-          </h4>
-          <li>
-            <a href="#" class="sidebar__link">
-              <i class="ri-customer-service-2-fill"></i>
-              Suporte
-            </a>
-          </li>
-          <li>
-            <a href="./home-sobrenos.html" class="sidebar__link">
-              <i class="ri-team-fill"></i>
-              Sobre nós
-            </a>
-          </li>
-        </ul>
-        <div class="usuario__conta">
-          <i class="ri-shield-user-line"></i>
-          <a href="./login.html" class="usuario__descricao">
-            <h3 id="SingUp">ENTRAR</h3>
-            <p>Game on, sempre!</p>
-          </a>
-        </div>
-      </aside>
-
-      <main class="container__descricao-jogo">
-        <section class="jogo__info-vendas">
-          <img
-            src="./images/cover paginas/dead-by-daylight-cover.webp"
-            alt=""
-          />
-          <div class="info-vendas">
-            <div class="tag__faixa-etaria">
-              <p>18</p>
-              <h4>Violência Extrema</h4>
-            </div>
-            <h4>Data de Lançamento: 21/03/22</h4>
-            <h4>Behaviour Interactive Inc.</h4>
-            <h4>R$59,90</h4>
-            <button class="btn__secondary">ADICIONAR AO CARRINHO</button>
-            <button class="btn__primary">COMPRE AGORA</button>
-          </div>
-        </section>
-        <section class="jogo__infos">
-          <h3>Dead by Daylight</h3>
-          <p>
-            A morte não é uma saída.
-            <br />
-            Dead by Daylight é um jogo de horror multijogadores (4x1) em que um
-            dos jogadores assume o papel do Assassino enquanto os outros quatro
-            jogam como Sobreviventes, tentando fugir do Assassino para não serem
-            pegos, torturados e assassinados.
-            <br />
-            <br />
-            Os sobreviventes jogam em terceira pessoa e têm como vantagem uma
-            melhor percepção da situação. O Assassino joga em primeira pessoa e
-            fica mais concentrado na presa.
-            <br />
-            <br />
-            A cada encontro, o objetivo dos Sobreviventes é fugir do Território
-            de Abate sem ser pego pelo Assassino. Isso é mais difícil do que
-            parece – ainda mais em um cenário que muda a cada partida.
-          </p>
-        </section>
-      </main>
     </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="main.js"></script>
-    <script src="main-loading.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  </body>
+    <main class="container__descricao-jogo">
+        <section class="jogo__info-vendas">
+            <img src="/images/cover paginas/dead-by-daylight-cover.webp" alt="">
+            <div class="info-vendas">
+                <div class="tag__faixa-etaria">
+                    <p>18</p>
+                    <h4>Violência Extrema</h4>
+                </div>
+                <h4>Data de Lançamento: 21/03/22</h4>
+                <h4>Behaviour Interactive Inc.</h4>
+                <h4>R$59,90</h4>
+                <button class="btn__secondary">ADICIONAR AO CARRINHO</button>
+                <button class="btn__primary">COMPRE AGORA</button>
+        
+            </div>
+        </section>
+        <section class="jogo__infos">
+            <h3>Dead by Daylight</h3>
+            <p>
+                A morte não é uma saída.
+                <br>
+                Dead by Daylight é um jogo de horror multijogadores (4x1) em que um dos jogadores assume o papel do Assassino enquanto os outros quatro jogam como Sobreviventes, 
+                tentando fugir do Assassino para não serem pegos, torturados e assassinados.
+                <br>
+                <br>
+                Os sobreviventes jogam em terceira pessoa e têm como vantagem uma melhor percepção da situação. 
+                O Assassino joga em primeira pessoa e fica mais concentrado na presa.
+                <br>
+                <br>
+                A cada encontro, o objetivo dos Sobreviventes é fugir do Território de Abate sem ser pego pelo Assassino. Isso é mais difícil do que parece – ainda mais em um cenário que muda a cada partida.
+            </p>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script src="/main.js"></script>
+        <script src="/main-loading.js"></script>
+   
+
+</body>
+
 </html>
