@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
   if (backhome) {
     backhome.addEventListener('click', () => {
       setTimeout(() => {
-        window.location.href = "./home-singin.html";
+        window.location.href = "./index.html";
       }, 600); // Tempo
       loadLoadingScreen();
     });
