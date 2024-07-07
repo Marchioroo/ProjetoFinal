@@ -92,5 +92,23 @@
     background: var(--gradient-light);
     border-radius: .5rem;
 }
+.swiper-slide a{
+    color: inherit; /* Mantém a cor do texto original */
+    text-decoration: none; /* Remove o sublinhado */
+
+}
 
 
+
+/* INICIA O SWIPER BIG DE DESTAQUE */
+
+
+#slide-big{
+    max-width: 65%;
+    bottom:0;
+    
+}
+#slide-big img{
+    
+    height: 550px;
+}

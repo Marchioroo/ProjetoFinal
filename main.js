@@ -29,7 +29,9 @@ document.addEventListener('DOMContentLoaded', function() {
                         modal.style.display = 'block';
                     } else {
                         // Se for maior ou igual a 18 anos, permite acesso ou exibe outra mensagem
-                        alert('Você pode acessar o jogo!');
+                        setTimeout(() => {
+                            window.location.href = "./descricao-jogos.html";
+                          }, 600);
                     }
                 });
             
