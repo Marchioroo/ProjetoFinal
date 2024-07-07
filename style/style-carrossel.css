@@ -93,16 +93,4 @@
     border-radius: .5rem;
 }
 
-/* INICIA O SWIPER BIG DE DESTAQUE */
-
-
-#slide-big{
-    max-width: 65%;
-    bottom:0;
-    
-}
-#slide-big img{
-    
-    height: 550px;
-}
 
