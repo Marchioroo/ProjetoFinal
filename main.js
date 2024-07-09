@@ -1,8 +1,12 @@
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const carousel = document.querySelector(".carousel");
   const slides = document.querySelectorAll(".carousel__item");
+  const slides1 = document.querySelectorAll(".carousel__item-1");
 
   let index = 0;
+  let index1 = 0;
 
   function showSlide() {
     slides.forEach(slide => {
@@ -10,17 +14,38 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  function showSlide1() {
+    slides1.forEach(slide => {
+      slide.style.transform = `translateX(-${index1 * 100}%)`;
+    });
+  }
+
   setInterval(() => {
     index = (index + 1) % slides.length;
+    index1 = (index1 + 1) % slides1.length;
+    showSlide1();
     showSlide();
-  }, 3000); // Troca de slide a cada 3 segundos (3000 milissegundos)
+  }, 4000); // Troca de slide a cada 3 segundos (3000 milissegundos)
 });
 
 
 
 // ===================================================================FUNÇÕES PARA CHAMAR VALIDAR A IDADE DO USUARIO=============================================================================
 // ===================================================================FUNÇÕES PARA CHAMAR VALIDAR A IDADE DO USUARIO=============================================================================
+
 document.addEventListener("DOMContentLoaded", function () {
+  function getParameterByName(name, url = window.location.href) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    const regex = new RegExp(`[?&]${name}(=([^&#]*)|&|#|$)`);
+    const results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+  }
+
+  // Obtém o parâmetro 'id' da URL
+  const id = getParameterByName('id');
+
   var dateInput = document.getElementById("data");
   var validaBotao = document.querySelector(".btn__primary");
   var modal = document.getElementById("modalIdade");
@@ -52,13 +77,14 @@ document.addEventListener("DOMContentLoaded", function () {
           } else {
             // Se for maior ou igual a 18 anos, permite acesso ou exibe outra mensagem
             setTimeout(() => {
-              window.location.href = "./descricao-jogos.html";
+              window.location.href = `descricao-jogos.html?id=${id}`;
+              ;
             }, 600);
+            loadLoadingScreen()
           }
         });
 
         // Fecha o modal se o usuário clicar no botão de fechar
-
         closeBtn.addEventListener("click", function () {
           modal.style.display = "none";
         });
@@ -131,7 +157,7 @@ document.querySelectorAll(".swiper-slide").forEach((element) => {
     // Só verifica se o iudmaior nao esta vazio e nem nulo, se isso for verade, acessa
     if (idMaior18 !== null && idMaior18 !== "") {
       setTimeout(() => {
-        window.location.href = "home-maior18.html";
+        window.location.href = `home-maior18.html?id=${idMaior18}`;
       }, 600); // Tempo
       loadLoadingScreen();
     }
@@ -139,10 +165,12 @@ document.querySelectorAll(".swiper-slide").forEach((element) => {
     // Só verifica se o id nao esta vazio e nem nulo, se isso for verade, acessa
     if (id !== null && id !== "") {
       setTimeout(() => {
-        window.location.href = "descricao-jogos.html";
-      }, 600); // Tempo
+        window.location.href = `descricao-jogos.html?id=${id}`;
+        
+      }, 600); 
       loadLoadingScreen();
     }
+    
   });
 });
 
@@ -151,84 +179,16 @@ document.querySelectorAll(".swiper-slide").forEach((element) => {
 
 // ===================================================================TRABALHANDO COM CLASS PARA EXIBIR AS INFORMAÇÕES DO GAME=============================================================================
 
-const jogos = [
-  {
-    id: 1,
-    nome: "Dead By Daylight",
-    imagens: {
-      imagem1: "/images/imagens-descricao-jogos/Deadby/deadby1.webp",
-      imagem2: "/images/imagens-descricao-jogos/Deadby/deadby2.jpg",
-      imagem3: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
-      imagem4: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
-    },
-    descricao: `A morte não é uma saída.<br>Dead by Daylight é um jogo de horror multijogadores (4x1) em que um dos jogadores assume o papel do Assassino enquanto os outros quatro jogam como Sobreviventes, tentando fugir do Assassino para não serem pegos, torturados e assassinados.<br><br>Os sobreviventes jogam em terceira pessoa e têm como vantagem uma melhor percepção da situação. O Assassino joga em primeira pessoa e fica mais concentrado na presa.<br><br>A cada encontro, o objetivo dos Sobreviventes é fugir do Território de Abate sem ser pego pelo Assassino. Isso é mais difícil do que parece – ainda mais em um cenário que muda a cada partida.`,
-    valor: 59.99,
-    lancamento: "01/01/2020",
-    desenvolvido: "Bungie",
-    requisitos: {
-      minimos: {
-        sistemaOperacional: "Windows 10 64-bit",
-        processador: "Intel Core i3-4170 ou AMD FX-8120",
-        memoria: "8 GB de RAM",
-        placaVideo: "GeForce GTX 460 1GB ou AMD HD 6850 1GB",
-        directX: "Versão 11",
-        rede: "Conexão de Internet banda larga",
-        armazenamento: "50 GB de espaço disponível",
-        placaSom: "Compatível com DX11",
-    
-      },
-      recomendados: {
-        sistemaOperacional: "Windows 10 64-bit",
-        processador: "Intel Core i3-4170 ou AMD FX-8300 ou Superior",
-        memoria: "8 GB de RAM",
-        placaVideo: "GeForce 760 ou AMD HD 8800 ou Superior",
-        directX: "Versão 11",
-        rede: "Conexão de Internet banda larga",
-        armazenamento: "50 GB de espaço disponível",
-        placaSom: "Compatível com DX11"
-      }
-    }
-  },
-  {
-    id: 2,
-    nome: "Black Myth: Wukong",
-    imagens: {
-        imagem1: "/images/imagens-descricao-jogos/BlackMythWukong/BlackMythWukong1.jpg",
-        imagem2: "/images/imagens-descricao-jogos/BlackMythWukong/BlackMythWukong2.jpeg",
-        imagem3: "/images/imagens-descricao-jogos/BlackMythWukong/BlackMythWukong3.jpeg",
-        imagem4: "/images/imagens-descricao-jogos/BlackMythWukong/BlackMythWukong4.webp",
-    },
-    descricao: 'Wukong é um jogo de ação e aventura desenvolvido pela Game Science, baseado no clássico romance chinês "Jornada ao Oeste". O jogador assume o papel de Sun Wukong, o Rei Macaco, e utiliza suas habilidades e transformações para combater inimigos e explorar um mundo fantástico repleto de mitologia chinesa. O jogo é conhecido por seus gráficos impressionantes e combates dinâmicos.',
-    valor: 299.90,
-    lancamento: "19/08/2024",
-    desenvolvido: "Game Science",
-    requisitos: {
-        minimos: {
-            sistemaOperacional: "Windows 10 64-bit",
-            processador: "Intel Core i5-8400 / AMD Ryzen 5 1600",
-            memoria: "16 GB de RAM",
-            placaVideo: " NVIDIA GeForce GTX 1060 6GB / AMD Radeon RX 580 8GB",
-            armazenamento: " 130 GB de espaço disponível",
-        },
-        recomendados: {
-            sistemaOperacional: "Windows 10 64-bit",
-            processador: "Intel Core i7-9700 / AMD Ryzen 5 5500",
-            memoria: "16 GB de RAM",
-            placaVideo: "NVIDIA GeForce RTX 2060 / AMD Radeon RX 5700 XT / INTEL Arc A750",
-            directX: "Versão 12",
-            rede: "Conexão de Internet banda larga",
-            armazenamento: "130 GB de espaço disponível",
-            placaSom: "Windows Compatible Audio Device"
-        }
-    }
-},
-];
+
+
+import { jogos } from '/jogos.js';
 
 
 
-
+console.log(jogos)
 class Jogo {
-  constructor({ nome, imagens, imagem1, imagem2, imagem3, imagem4, descricao, valor, lancamento, desenvolvido, sistemaOperacional, processador, memoria, placaVideo, armazenamento, observacoes, requisitos, minimos, recomendados }) {
+  constructor({ nome, imagens, imagem1, imagem2, imagem3, imagem4, descricao, valor, lancamento, desenvolvido, 
+    sistemaOperacional, processador, memoria, placaVideo, armazenamento, observacoes, requisitos, minimos, recomendados, genero,recurso }) {
     this.nome = nome;
     this.imagens = imagens;
     this.imagem1 = imagem1;
@@ -248,6 +208,8 @@ class Jogo {
     this.requisitos = requisitos;
     this.minimos = minimos;
     this.recomendados = recomendados;
+    this.genero = genero;
+    this.recurso = recurso;
   }
 
   mostraNomeJogo() {
@@ -355,30 +317,62 @@ class Jogo {
     const recoArmazenamento = document.querySelector(".ArmazenamentoRecomendado");
     recoArmazenamento.innerHTML += `${this.requisitos.recomendados.armazenamento}`;
 
-    // Observações
-    const observacoes = document.querySelector(".observacoes");
-    observacoes.innerHTML += `${this.requisitos.minimos.observacoes}`;
 
+
+  }
+  mostrarGeneroERecurso() {
+    const genero = document.querySelector(".info-genero");
+    genero.innerHTML += `${this.genero}`;
+
+    const recurso = document.querySelector(".info-recurso");
+    recurso.innerHTML += `${this.recurso}`;
+    
   }
 
 }
 
-function exibirDetalhesDoJogo(id) {
-  const jogo = jogos.find(jogo => jogo.id === id);
-  //copiado do que a professora passou
-  if (jogo) {
-    const jogoInstanciado = new Jogo(jogo);
-    jogoInstanciado.mostraNomeJogo();
-    jogoInstanciado.mostrarImagens();
-    jogoInstanciado.mostraDescricaoJogo();
-    jogoInstanciado.mostraLancamentoJogo();
-    jogoInstanciado.mostraValorJogo();
-    jogoInstanciado.mostraDesenvolvidoJogo();
-    jogoInstanciado.requisitosMinimos();
-  } else {
-    console.log('Jogo não encontrado.');
-  }
-}
 
-exibirDetalhesDoJogo(2);
+document.addEventListener('DOMContentLoaded', () => {
+  // Função para obter o valor de um parâmetro da URL
+  function getParameterByName(name, url = window.location.href) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    const regex = new RegExp(`[?&]${name}(=([^&#]*)|&|#|$)`);
+    const results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+  }
+
+  // Obtém o parâmetro 'id' da URL
+  const idGame = getParameterByName('id');
+  if (idGame) {
+    const idGameInt = parseInt(idGame, 10);
+    console.log(`ID do jogo obtido: ${idGameInt}`);
+
+    
+    function exibirDetalhesDoJogo(idGame) {
+      console.log(`ID do jogo para exibir detalhes: ${idGame}`);
+      const jogo = jogos.find(jogo => jogo.id === idGame);
+      console.log(`Jogo encontrado: ${JSON.stringify(jogo)}`); 
+      if (jogo) {
+        const jogoInstanciado = new Jogo(jogo);
+        jogoInstanciado.mostraNomeJogo();
+        jogoInstanciado.mostrarImagens();
+        jogoInstanciado.mostraDescricaoJogo();
+        jogoInstanciado.mostraLancamentoJogo();
+        jogoInstanciado.mostraValorJogo();
+        jogoInstanciado.mostraDesenvolvidoJogo();
+        jogoInstanciado.requisitosMinimos();
+        jogoInstanciado.mostrarGeneroERecurso();
+      } else {
+        console.log('Jogo não encontrado.');
+      }
+    }
+
+    
+    exibirDetalhesDoJogo(idGameInt);
+  }
+});
+
+
 

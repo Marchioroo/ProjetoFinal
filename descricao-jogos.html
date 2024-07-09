@@ -9,8 +9,9 @@
     <!-- Nosso icone-->
     <link rel="icon" type="image/x-icon" href="/images/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/style/style-home.css">
-    <link rel="stylesheet" href="/style/descricao-jogo.css">
+
+    <link rel="stylesheet" href="style/style-home.css">
+    <link rel="stylesheet" href="style/descricao-jogo.css">
 </head>
 
 <body>
@@ -125,8 +126,20 @@
                 </div>
             </section>
             <section class="jogo__infos">
+
                 <h3 class="jogo__infos-nome"></h3>
                 <p class="jogo__infos-descricao"></p>
+
+                <div class="jogo__infos-genero">
+                    
+                    <div class="genero">
+                        <h4 class="info-genero"><span id='h4'>Genero: </span></h4>
+                    </div>
+                    <div class="recurso">
+                        <h4 class="info-recurso"><span id='h4'>Recursos: </span></h4>
+                    </div>
+
+                </div>
 
                 <br> <h2>Requisitos:</h2>
                 <div class="requisitos-jogos">
@@ -156,6 +169,12 @@
 
                 </div>
 
+                <div class="more-info">
+                    <div class="more-info-text">
+
+                    </div>
+                </div>
+
             </section>
         </main>
 
@@ -165,8 +184,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="/main.js"></script>
-    <script src="/main-loading.js"></script>
+    <script type ="module" src="main.js"></script>
+    <script type="module" src="jogos.js"></script>
+    <script src="main-loading.js"></script>
 
 
 </body>

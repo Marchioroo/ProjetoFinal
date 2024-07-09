@@ -1,4 +1,4 @@
-const jogos = [
+export const jogos = [
     //Dead By Daylight
     {
         id: 1,
@@ -35,7 +35,10 @@ const jogos = [
                 armazenamento: "50 GB de espaço disponível",
                 placaSom: "Compatível com DX11"
             }
-        }
+        },
+        genero: "Ação, Sobrevivência, RPG",
+        recurso: "Online Multiplayer"
+        
     },
     //Black Myth: Wukong
     {
@@ -69,7 +72,9 @@ const jogos = [
                 armazenamento: "130 GB de espaço disponível",
                 placaSom: "Windows Compatible Audio Device"
             }
-        }
+        },
+        genero: "Ação, Sobrevivência, RPG",
+        recurso: "Online Multiplayer"
     },
     //Final Fantasy 14: Dawntrail
     {
@@ -103,7 +108,9 @@ const jogos = [
                 armazenamento: "140 GB de espaço disponível",
                 placaSom: "DirectSound® supported sound card"
             }
-        }
+        },
+        genero: "Ação, Sobrevivência, RPG",
+        recurso: "Online Multiplayer"
     },
     // world of warcraft war within
     {
@@ -137,7 +144,9 @@ const jogos = [
                 armazenamento: "100 GB de espaço disponível",
                 placaSom: "Compatível com DirectX"
             }
-        }
+        },
+        genero: "Ação, Sobrevivência, RPG",
+        recurso: "Online Multiplayer"
     },
     // the legend of zelda: echoes
     {
@@ -153,25 +162,27 @@ const jogos = [
         valor: 229.90,
         lancamento: "26/09/2024",
         desenvolvido: "Nintendo",
-        // requisitos: {
-        //     minimos: {
-        //         sistemaOperacional: "Windows 10 64-bit",
-        //         processador: "Intel Core i5-3450 / AMD FX 8300",
-        //         memoria: "4 GB de RAM (8 GB se usar gráficos integrados)",
-        //         placaVideo: "NVIDIA GeForce GTX 760 / AMD Radeon RX 560 / Intel UHD 630 (45W)",
-        //         armazenamento: "100 GB de espaço disponível",
-        //     },
-        //     recomendados: {
-        //         sistemaOperacional: "Windows® 10 64 bit",
-        //         processador: "Intel Core i7-6700K / AMD Ryzen 7 2700X",
-        //         memoria: "8 GB de RAM",
-        //         placaVideo: "NVIDIA GeForce GTX 1080 / AMD Radeon RX Vega 64",
-        //         directX: "Versão 11",
-        //         rede: "Conexão de Internet banda larga",
-        //         armazenamento: "100 GB de espaço disponível",
-        //         placaSom: "Compatível com DirectX"
-        //     }
-        // }
+        requisitos: {
+            minimos: {
+                sistemaOperacional: "Windows 10 64-bit",
+                processador: "Intel Core i5-3450 / AMD FX 8300",
+                memoria: "4 GB de RAM (8 GB se usar gráficos integrados)",
+                placaVideo: "NVIDIA GeForce GTX 760 / AMD Radeon RX 560 / Intel UHD 630 (45W)",
+                armazenamento: "100 GB de espaço disponível",
+            },
+            recomendados: {
+                sistemaOperacional: "Windows® 10 64 bit",
+                processador: "Intel Core i7-6700K / AMD Ryzen 7 2700X",
+                memoria: "8 GB de RAM",
+                placaVideo: "NVIDIA GeForce GTX 1080 / AMD Radeon RX Vega 64",
+                directX: "Versão 11",
+                rede: "Conexão de Internet banda larga",
+                armazenamento: "100 GB de espaço disponível",
+                placaSom: "Compatível com DirectX"
+            }
+        },
+        genero: "Ação, Sobrevivência, RPG",
+        recurso: "Online Multiplayer"
     },
     // Dragon Ball: Sparking! Zero
     {
@@ -205,7 +216,9 @@ const jogos = [
                 armazenamento: "40 GB de espaço disponível",
                 placaSom: "Compatível com DirectX 11"
             }
-        }
+        },
+        genero: "Ação, Sobrevivência, RPG",
+        recurso: "Online Multiplayer"
     },
     // Call of Duty: Black Ops 6
     {
@@ -239,7 +252,9 @@ const jogos = [
                 armazenamento: "175 GB de espaço disponível",
                 placaSom: "Compatível com DirectX"
             }
-        }
+        },
+        genero: "Ação, Sobrevivência, RPG",
+        recurso: "Online Multiplayer"
     },
     // Super Mario Party Jamboree
     {
@@ -255,25 +270,27 @@ const jogos = [
         valor: 299.90,
         lancamento: "17/10/2024",
         desenvolvido: "Nintendo",
-        // requisitos: {
-        //     minimos: {
-        //         sistemaOperacional: "Windows® 10 64-bit",
-        //         processador: "Intel Core i3-4340 ou AMD FX-6300",
-        //         memoria: "8 GB de RAM",
-        //         placaVideo: "NVIDIA GeForce GTX 670 / GeForce GTX 1650 ou Radeon HD 7950",
-        //         armazenamento: "175 GB de espaço disponível",
-        //     },
-        //     recomendados: {
-        //         sistemaOperacional: "Windows® 10 64 bit",
-        //         processador: "Intel Core i5-2500K ou AMD Ryzen R5 1600X",
-        //         memoria: "12 GB de RAM",
-        //         placaVideo: "NVIDIA GeForce GTX 970 / GTX 1660 Super ou Radeon R9 390 / RX 580",
-        //         directX: "Versão 12",
-        //         rede: "Conexão de Internet banda larga",
-        //         armazenamento: "175 GB de espaço disponível",
-        //         placaSom: "Compatível com DirectX"
-        //     }
-        // }
+        requisitos: {
+            minimos: {
+                sistemaOperacional: "Windows® 10 64-bit",
+                processador: "Intel Core i3-4340 ou AMD FX-6300",
+                memoria: "8 GB de RAM",
+                placaVideo: "NVIDIA GeForce GTX 670 / GeForce GTX 1650 ou Radeon HD 7950",
+                armazenamento: "175 GB de espaço disponível",
+            },
+            recomendados: {
+                sistemaOperacional: "Windows® 10 64 bit",
+                processador: "Intel Core i5-2500K ou AMD Ryzen R5 1600X",
+                memoria: "12 GB de RAM",
+                placaVideo: "NVIDIA GeForce GTX 970 / GTX 1660 Super ou Radeon R9 390 / RX 580",
+                directX: "Versão 12",
+                rede: "Conexão de Internet banda larga",
+                armazenamento: "175 GB de espaço disponível",
+                placaSom: "Compatível com DirectX"
+            }
+        },
+        genero: "Ação, Sobrevivência, RPG",
+        recurso: "Online Multiplayer"
     },
     // Life is Strange: Double Exposure
     {
@@ -307,7 +324,9 @@ const jogos = [
                 armazenamento: "20 GB de espaço disponível",
                 placaSom: "Compatível com DirectX"
             }
-        }
+        },
+        genero: "Ação, Sobrevivência, RPG",
+        recurso: "Online Multiplayer"
     },
     // Mario & Luigi: Brothership
     {
@@ -323,25 +342,27 @@ const jogos = [
         valor: 299.90,
         lancamento: "07/11/2024",
         desenvolvido: "Nintendo",
-        // requisitos: {
-        //     minimos: {
-        //         sistemaOperacional: "Windows® 10 64-bit",
-        //         processador: "Intel Core i3-4340 ou AMD FX-6300",
-        //         memoria: "8 GB de RAM",
-        //         placaVideo: "NVIDIA GeForce GTX 670 / GeForce GTX 1650 ou Radeon HD 7950",
-        //         armazenamento: "175 GB de espaço disponível",
-        //     },
-        //     recomendados: {
-        //         sistemaOperacional: "Windows® 10 64 bit",
-        //         processador: "Intel Core i5-2500K ou AMD Ryzen R5 1600X",
-        //         memoria: "12 GB de RAM",
-        //         placaVideo: "NVIDIA GeForce GTX 970 / GTX 1660 Super ou Radeon R9 390 / RX 580",
-        //         directX: "Versão 12",
-        //         rede: "Conexão de Internet banda larga",
-        //         armazenamento: "175 GB de espaço disponível",
-        //         placaSom: "Compatível com DirectX"
-        //     }
-        // }
+        requisitos: {
+            minimos: {
+                sistemaOperacional: "Windows® 10 64-bit",
+                processador: "Intel Core i3-4340 ou AMD FX-6300",
+                memoria: "8 GB de RAM",
+                placaVideo: "NVIDIA GeForce GTX 670 / GeForce GTX 1650 ou Radeon HD 7950",
+                armazenamento: "175 GB de espaço disponível",
+            },
+            recomendados: {
+                sistemaOperacional: "Windows® 10 64 bit",
+                processador: "Intel Core i5-2500K ou AMD Ryzen R5 1600X",
+                memoria: "12 GB de RAM",
+                placaVideo: "NVIDIA GeForce GTX 970 / GTX 1660 Super ou Radeon R9 390 / RX 580",
+                directX: "Versão 12",
+                rede: "Conexão de Internet banda larga",
+                armazenamento: "175 GB de espaço disponível",
+                placaSom: "Compatível com DirectX"
+            }
+        },
+        genero: "Ação, Sobrevivência, RPG",
+        recurso: "Online Multiplayer"
     },
     // Dragon Quest III HD-2D Remake **
     {
@@ -375,7 +396,9 @@ const jogos = [
                 armazenamento: "20 GB de espaço disponível",
                 placaSom: " "
             }
-        }
+        },
+        genero: "Ação, Sobrevivência, RPG",
+        recurso: "Online Multiplayer"
     },
     // Assassin’s Creed Shadows 
     {
@@ -409,7 +432,9 @@ const jogos = [
                 armazenamento: "",
                 placaSom: ""
             }
-        }
+        },
+        genero: "Ação, Sobrevivência, RPG",
+        recurso: "Online Multiplayer"
     },
     // Epic Mickey: Rebrushed
     {
@@ -443,7 +468,9 @@ const jogos = [
                 armazenamento: "28 GB de espaço disponível",
                 placaSom: " "
             }
-        }
+        },
+        genero: "Ação, Sobrevivência, RPG",
+        recurso: "Online Multiplayer"
     },
     // Indiana Jones and the Great Circle
     {
@@ -477,7 +504,9 @@ const jogos = [
                 armazenamento: "",
                 placaSom: ""
             }
-        }
+        },
+        genero: "Ação, Sobrevivência, RPG",
+        recurso: "Online Multiplayer"
     },
     // Microsoft Flight Simulator 2024
     {
@@ -511,7 +540,9 @@ const jogos = [
                 armazenamento: "",
                 placaSom: ""
             }
-        }
+        },
+        genero: "Ação, Sobrevivência, RPG",
+        recurso: "Online Multiplayer"
     },
     // Silent Hill 2 Remake
     {
@@ -552,7 +583,9 @@ const jogos = [
                 armazenamento: "50 GB de espaço disponível",
                 placaSom: " Windows Compatible Audio Device"
             }
-        }
+        },
+        genero: "Ação, Sobrevivência, RPG",
+        recurso: "Online Multiplayer"
     },
     // HORIZON ZERO DOWN
     {
@@ -594,7 +627,9 @@ const jogos = [
                 armazenamento: "100 GB de espaço disponível",
                 placaSom: ""
             }
-        }
+        },
+        genero: "Ação, Sobrevivência, RPG",
+        recurso: "Online Multiplayer"
     },
     // THE KING OF FIGHTER XV
     {
@@ -628,7 +663,9 @@ const jogos = [
                 armazenamento: "65 GB de espaço disponível",
                 placaSom: "Compatível com DirectX"
             }
-        }
+        },
+        genero: "Ação, Sobrevivência, RPG",
+        recurso: "Online Multiplayer"
     },
     // Call of Duty®: Modern Warfare® III
     {
@@ -664,7 +701,9 @@ const jogos = [
                 armazenamento: "149 GB de espaço disponível",
                 placaSom: "Compatível com DirectX 9.0c"
             }
-        }
+        },
+        genero: "Ação, Sobrevivência, RPG",
+        recurso: "Online Multiplayer"
     },
     // Overcooked 2
     {
@@ -700,7 +739,9 @@ const jogos = [
                 armazenamento: "3 GB de espaço disponível",
                 placaSom: "DirectX Compatible Sound Card"
             }
-        }
+        },
+        genero: "Ação, Sobrevivência, RPG",
+        recurso: "Online Multiplayer"
     },
     // Tekken 8®
     {
@@ -740,7 +781,9 @@ const jogos = [
                 armazenamento: "100 GB de espaço disponível",
                 placaSom: "DirectX compatible soundcard/Onboard chipset"
             }
-        }
+        },
+        genero: "Ação, Sobrevivência, RPG",
+        recurso: "Online Multiplayer"
     },
     // Alan Wake 2
     {
@@ -774,7 +817,9 @@ const jogos = [
                 armazenamento: "90 GB de espaço disponível",
                 placaSom: ""
             }
-        }
+        },
+        genero: "Ação, Sobrevivência, RPG",
+        recurso: "Online Multiplayer"
     },
     // Red Dead Redemption 2
     {
@@ -812,7 +857,9 @@ const jogos = [
                 armazenamento: "150 GB de espaço disponível",
                 placaSom: "Direct X Compatible"
             }
-        }
+        },
+        genero: "Ação, Sobrevivência, RPG",
+        recurso: "Online Multiplayer"
     },
     // The Last of Us™ Part I - Deluxe
     {
@@ -830,25 +877,27 @@ const jogos = [
         valor: 249.9,
         lancamento: "28/03/2023",
         desenvolvido: "Naughty Dog LLC",
-        // requisitos: {
-        //     minimos: {
-        //         sistemaOperacional: "Windows® 10 64-bit",
-        //         processador: "ntel® Core™ i7-4770K / AMD Ryzen 5 1500X",
-        //         memoria: "12 GB de RAM",
-        //         placaVideo: "Nvidia GeForce GTX 1060 6GB / AMD Radeon RX 480 4GB",
-        //         armazenamento: "150 GB de espaço disponível",
-        //     },
-        //     recomendados: {
-        //         sistemaOperacional: "Windows® 10 64 bit",
-        //         processador: "Intel® Core™ i7-4770K / AMD Ryzen 5 1500X",
-        //         memoria: "12 GB de RAM",
-        //         placaVideo: " Nvidia GeForce GTX 1060 6GB / AMD Radeon RX 480 4GB",
-        //         directX: "DirectX 12",
-        //         rede: "Conexão de Internet banda larga",
-        //         armazenamento: "150 GB de espaço disponível",
-        //         placaSom: "Direct X Compatible"
-        //     }
-        // }
+        requisitos: {
+            minimos: {
+                sistemaOperacional: "Windows® 10 64-bit",
+                processador: "ntel® Core™ i7-4770K / AMD Ryzen 5 1500X",
+                memoria: "12 GB de RAM",
+                placaVideo: "Nvidia GeForce GTX 1060 6GB / AMD Radeon RX 480 4GB",
+                armazenamento: "150 GB de espaço disponível",
+            },
+            recomendados: {
+                sistemaOperacional: "Windows® 10 64 bit",
+                processador: "Intel® Core™ i7-4770K / AMD Ryzen 5 1500X",
+                memoria: "12 GB de RAM",
+                placaVideo: " Nvidia GeForce GTX 1060 6GB / AMD Radeon RX 480 4GB",
+                directX: "DirectX 12",
+                rede: "Conexão de Internet banda larga",
+                armazenamento: "150 GB de espaço disponível",
+                placaSom: "Direct X Compatible"
+            }
+        },
+        genero: "Ação, Sobrevivência, RPG",
+        recurso: "Online Multiplayer"
     },
     // Battlefield
     {
@@ -896,7 +945,9 @@ const jogos = [
                 armazenamento: "100 GB de espaço disponível",
                 placaSom: ""
             }
-        }
+        },
+        genero: "Ação, Sobrevivência, RPG",
+        recurso: "Online Multiplayer"
     },
     // Hogwarts Lagacy
     {
@@ -944,7 +995,9 @@ const jogos = [
                 armazenamento: "85 GB de espaço disponível",
                 placaSom: ""
             }
-        }
+        },
+        genero: "Ação, Sobrevivência, RPG",
+        recurso: "Online Multiplayer"
     },
     // Valorant
     {
@@ -978,6 +1031,8 @@ const jogos = [
                 armazenamento: "8 GB de espaço disponível",
                 placaSom: ""
             }
-        }
+        },
+        genero: "Ação, Sobrevivência, RPG",
+        recurso: "Online Multiplayer"
     },
 ];

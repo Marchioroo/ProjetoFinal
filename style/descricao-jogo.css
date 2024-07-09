@@ -134,10 +134,8 @@
 }
 
 .minimos-text{
-    position: relative;
-    
-    overflow: auto;
-    
+    position: relative;  
+    overflow: auto; 
     justify-content: center;
     align-items: center;
 }
@@ -152,4 +150,30 @@
 
 #h5{
     color: #595A5C;
+}
+
+.jogo__infos-genero{
+   display: flex;
+   flex-direction: row;
+   
+}
+
+.genero, .recurso{
+    width: 100%;
+    border-left: 3px solid white;
+    margin:60px 10px 40px 0px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-genero, .info-recurso{
+    position: relative;
+    top:5px;
+    left: 30px;
+}
+
+
+#info-genero, #info-recurso{
+    color:#595A5C
 }
