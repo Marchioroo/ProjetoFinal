@@ -191,37 +191,37 @@ const jogos = [
   },
   {
     id: 2,
-    nome: "Outro Jogo",
+    nome: "Black Myth: Wukong",
     imagens: {
-      imagem1: "/images/imagens-descricao-jogos/Deadby/deadby1.webp",
-      imagem2: "/images/imagens-descricao-jogos/Deadby/deadby2.jpg",
-      imagem3: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
-      imagem4: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
+        imagem1: "/images/imagens-descricao-jogos/BlackMythWukong/BlackMythWukong1.jpg",
+        imagem2: "/images/imagens-descricao-jogos/BlackMythWukong/BlackMythWukong2.jpeg",
+        imagem3: "/images/imagens-descricao-jogos/BlackMythWukong/BlackMythWukong3.jpeg",
+        imagem4: "/images/imagens-descricao-jogos/BlackMythWukong/BlackMythWukong4.webp",
     },
-    descricao: "Descrição do outro jogo.",
-    valor: 59.99,
-    lancamento: "15/03/2023",
-    desenvolvido: "Desenvolvedora B",
+    descricao: 'Wukong é um jogo de ação e aventura desenvolvido pela Game Science, baseado no clássico romance chinês "Jornada ao Oeste". O jogador assume o papel de Sun Wukong, o Rei Macaco, e utiliza suas habilidades e transformações para combater inimigos e explorar um mundo fantástico repleto de mitologia chinesa. O jogo é conhecido por seus gráficos impressionantes e combates dinâmicos.',
+    valor: 299.90,
+    lancamento: "19/08/2024",
+    desenvolvido: "Game Science",
     requisitos: {
-      minimos: {
-        sistemaOperacional: "Windows 10 64-bit2",
-        processador: "Intel Core i5-8400 ou AMD Ryzen 5 1600",
-        memoria: "16 GB de RAM",
-        placaVideo: "NVIDIA GeForce GTX 970 4GB ",
-        armazenamento: "100 GB de espaço disponível",
-      },
-      recomendados: {
-        sistemaOperacional: "Windows 10 64-bit",
-        processador: "Intel Core i7-8700K ou AMD Ryzen 7 2700X",
-        memoria: "16 GB de RAM",
-        placaVideo: "NVIDIA GeForce RTX 2080 Ti Superior",
-        directX: "Versão 12",
-        rede: "Conexão de Internet banda larga",
-        armazenamento: "100 GB de espaço disponível",
-        placaSom: "Compatível com DirectX"
-      }
+        minimos: {
+            sistemaOperacional: "Windows 10 64-bit",
+            processador: "Intel Core i5-8400 / AMD Ryzen 5 1600",
+            memoria: "16 GB de RAM",
+            placaVideo: " NVIDIA GeForce GTX 1060 6GB / AMD Radeon RX 580 8GB",
+            armazenamento: " 130 GB de espaço disponível",
+        },
+        recomendados: {
+            sistemaOperacional: "Windows 10 64-bit",
+            processador: "Intel Core i7-9700 / AMD Ryzen 5 5500",
+            memoria: "16 GB de RAM",
+            placaVideo: "NVIDIA GeForce RTX 2060 / AMD Radeon RX 5700 XT / INTEL Arc A750",
+            directX: "Versão 12",
+            rede: "Conexão de Internet banda larga",
+            armazenamento: "130 GB de espaço disponível",
+            placaSom: "Windows Compatible Audio Device"
+        }
     }
-  }
+},
 ];
 
 
@@ -380,5 +380,5 @@ function exibirDetalhesDoJogo(id) {
   }
 }
 
-exibirDetalhesDoJogo(1);
+exibirDetalhesDoJogo(2);
 
