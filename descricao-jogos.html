@@ -89,69 +89,85 @@
             </ul>
             <div class="usuario__conta">
                 <i class="ri-shield-user-line"></i>
-      
+
                 <a href="#" class="usuario__descricao">
-                  <h3 id="SingUp">ENTRAR</h3>
-                  <p>Game on, sempre!</p>
+                    <h3 id="SingUp">ENTRAR</h3>
+                    <p>Game on, sempre!</p>
                 </a>
-              </div>
+            </div>
         </aside>
 
-        <!-- Verificação Idade -->
-         <div id="validacao-idade" class="content-box">
-            <form action="#">
-                <section class="home__conteudo">
-                    <h2>ESTE PRODUTO PODE CONTER CONTEÚDO NÃO APROPRIADO PARA TODAS AS IDADES OU PARA
-                        VISUALIZAÇÃO NO
-                        TRABALHO
-                    </h2>
 
-                    <label for="data">
-                        <h4>Informe sua data de nascimento para continuar:</h4>
-                    </label>
-                    <input type="date" id="data" name="data" class="aniversario" placeholder="DD/MM/AAAA"
-                        title="Escolha uma data" required>
-                    <button class="btn__primary">CONFIRMAR MAIORIDADE</button>
 
-                    <div id="modalIdade" class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <p>Você é menor de idade e não pode acessar o jogo.</p>
-                        </div>
-                    </div>
-                </section>
-            </form>
-        </div>
+        <!-- AREA DE INFOAMÇÃO DO GAME -->
+        <!-- AREA DE INFOAMÇÃO DO GAME -->
+        <!-- AREA DE INFOAMÇÃO DO GAME -->
+
 
         <main class="container__descricao-jogo">
             <section class="jogo__info-vendas">
-                <img src="/images/cover paginas/dead-by-daylight-cover.webp" alt="">
+                <div class="carousel">
+                    <img class="carousel__item" src="" alt="Imagem 1" id="img1">
+                    <img class="carousel__item" src="" alt="Imagem 2" id="img2">
+                    <img class="carousel__item" src="" alt="Imagem 3" id="img3">
+                    <img class="carousel__item" src="" alt="Imagem 4" id="img4">
+                </div>
                 <div class="info-vendas">
                     <div class="tag__faixa-etaria">
                         <p>18</p>
                         <h4>Violência Extrema</h4>
                     </div>
-                    <h4 class="info-vendas-lancamento"></h4>
-                    <h4 class="info-vendas-desenvolvido"></h4>
-                    <h4 class="info-vendas-valor"></h4>
+                    <h4 class="info-vendas-lancamento"><span id='h4'>Lançamento: </span></h4>
+                    <h4 class="info-vendas-desenvolvido"><span id='h4'>Desenvolvedora: </span></h4>
+                    <h4 class="info-vendas-valor"><span id='h4'>Valor: </span></h4>
                     <button class="btn__secondary">ADICIONAR AO CARRINHO</button>
                     <button class="btn__primary">COMPRE AGORA</button>
-            
                 </div>
             </section>
             <section class="jogo__infos">
                 <h3 class="jogo__infos-nome"></h3>
                 <p class="jogo__infos-descricao"></p>
+
+                <br> <h2>Requisitos:</h2>
+                <div class="requisitos-jogos">
+
+                    <div class="minimos">
+                        <div class="minimos-text">
+                            <h5 class="sistemaOperacionalMinimo"><span id='h5'>Sistema Operacional: </span></h5>
+                            <h5 class="processadorMinimo"><span id='h5'>Processador: </span></h5>
+                            <h5 class="memoriaMinimo"><span id='h5'>Memória: </span></h5>
+                            <h5 class="placaDeVideoMinimo"><span id='h5'> Placa de Vídeo: </span></h5>
+                            <h5 class="ArmazenamentoMinimo"><span id='h5'> Armazenamento: </span></h5>
+                            
+                        </div>
+                    </div>
+
+                    <div class="recomendados">
+                        <div class="minimos-text">
+                            <h5 class="sistemaOperacionalRecomendado"><span id='h5'>Sistema Operacional: </span></h5>
+                            <h5 class="processadorRecomendado"><span id='h5'>Processador: </span></h5>
+                            <h5 class="memoriaRecomendado"><span id='h5'>Memória: </span></h5>
+                            <h5 class="placaDeVideoRecomendado"><span id='h5'> Placa de Vídeo: </span></h5>
+                            <h5 class="ArmazenamentoRecomendado"><span id='h5'> Armazenamento: </span></h5>
+                             
+                        </div>
+
+                    </div>
+
+                </div>
+
             </section>
         </main>
+
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <script src="/main.js"></script>
-        <script src="/main-loading.js"></script>
-   
+    <script src="/main.js"></script>
+    <script src="/main-loading.js"></script>
+
 
 </body>
 

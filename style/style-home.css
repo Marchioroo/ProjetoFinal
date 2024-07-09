@@ -243,7 +243,7 @@ i {
     transition: transform 0.3s ease;
     box-shadow: 0 0 10px rgba(7, 2, 34, 0.1);
 }
-.btn__primary:hover, .btn__secondary:hover{
+.btn__primary:hover{
     transform: scale(1.01);
     box-shadow: 0 0 0px rgba(0, 0, 0, 0.3);
    
@@ -511,10 +511,11 @@ input[type="date"]:focus {
 
 .container__card {
     position: relative;
+    top:-10px;
     width: calc(100% - 80px);
     height: 100%;
     left: 80px;
-    margin: 5rem 0;
+    margin: 3rem 0;
     display: flex;
     justify-content: center;
     gap: 3rem;
@@ -522,7 +523,7 @@ input[type="date"]:focus {
 }
 
 .content__card {
-    max-width: 700px;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

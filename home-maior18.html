@@ -1,142 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>CoderGame | Home</title>
-    <!-- Nosso icone-->
-    <link rel="icon" type="image/x-icon" href="/images/logo.png" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./style/style-home.css" />
-  </head>
+  <title>CoderGame | Home</title>
+  <!-- Nosso icone-->
+  <link rel="icon" type="image/x-icon" href="/images/logo.png" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 
-  <body>
-    <aside class="sidebar">
-        <div class="sidebar__header">
-            <img src="./images/logo.png" alt="logo CoderGame">
-            <h2>CoderGAME</h2>
-        </div>
+  <link rel="stylesheet" href="./style/style-home.css" />
+</head>
 
-      <ul class="sidebar__lista">
-        <h4></h4>
-        <li>
-          <a href="#" class="sidebar__link" id="botaoHome">
-            <i class="ri-home-fill"></i>
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="#" class="sidebar__link">
-            <i class="ri-heart-fill"></i>
-            Favoritos
-          </a>
-        </li>
-        <li>
-          <a href="#" class="sidebar__link">
-            <i class="ri-shopping-cart-fill"></i>
-            Loja
-          </a>
-        </li>
-        <h4>
-          <span>Explorar</span>
-        </h4>
-        <li>
-          <a href="#" class="sidebar__link">
-            <i class="ri-search-line"></i>
-            Pesquisar
-          </a>
-        </li>
-        <li>
-          <a href="#" class="sidebar__link">
-            <i class="ri-discord-fill"></i>
-            Discord
-          </a>
-        </li>
-        <li>
-          <a href="#" class="sidebar__link">
-            <i class="ri-layout-grid-fill"></i>
-            Categorias
-          </a>
-        </li>
-        <li>
-          <a href="#" class="sidebar__link">
-            <i class="ri-bar-chart-2-fill"></i>
-            Mais vendidos
-          </a>
-        </li>
+<body>
+  <aside class="sidebar">
+    <div class="sidebar__header">
+      <img src="./images/logo.png" alt="logo CoderGame">
+      <h2>CoderGAME</h2>
+    </div>
 
-        <h4>
-          <span>Equipe CoderGAME</span>
-        </h4>
-        <li>
-          <a href="#" class="sidebar__link">
-            <i class="ri-customer-service-2-fill"></i>
-            Suporte
-          </a>
-        </li>
-        <li>
-          <a href="#" class="sidebar__link" id="botaoSobrenos">
-            <i class="ri-team-fill"></i>
-            Sobre nós
-          </a>
-        </li>
-      </ul>
-      <div class="usuario__conta">
-        <i class="ri-shield-user-line"></i>
-        <a href="#" class="usuario__descricao">
-          <h3 id="SingUp">ENTRAR</h3>
-          <p>Game on, sempre!</p>
+    <ul class="sidebar__lista">
+      <h4></h4>
+      <li>
+        <a href="#" class="sidebar__link" id="botaoHome">
+          <i class="ri-home-fill"></i>
+          Home
         </a>
-      </div>
-    </aside>
+      </li>
+      <li>
+        <a href="#" class="sidebar__link">
+          <i class="ri-heart-fill"></i>
+          Favoritos
+        </a>
+      </li>
+      <li>
+        <a href="#" class="sidebar__link">
+          <i class="ri-shopping-cart-fill"></i>
+          Loja
+        </a>
+      </li>
+      <h4>
+        <span>Explorar</span>
+      </h4>
+      <li>
+        <a href="#" class="sidebar__link">
+          <i class="ri-search-line"></i>
+          Pesquisar
+        </a>
+      </li>
+      <li>
+        <a href="#" class="sidebar__link">
+          <i class="ri-discord-fill"></i>
+          Discord
+        </a>
+      </li>
+      <li>
+        <a href="#" class="sidebar__link">
+          <i class="ri-layout-grid-fill"></i>
+          Categorias
+        </a>
+      </li>
+      <li>
+        <a href="#" class="sidebar__link">
+          <i class="ri-bar-chart-2-fill"></i>
+          Mais vendidos
+        </a>
+      </li>
 
-    <!-- Verificação Idade -->
-    <form action="#">
-      <section class="home__conteudo">
-        <h2>
-          ESTE PRODUTO PODE CONTER CONTEÚDO NÃO APROPRIADO PARA TODAS AS IDADES
-          OU PARA VISUALIZAÇÃO NO TRABALHO
-        </h2>
+      <h4>
+        <span>Equipe CoderGAME</span>
+      </h4>
+      <li>
+        <a href="#" class="sidebar__link">
+          <i class="ri-customer-service-2-fill"></i>
+          Suporte
+        </a>
+      </li>
+      <li>
+        <a href="#" class="sidebar__link" id="botaoSobrenos">
+          <i class="ri-team-fill"></i>
+          Sobre nós
+        </a>
+      </li>
+    </ul>
+    <div class="usuario__conta">
+      <i class="ri-shield-user-line"></i>
+      <a href="#" class="usuario__descricao">
+        <h3 id="SingUp">ENTRAR</h3>
+        <p>Game on, sempre!</p>
+      </a>
+    </div>
+  </aside>
 
-        <label for="data">
-          <h4>Informe sua data de nascimento para continuar:</h4>
-        </label>
-        <input
-          type="date"
-          id="data"
-          name="data"
-          class="aniversario"
-          placeholder="DD/MM/AAAA"
-          title="Escolha uma data"
-          required
-        />
-        <button class="btn__primary">CONFIRMAR MAIORIDADE</button>
+  <!-- Verificação Idade -->
+  <form action="#">
+    <section class="home__conteudo">
+      <h2>
+        ESTE PRODUTO PODE CONTER CONTEÚDO NÃO APROPRIADO PARA TODAS AS IDADES
+        OU PARA VISUALIZAÇÃO NO TRABALHO
+      </h2>
 
-        <div id="modalIdade" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>
-              Este conteúdo de jogos são destinados exclusivamente para maiores
-              de 18 anos. Se você não tem 18 anos completos, por favor, não
-              acesse os jogos e serviços oferecidos aqui.
-            </p>
-          </div>
+      <label for="data">
+        <h4>Informe sua data de nascimento para continuar:</h4>
+      </label>
+      <input type="date" id="data" name="data" class="aniversario" placeholder="DD/MM/AAAA" title="Escolha uma data"
+        required />
+      <button class="btn__primary">CONFIRMAR MAIORIDADE</button>
+
+      <div id="modalIdade" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>
+            Este conteúdo de jogos são destinados exclusivamente para maiores
+            de 18 anos. Se você não tem 18 anos completos, por favor, não
+            acesse os jogos e serviços oferecidos aqui.
+          </p>
         </div>
-      </section>
-    </form>
+      </div>
+    </section>
+  </form>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script  src="main.js"></script>
-    <script  src="main-loading.js"></script>
-    <script  src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+  <script src="main-loading.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
 </html>
