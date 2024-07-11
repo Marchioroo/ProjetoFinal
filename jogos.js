@@ -81,10 +81,10 @@ export const jogos = [
         id: 3,
         nome: "Final Fantasy 14: Dawntrail",
         imagens: {
-            imagem1: "/images/imagens-descricao-jogos/Deadby/deadby1.webp",
-            imagem2: "/images/imagens-descricao-jogos/Deadby/deadby2.jpg",
-            imagem3: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
-            imagem4: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
+            imagem1: "/images/imagens-descricao-jogos/FinalFantasy14Dawntrail/FinalFantasy14Dawntrail1.jpg",
+            imagem2: "/images/imagens-descricao-jogos/FinalFantasy14Dawntrail/FinalFantasy14Dawntrail2.jpg",
+            imagem3: "/images/imagens-descricao-jogos/FinalFantasy14Dawntrail/FinalFantasy14Dawntrail3.jpg",
+            imagem4: "/images/imagens-descricao-jogos/FinalFantasy14Dawntrail/FinalFantasy14Dawntrail4.jpg",
         },
         descricao: 'É a mais recente expansão do popular MMORPG Final Fantasy XIV. Esta expansão leva os jogadores a novas áreas, introduz novas classes e ofícios, e continua a rica narrativa que a série é conhecida. Os jogadores irão explorar terras exóticas, enfrentar novos desafios e descobrir segredos antigos enquanto trabalham juntos para salvar o reino.',
         valor: 107.99,
@@ -112,15 +112,15 @@ export const jogos = [
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer"
     },
-    // world of warcraft war within
+    //World of warcraft war within
     {
         id: 4,
         nome: "World of Warcraft War Within",
         imagens: {
-            imagem1: "/images/imagens-descricao-jogos/Deadby/deadby1.webp",
-            imagem2: "/images/imagens-descricao-jogos/Deadby/deadby2.jpg",
-            imagem3: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
-            imagem4: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
+            imagem1: "/images/imagens-descricao-jogos/WorldOfWarcraftWarWithin/WorldOfWarcraftWarWithin1.jpg",
+            imagem2: "/images/imagens-descricao-jogos/WorldOfWarcraftWarWithin/WorldOfWarcraftWarWithin2.webp",
+            imagem3: "/images/imagens-descricao-jogos/WorldOfWarcraftWarWithin/WorldOfWarcraftWarWithin3.jpg",
+            imagem4: "/images/imagens-descricao-jogos/WorldOfWarcraftWarWithin/WorldOfWarcraftWarWithin4.jpg",
         },
         descricao: 'É a mais recente expansão do popular MMORPG Final Fantasy XIV. Esta expansão leva os jogadores a novas áreas, introduz novas classes e ofícios, e continua a rica narrativa que a série é conhecida. Os jogadores irão explorar terras exóticas, enfrentar novos desafios e descobrir segredos antigos enquanto trabalham juntos para salvar o reino.',
         valor: 319.00,
@@ -148,15 +148,15 @@ export const jogos = [
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer"
     },
-    // the legend of zelda: echoes
+    //The legend of zelda: echoes
     {
         id: 5,
         nome: "The Legend of Zelda: Echoes",
         imagens: {
-            imagem1: "/images/imagens-descricao-jogos/Deadby/deadby1.webp",
-            imagem2: "/images/imagens-descricao-jogos/Deadby/deadby2.jpg",
-            imagem3: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
-            imagem4: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
+            imagem1: "/images/imagens-descricao-jogos/TheLegendOfZeldaEchoes/TheLegendOfZeldaEchoes1.jpg",
+            imagem2: "/images/imagens-descricao-jogos/TheLegendOfZeldaEchoes/TheLegendOfZeldaEchoes2.jpg",
+            imagem3: "/images/imagens-descricao-jogos/TheLegendOfZeldaEchoes/TheLegendOfZeldaEchoes3.jpg",
+            imagem4: "/images/imagens-descricao-jogos/TheLegendOfZeldaEchoes/TheLegendOfZeldaEchoes4.webp",
         },
         descricao: 'The Legend of Zelda: Echoes é um novo capítulo na aclamada série de jogos The Legend of Zelda. Nesta aventura, Link explora um mundo vasto e interconectado cheio de mistérios, puzzles e inimigos formidáveis. O jogo introduz novos elementos de jogabilidade e uma narrativa rica que se aprofunda na história de Hyrule e seus personagens icônicos. Com gráficos impressionantes e trilha sonora épica, Echoes promete ser uma experiência inesquecível para os fãs da franquia.',
         valor: 229.90,
@@ -184,15 +184,15 @@ export const jogos = [
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer"
     },
-    // Dragon Ball: Sparking! Zero
+    //Dragon Ball: Sparking! Zero
     {
         id: 6,
         nome: "Dragon Ball: Sparking! Zero",
         imagens: {
-            imagem1: "/images/imagens-descricao-jogos/Deadby/deadby1.webp",
-            imagem2: "/images/imagens-descricao-jogos/Deadby/deadby2.jpg",
-            imagem3: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
-            imagem4: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
+            imagem1: "/images/imagens-descricao-jogos/DragonBallSparkingZero/DragonBallSparkingZero1.jpg",
+            imagem2: "/images/imagens-descricao-jogos/DragonBallSparkingZero/DragonBallSparkingZero2.webp",
+            imagem3: "/images/imagens-descricao-jogos/DragonBallSparkingZero/DragonBallSparkingZero3.webp",
+            imagem4: "/images/imagens-descricao-jogos/DragonBallSparkingZero/DragonBallSparkingZero4.jpg",
         },
         descricao: 'Dragon Ball: Sparking! Zero é um jogo de luta baseado na popular franquia Dragon Ball. O jogo apresenta uma grande variedade de personagens jogáveis, cada um com suas habilidades e movimentos especiais. Os jogadores podem reviver as icônicas batalhas do anime e do mangá em ambientes 3D detalhados. O jogo é conhecido por sua jogabilidade dinâmica, gráficos vibrantes e fidelidade ao material original, proporcionando uma experiência imersiva para os fãs da série.',
         valor: 229.90,
@@ -220,15 +220,15 @@ export const jogos = [
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer"
     },
-    // Call of Duty: Black Ops 6
+    //Call of Duty: Black Ops 6
     {
         id: 7,
         nome: "Call of Duty: Black Ops 6",
         imagens: {
-            imagem1: "/images/imagens-descricao-jogos/Deadby/deadby1.webp",
-            imagem2: "/images/imagens-descricao-jogos/Deadby/deadby2.jpg",
-            imagem3: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
-            imagem4: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
+            imagem1: "/images/imagens-descricao-jogos/CallofDutyBlackOps6/CODBOps6-1.jpg",
+            imagem2: "/images/imagens-descricao-jogos/CallofDutyBlackOps6/CODBOps6-2.jpg",
+            imagem3: "/images/imagens-descricao-jogos/CallofDutyBlackOps6/CODBOps6-3.jpeg",
+            imagem4: "/images/imagens-descricao-jogos/CallofDutyBlackOps6/CODBOps6-4.jpg",
         },
         descricao: 'Call of Duty: Black Ops 6 é a mais recente entrada na famosa série de jogos de tiro em primeira pessoa. Desenvolvido pela Treyarch e publicado pela Activision, o jogo continua a tradição de combates intensos, narrativas envolventes e modos multijogador variados. O jogo traz uma campanha emocionante que explora novos conflitos globais e intrigas políticas, modos multijogador inovadores e um modo zumbis cheio de ação.',
         valor: 479.00,
@@ -256,15 +256,15 @@ export const jogos = [
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer"
     },
-    // Super Mario Party Jamboree
+    //Super Mario Party Jamboree
     {
         id: 8,
         nome: "Super Mario Party Jamboree",
         imagens: {
-            imagem1: "/images/imagens-descricao-jogos/Deadby/deadby1.webp",
-            imagem2: "/images/imagens-descricao-jogos/Deadby/deadby2.jpg",
-            imagem3: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
-            imagem4: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
+            imagem1: "/images/imagens-descricao-jogos/SuperMarioPartyJamboree/SMPJamboree1.jpg",
+            imagem2: "/images/imagens-descricao-jogos/SuperMarioPartyJamboree/SMPJamboree2.png",
+            imagem3: "/images/imagens-descricao-jogos/SuperMarioPartyJamboree/SMPJamboree3.jpg",
+            imagem4: "/images/imagens-descricao-jogos/SuperMarioPartyJamboree/SMPJamboree4.webp",
         },
         descricao: 'Super Mario Party Jamboree é a mais nova edição da popular série de jogos de festa da Nintendo. O jogo apresenta uma variedade de minijogos divertidos e competitivos, com novos tabuleiros e modos de jogo para entreter jogadores de todas as idades. Os jogadores podem escolher entre uma ampla seleção de personagens icônicos do universo Mario e competir em desafios que testam habilidades, sorte e estratégia. Com gráficos coloridos, música animada e a opção de jogar com amigos localmente ou online, Super Mario Party Jamboree promete ser uma experiência de festa imperdível.',
         valor: 299.90,
@@ -292,15 +292,15 @@ export const jogos = [
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer"
     },
-    // Life is Strange: Double Exposure
+    //Life is Strange: Double Exposure
     {
         id: 9,
         nome: "Life is Strange: Double Exposure",
         imagens: {
-            imagem1: "/images/imagens-descricao-jogos/Deadby/deadby1.webp",
-            imagem2: "/images/imagens-descricao-jogos/Deadby/deadby2.jpg",
-            imagem3: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
-            imagem4: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
+            imagem1: "/images/imagens-descricao-jogos/LifeIsStrangeDoubleExposure/LISDE1.webp",
+            imagem2: "/images/imagens-descricao-jogos/LifeIsStrangeDoubleExposure/LISDE2.webp",
+            imagem3: "/images/imagens-descricao-jogos/LifeIsStrangeDoubleExposure/LISDE3.png",
+            imagem4: "/images/imagens-descricao-jogos/LifeIsStrangeDoubleExposure/LISDE4.jpeg",
         },
         descricao: 'Life is Strange: Double Exposure é um jogo de aventura narrativa desenvolvido pela Dontnod Entertainment e publicado pela Square Enix. Este novo título da série continua a explorar temas profundos e emocionais, com foco nas escolhas do jogador e suas consequências. A história gira em torno de novos personagens que possuem habilidades especiais que permitem manipular o tempo e o espaço, adicionando uma camada única de jogabilidade e narrativa. Os jogadores deverão tomar decisões difíceis que influenciam a direção da trama e o destino dos personagens, em uma experiência imersiva e visualmente cativante.',
         valor: 219.90,
@@ -328,15 +328,15 @@ export const jogos = [
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer"
     },
-    // Mario & Luigi: Brothership
+    //Mario & Luigi: Brothership
     {
         id: 10,
         nome: "Mario & Luigi: Brothership",
         imagens: {
-            imagem1: "/images/imagens-descricao-jogos/Deadby/deadby1.webp",
-            imagem2: "/images/imagens-descricao-jogos/Deadby/deadby2.jpg",
-            imagem3: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
-            imagem4: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
+            imagem1: "/images/imagens-descricao-jogos/Mario&LuigiBrothership/MLBrothership1.webp",
+            imagem2: "/images/imagens-descricao-jogos/Mario&LuigiBrothership/MLBrothership2.webp",
+            imagem3: "/images/imagens-descricao-jogos/Mario&LuigiBrothership/MLBrothership3.jpg",
+            imagem4: "/images/imagens-descricao-jogos/Mario&LuigiBrothership/MLBrothership4.png",
         },
         descricao: 'Mario & Luigi: Brothership é um jogo de RPG de ação e aventura desenvolvido pela Nintendo. Este título leva os jogadores a uma nova e emocionante jornada no Reino dos Cogumelos, onde Mario e Luigi devem unir forças para enfrentar novos inimigos e resolver puzzles intrigantes. O jogo combina elementos clássicos da série Mario com mecânicas de combate por turnos e exploração, oferecendo uma experiência rica e envolvente. Com gráficos vibrantes, uma história cativante e personagens adoráveis, Mario & Luigi: Brothership promete ser uma aventura imperdível para fãs de todas as idades.',
         valor: 299.90,
@@ -364,17 +364,17 @@ export const jogos = [
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer"
     },
-    // Dragon Quest III HD-2D Remake **
+    //Dragon Quest III HD-2D Remake
     {
         id: 11,
         nome: "Dragon Quest III HD-2D Remake",
         imagens: {
-            imagem1: "/images/imagens-descricao-jogos/Deadby/deadby1.webp",
-            imagem2: "/images/imagens-descricao-jogos/Deadby/deadby2.jpg",
-            imagem3: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
-            imagem4: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
+            imagem1: "/images/imagens-descricao-jogos/DragonQuest3Remake/DQ3Remake1.jpg",
+            imagem2: "/images/imagens-descricao-jogos/DragonQuest3Remake/DQ3Remake1.jpeg",
+            imagem3: "/images/imagens-descricao-jogos/DragonQuest3Remake/DQ3Remake3.webp",
+            imagem4: "/images/imagens-descricao-jogos/DragonQuest3Remake/DQ3Remake4.jpg",
         },
-        descricao: ' ',
+        descricao: 'O "Dragon Quest III HD-2D Remake" é uma versão atualizada do clássico jogo de RPG "Dragon Quest III: The Seeds of Salvation". Este remake utiliza a tecnologia HD-2D, que combina gráficos pixelados em 2D com efeitos modernos de iluminação e profundidade, criando uma estética visual que é ao mesmo tempo nostálgica e inovadora.<br>A narrativa segue o herói, filho de Ortega, em sua missão para derrotar o maligno Baramos e, eventualmente, enfrentar o vilão Zoma. A jornada abrange um mundo vasto e cheio de mistérios, com personagens memoráveis e uma trama envolvente.<br>O "Dragon Quest III HD-2D Remake" é uma celebração do legado de um dos jogos mais queridos da série Dragon Quest, oferecendo tanto para novos jogadores quanto para fãs de longa data uma experiência renovada e cativante.',
         valor: 299.90,
         lancamento: "14/11/2024",
         desenvolvido: "Square Enix",
@@ -400,17 +400,17 @@ export const jogos = [
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer"
     },
-    // Assassin’s Creed Shadows 
+    //Assassin’s Creed Shadows 
     {
         id: 12,
         nome: "Assassin’s Creed Shadows",
         imagens: {
-            imagem1: "/images/imagens-descricao-jogos/Deadby/deadby1.webp",
-            imagem2: "/images/imagens-descricao-jogos/Deadby/deadby2.jpg",
-            imagem3: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
-            imagem4: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
+            imagem1: "/images/imagens-descricao-jogos/AssassinsCreedShadows/ACreedShadows1.jpg",
+            imagem2: "/images/imagens-descricao-jogos/AssassinsCreedShadows/ACreedShadows2.jpg",
+            imagem3: "/images/imagens-descricao-jogos/AssassinsCreedShadows/ACreedShadows3.jpg",
+            imagem4: "/images/imagens-descricao-jogos/AssassinsCreedShadows/ACreedShadows4.jpg",
         },
-        descricao: ' ',
+        descricao: 'Em "Assassin’s Creed Shadows", os jogadores mergulham no Japão feudal durante o período Sengoku, uma era de constantes conflitos e guerra civil. O protagonista, Hiroshi, é um jovem aprendiz de assassino, treinado nas artes furtivas e no combate pela lendária Ordem dos Assassinos. Enfrentando os poderosos senhores da guerra e o clã dos Templários que manipulam os conflitos por trás das sombras, Hiroshi deve navegar através de intrigas políticas e batalhas sangrentas para restaurar a paz e a justiça no Japão.',
         valor: 299.90,
         lancamento: "15/11/2024",
         desenvolvido: "Ubisoft EntertainmentNintendo",
@@ -436,15 +436,15 @@ export const jogos = [
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer"
     },
-    // Epic Mickey: Rebrushed
+    //Epic Mickey: Rebrushed
     {
         id: 13,
         nome: "Epic Mickey: Rebrushed",
         imagens: {
-            imagem1: "/images/imagens-descricao-jogos/Deadby/deadby1.webp",
-            imagem2: "/images/imagens-descricao-jogos/Deadby/deadby2.jpg",
-            imagem3: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
-            imagem4: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
+            imagem1: "/images/imagens-descricao-jogos/EpicMickeyRebrushed/EMRebrushed1.jpg",
+            imagem2: "/images/imagens-descricao-jogos/EpicMickeyRebrushed/EMRebrushed2.jpg",
+            imagem3: "/images/imagens-descricao-jogos/EpicMickeyRebrushed/EMRebrushed3.webp",
+            imagem4: "/images/imagens-descricao-jogos/EpicMickeyRebrushed/EMRebrushed4.jpg",
         },
         descricao: 'Disney Epic Mickey: Rebrushed traz vida à magia da Disney em um jogo vibrante de plataforma 3D. Este belo remake envia Mickey Mouse em uma jornada épica pela Terra Desolada, um reino de personagens esquecidos da Disney. No papel de Mickey, você mergulhará em um mundo fantástico e, armado com tinta e solvente, moldará sua aventura e o destino deste mundo alternativo. Cada movimento do seu pincel mágico importa! Use tinta para restaurar beleza e harmonia ou solvente para alterar o ambiente e descobrir segredos. Suas escolhas influenciam o destino de Mickey e mudam o resultado dessa odisseia artística. Será você o herói épico que a Terra Desolada precisa?',
         valor: 162.00,
@@ -472,15 +472,15 @@ export const jogos = [
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer"
     },
-    // Indiana Jones and the Great Circle
+    //Indiana Jones and the Great Circle
     {
         id: 14,
         nome: "Indiana Jones and the Great Circle",
         imagens: {
-            imagem1: "/images/imagens-descricao-jogos/Deadby/deadby1.webp",
-            imagem2: "/images/imagens-descricao-jogos/Deadby/deadby2.jpg",
-            imagem3: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
-            imagem4: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
+            imagem1: "/images/imagens-descricao-jogos/IndianaJonesTheGreatCircle/IJTGC1.webp",
+            imagem2: "/images/imagens-descricao-jogos/IndianaJonesTheGreatCircle/IJTGC2.jpg",
+            imagem3: "/images/imagens-descricao-jogos/IndianaJonesTheGreatCircle/IJTGC3.jpg",
+            imagem4: "/images/imagens-descricao-jogos/IndianaJonesTheGreatCircle/IJTGC4.jpg",
         },
         descricao: 'Desvenda um dos maiores mistérios da história em Indiana Jones and the Great Circle™, uma aventura a solo em primeira pessoa, passada entre os acontecimentos de Raiders of the Lost Ark™ e The Last Crusade™. No ano de 1937, forças sinistras procuram por todo o planeta o segredo para um poder antigo relacionado com o Great Circle, e apenas uma pessoa os pode deter: Indiana Jones™. Torna-te o lendário arqueólogo num jogo cinemático de ação e aventura do premiado estúdio MachineGames, também responsável pela série Wolfenstein, e com produção executiva do designer de jogos galardoado com o prémio Hall of Fame, Todd Howard.',
         valor: 199.90,
@@ -488,71 +488,71 @@ export const jogos = [
         desenvolvido: "MachineGames",
         requisitos: {
             minimos: {
-                sistemaOperacional: "",
-                processador: "",
-                memoria: "",
-                placaVideo: "",
-                armazenamento: "",
+                sistemaOperacional: "Windows® 10 64-bit",
+                processador: "Intel Core i5-2500K ou AMD FX-6350",
+                memoria: "8 GB de RAM",
+                placaVideo: "NVIDIA GeForce GTX 760 ou AMD Radeon R9 280",
+                armazenamento: "50 GB de espaço disponível",
             },
             recomendados: {
-                sistemaOperacional: "",
-                processador: "",
-                memoria: "",
-                placaVideo: "",
-                directX: "",
-                rede: "",
-                armazenamento: "",
-                placaSom: ""
+                sistemaOperacional: "Windows® 10 64-bit",
+                processador: "Intel Core i7-4770 ou AMD Ryzen 5 1600",
+                memoria: "16 GB de RAM",
+                placaVideo: "NVIDIA GeForce GTX 1060 ou AMD Radeon RX 580",
+                directX: "Versão 12",
+                rede: "Conexão de internet banda larga",
+                armazenamento: "50 GB de espaço disponível",
+                placaSom: "Compatível com DirectX"
             }
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer"
     },
-    // Microsoft Flight Simulator 2024
+    //Microsoft Flight Simulator 2024
     {
         id: 15,
         nome: "Microsoft Flight Simulator 2024",
         imagens: {
-            imagem1: "/images/imagens-descricao-jogos/Deadby/deadby1.webp",
-            imagem2: "/images/imagens-descricao-jogos/Deadby/deadby2.jpg",
-            imagem3: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
-            imagem4: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
+            imagem1: "/images/imagens-descricao-jogos/MicrosoftFlightSimulator2024/MFlightS1.jpg",
+            imagem2: "/images/imagens-descricao-jogos/MicrosoftFlightSimulator2024/MFlightS2.jpg",
+            imagem3: "/images/imagens-descricao-jogos/MicrosoftFlightSimulator2024/MFlightS3.jpg",
+            imagem4: "/images/imagens-descricao-jogos/MicrosoftFlightSimulator2024/MFlightS4.jpg",
         },
-        descricao: '',
+        descricao: 'Explora o mundo como nunca antes em Microsoft Flight Simulator 2024, a mais recente versão do icônico simulador de voo. Com gráficos de última geração, modelagem realista de aeronaves e condições climáticas dinâmicas, este jogo oferece uma experiência imersiva de voo. Viaja por todo o planeta, desde aeroportos movimentados até pistas de pouso remotas, e desfruta de uma simulação autêntica com dados em tempo real e uma física de voo precisa. Seja para iniciantes ou pilotos experientes, Microsoft Flight Simulator 2024 proporciona uma aventura de voo incomparável, desenvolvida pelo aclamado estúdio Asobo Studio.',
         valor: 399.90,
         lancamento: "2024",
-        desenvolvido: "",
+        desenvolvido: "Asobo Studio",
         requisitos: {
             minimos: {
-                sistemaOperacional: "",
-                processador: "",
-                memoria: "",
-                placaVideo: "",
-                armazenamento: "",
+                sistemaOperacional: "Windows® 10 64-bit",
+                processador: "Intel Core i5-4460 ou AMD Ryzen 3 1200",
+                memoria: "8 GB de RAM",
+                placaVideo: "NVIDIA GeForce GTX 770 ou AMD Radeon RX 570",
+                armazenamento: "150 GB de espaço disponível",
             },
             recomendados: {
-                sistemaOperacional: "",
-                processador: "",
-                memoria: "",
-                placaVideo: "",
-                directX: "",
-                rede: "",
-                armazenamento: "",
-                placaSom: ""
+                sistemaOperacional: "Windows® 10 64-bit",
+                processador: "Intel Core i7-9700K ou AMD Ryzen 7 3700X",
+                memoria: "16 GB de RAM",
+                placaVideo: "NVIDIA GeForce RTX 2060 ou AMD Radeon RX 5700 XT",
+                directX: "Versão 12",
+                rede: "Conexão de internet banda larga",
+                armazenamento: "150 GB de espaço disponível",
+                placaSom: "Compatível com DirectX"
             }
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer"
     },
-    // Silent Hill 2 Remake
+    //Silent Hill 2 Remake
     {
         id: 16,
         nome: "Silent Hill 2 Remake",
         imagens: {
-            imagem1: "/images/imagens-descricao-jogos/Deadby/deadby1.webp",
-            imagem2: "/images/imagens-descricao-jogos/Deadby/deadby2.jpg",
-            imagem3: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
-            imagem4: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
+            imagem1: "/images/imagens-descricao-jogos/SilentHill2Remake/SilentHill2Remake1.webp",
+            imagem2: "/images/imagens-descricao-jogos/SilentHill2Remake/SilentHill2Remake2.jpg",
+            imagem3: "/images/imagens-descricao-jogos/SilentHill2Remake/SilentHill2Remake3.webp",
+            imagem4: "/images/imagens-descricao-jogos/SilentHill2Remake/SilentHill2Remake4.jpg",
         },
         descricao: `Tendo recebido uma carta de sua falecida esposa,<br>
         James dirige-se ao local onde compartilharam muitas lembranças,<br>
@@ -587,15 +587,15 @@ export const jogos = [
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer"
     },
-    // HORIZON ZERO DOWN
+    //HORIZON ZERO DAWN
     {
         id: 17,
-        nome: "HORIZON ZERO DOWN",
+        nome: "HORIZON ZERO DAWN",
         imagens: {
-            imagem1: "/images/imagens-descricao-jogos/Deadby/deadby1.webp",
-            imagem2: "/images/imagens-descricao-jogos/Deadby/deadby2.jpg",
-            imagem3: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
-            imagem4: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
+            imagem1: "/images/imagens-descricao-jogos/HorizonZeroDawn/HorizonZeroDawn1.webp",
+            imagem2: "/images/imagens-descricao-jogos/HorizonZeroDawn/HorizonZeroDawn2.jpg",
+            imagem3: "/images/imagens-descricao-jogos/HorizonZeroDawn/HorizonZeroDawn3.jpg",
+            imagem4: "/images/imagens-descricao-jogos/HorizonZeroDawn/HorizonZeroDawn4.jpg",
         },
         descricao: `A TERRA NÃO NOS PERTENCE MAIS
         <br>
@@ -631,15 +631,15 @@ export const jogos = [
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer"
     },
-    // THE KING OF FIGHTER XV
+    //THE KING OF FIGHTER XV
     {
         id: 18,
         nome: "THE KING OF FIGHTER XV",
         imagens: {
-            imagem1: "/images/imagens-descricao-jogos/Deadby/deadby1.webp",
-            imagem2: "/images/imagens-descricao-jogos/Deadby/deadby2.jpg",
-            imagem3: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
-            imagem4: "/images/imagens-descricao-jogos/Deadby/deadby4.jpg",
+            imagem1: "/images/imagens-descricao-jogos/TheKingOfFighterXV/TKFighterXV1.jpeg",
+            imagem2: "/images/imagens-descricao-jogos/TheKingOfFighterXV/TKFighterXV2.jpg",
+            imagem3: "/images/imagens-descricao-jogos/TheKingOfFighterXV/TKFighterXV3.jpg",
+            imagem4: "/images/imagens-descricao-jogos/TheKingOfFighterXV/TKFighterXV4.jpg",
         },
         descricao: 'THE KING OF FIGHTERS XV é o mais recente título da icônica série de jogos de luta desenvolvida pela SNK. Este jogo continua a tradição de combates frenéticos e estratégicos que a série é conhecida por oferecer. Com uma ampla seleção de personagens jogáveis, cada um com estilos de luta únicos e especiais devastadores, os jogadores podem participar de batalhas emocionantes em uma variedade de cenários dinâmicos. Além do modo arcade tradicional, o jogo oferece modos online competitivos, permitindo que jogadores de todo o mundo enfrentem uns aos outros em busca da supremacia nos torneios de KOF. Com gráficos atualizados e mecânicas de jogo refinadas, THE KING OF FIGHTERS XV promete ser uma experiência imperdível para os fãs de jogos de luta e da série KOF.',
         valor: 194.35,
