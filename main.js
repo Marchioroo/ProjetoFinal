@@ -1,3 +1,4 @@
+import { jogos } from '.jogos.js';
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -178,11 +179,6 @@ document.querySelectorAll(".swiper-slide").forEach((element) => {
 // =======================================================================================FIM ID CARD=============================================================================
 
 // ===================================================================TRABALHANDO COM CLASS PARA EXIBIR AS INFORMAÇÕES DO GAME=============================================================================
-
-
-
-import { jogos } from '/jogos.js';
-
 
 
 console.log(jogos)
