@@ -375,4 +375,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+ScrollReveal().reveal('.qrcode', {
+  origin: 'top',
+  duration: 1000,
+  distance: '20%'
+});
+
+
+
 
