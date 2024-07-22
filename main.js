@@ -184,7 +184,7 @@ document.querySelectorAll(".swiper-slide").forEach((element) => {
 console.log(jogos)
 class Jogo {
   constructor({ nome, imagens, imagem1, imagem2, imagem3, imagem4, descricao, valor, lancamento, desenvolvido, 
-    sistemaOperacional, processador, memoria, placaVideo, armazenamento, observacoes, requisitos, minimos, recomendados, genero,recurso }) {
+    sistemaOperacional, processador, memoria, placaVideo, armazenamento, observacoes, requisitos, minimos, recomendados, genero,recurso, classificacaoIndicativa }) {
     this.nome = nome;
     this.imagens = imagens;
     this.imagem1 = imagem1;
@@ -206,6 +206,7 @@ class Jogo {
     this.recomendados = recomendados;
     this.genero = genero;
     this.recurso = recurso;
+    this.classificacaoIndicativa = classificacaoIndicativa;
   }
 
   mostraNomeJogo() {
@@ -325,7 +326,39 @@ class Jogo {
     
   }
 
+  mostraClassificacaoIndicativa() {
+    const idade = document.querySelector(".idade__jogar");
+    const idadeInformacao = document.querySelector(".idade__informacao");
+    idade.innerHTML += `${this.classificacaoIndicativa}`;
+
+    switch(this.classificacaoIndicativa) {
+      case 18: 
+        idade.classList.add("mais18");
+        idadeInformacao.innerHTML += 'Violência Extrema';
+        break;
+      case 16: 
+        idade.classList.add("mais16"); 
+        idadeInformacao.innerHTML += `Linguagem imprópria, <br> temas sensíveis e violência`
+        break;
+      case 14: 
+        idade.classList.add("mais14"); 
+        idadeInformacao.innerHTML += `Temas sensíveis e violência`
+        break;
+      case 12: 
+        idade.classList.add("mais12");
+        idadeInformacao.innerHTML += `Violência e conteúdo sexual`
+        break;
+      case "L": 
+        idade.classList.add("livre");
+        idadeInformacao.innerHTML += `Livre`
+        break;
+    } 
+  }
+
+
 }
+
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -360,6 +393,7 @@ document.addEventListener('DOMContentLoaded', () => {
         jogoInstanciado.mostraDesenvolvidoJogo();
         jogoInstanciado.requisitosMinimos();
         jogoInstanciado.mostrarGeneroERecurso();
+        jogoInstanciado.mostraClassificacaoIndicativa();
       } else {
         console.log('Jogo não encontrado.');
       }

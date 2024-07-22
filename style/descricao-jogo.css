@@ -1,28 +1,28 @@
-:root{
+:root {
     --white: #fff;
     --black: #041046;
     --lightBulue: #17a;
     --black-dark: #06090F;
-       --black-light: #151B26;
-       --white: #F7F9FC;
-       --gray-1: #595A5C;
-       --blue: #5390E3;
-       --gradient-light: linear-gradient(225deg, #5390E3 8.12%, #1357B3 92.21%);
-       --gradient-dark: linear-gradient(225deg, #1B69D2 0%, #07346F 100%);
-       --gradient-black: linear-gradient(225deg, #0f131b 0%, rgb(8, 52, 109) 100%);
-       --gradient-bemblack:linear-gradient(225deg, #151B26 0%, rgb(27, 27, 36) 100%);
-   }
- 
+    --black-light: #151B26;
+    --white: #F7F9FC;
+    --gray-1: #595A5C;
+    --blue: #5390E3;
+    --gradient-light: linear-gradient(225deg, #5390E3 8.12%, #1357B3 92.21%);
+    --gradient-dark: linear-gradient(225deg, #1B69D2 0%, #07346F 100%);
+    --gradient-black: linear-gradient(225deg, #0f131b 0%, rgb(8, 52, 109) 100%);
+    --gradient-bemblack: linear-gradient(225deg, #151B26 0%, rgb(27, 27, 36) 100%);
+}
+
 .container__descricao-jogo {
     position: relative;
     width: calc(100% - 80px);
     left: 80px;
-    margin-top:100px;
+    margin-top: 100px;
     color: var(--white);
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
 .jogo__info-vendas {
@@ -35,8 +35,10 @@
     display: flex;
     overflow: hidden;
     width: 100%;
-    max-width: 800px; /* Ajuste o máximo conforme necessário */
-    height: 436px; /* Ajuste a altura conforme necessário */
+    max-width: 800px;
+    /* Ajuste o máximo conforme necessário */
+    height: 436px;
+    /* Ajuste a altura conforme necessário */
     border-radius: 1rem;
     position: relative;
 }
@@ -69,7 +71,6 @@
     font-weight: 700;
     line-height: 1;
     padding: 0.875rem;
-    background-color: var(--black-dark);
     border-radius: 0.5rem;
 }
 
@@ -78,10 +79,30 @@
     font-weight: 700;
 }
 
+.mais18 {
+    background-color: var(--black-dark);
+}
+
+.mais16 {
+    background-color: red;
+}
+
+.mais14 {
+    background-color: orange;
+}
+
+.mais12 {
+    background-color: yellow;
+}
+
+.livre {
+    background-color: green;
+}
+
 .jogo__infos {
     max-width: 1180px;
     margin-top: 2rem;
-    
+
 }
 
 .jogo__infos h3 {
@@ -98,82 +119,82 @@
 
 .jogo__info-vendas button {
     width: 100%;
-    
+
 }
-.btn__secondary:hover{
-    background-color:var(--black-light);
+
+.btn__secondary:hover {
+    background-color: var(--black-light);
 }
 
 
-#h4{
+#h4 {
     color: var(--gray-1);
-    
+
 }
 
 /* AQUI FICARÁ OS REQUISITOS MINIMOS */
 
-/* AQUI FICARÁ OS REQUISITOS MINIMOS */
-
-/* AQUI FICARÁ OS REQUISITOS MINIMOS */
-
-.requisitos-jogos{
+.requisitos-jogos {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:0;
+    margin: 0;
     padding: 0;
-    
+
 }
 
-.minimos, .recomendados{
-    margin:20px 10px 80px 0px;
-    border-radius:10px;
+.minimos,
+.recomendados {
+    margin: 20px 10px 80px 0px;
+    border-radius: 10px;
     width: 100%;
     height: 300px;
     background-color: var(--black-light);
 }
 
-.minimos-text{
-    position: relative;  
-    overflow: auto; 
+.minimos-text {
+    position: relative;
+    overflow: auto;
     justify-content: center;
     align-items: center;
 }
 
-.minimos-text h5{
+.minimos-text h5 {
     font-size: 15px;
-    margin-bottom:20px;
-    color:#d2dbe9;
-    margin:30px;
-    
+    margin-bottom: 20px;
+    color: #d2dbe9;
+    margin: 30px;
+
 }
 
-#h5{
+#h5 {
     color: #595A5C;
 }
 
-.jogo__infos-genero{
-   display: flex;
-   flex-direction: row;
-   
+.jogo__infos-genero {
+    display: flex;
+    flex-direction: row;
+
 }
 
-.genero, .recurso{
+.genero,
+.recurso {
     width: 100%;
     border-left: 3px solid white;
-    margin:60px 10px 40px 0px;
+    margin: 60px 10px 40px 0px;
     height: 40px;
     justify-content: center;
     align-items: center;
 }
 
-.info-genero, .info-recurso{
+.info-genero,
+.info-recurso {
     position: relative;
-    top:5px;
+    top: 5px;
     left: 30px;
 }
 
-
-#info-genero, #info-recurso{
-    color:#595A5C
+#info-genero,
+#info-recurso {
+    color: #595A5C
 }

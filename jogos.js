@@ -37,7 +37,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Sobrevivência, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 18
 
     },
     //Black Myth: Wukong
@@ -74,7 +75,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Sobrevivência, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 16
     },
     //Final Fantasy 14: Dawntrail
     {
@@ -110,7 +112,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Sobrevivência, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 16
     },
     //World of warcraft war within
     {
@@ -146,7 +149,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Sobrevivência, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 12
     },
     //The legend of zelda: echoes
     {
@@ -182,7 +186,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Sobrevivência, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: "L"
     },
     //Dragon Ball: Sparking! Zero
     {
@@ -218,7 +223,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Sobrevivência, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 12
     },
     //Call of Duty: Black Ops 6
     {
@@ -254,7 +260,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Sobrevivência, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 18
     },
     //Super Mario Party Jamboree
     {
@@ -290,7 +297,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Sobrevivência, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: "L"
     },
     //Life is Strange: Double Exposure
     {
@@ -326,7 +334,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Sobrevivência, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 16
     },
     //Mario & Luigi: Brothership
     {
@@ -362,7 +371,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Sobrevivência, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: "L"
     },
     //Dragon Quest III HD-2D Remake
     {
@@ -398,7 +408,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Sobrevivência, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 12
     },
     //Assassin’s Creed Shadows 
     {
@@ -434,7 +445,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Sobrevivência, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 18
     },
     //Epic Mickey: Rebrushed
     {
@@ -470,7 +482,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Sobrevivência, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: "L"
     },
     //Indiana Jones and the Great Circle
     {
@@ -506,7 +519,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Sobrevivência, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: "Classificação Pendente"
     },
     //Microsoft Flight Simulator 2024
     {
@@ -542,7 +556,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Sobrevivência, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: "Classificação Pendente"
     },
     //Silent Hill 2 Remake
     {
@@ -585,7 +600,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Sobrevivência, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 18
     },
     //HORIZON ZERO DAWN
     {
@@ -629,7 +645,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Sobrevivência, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 14
     },
     //THE KING OF FIGHTER XV
     {
@@ -665,7 +682,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Sobrevivência, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 12
     },
     //Call of Duty®: Modern Warfare® III
     {
@@ -703,7 +721,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Sobrevivência, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 18
     },
     //Overcooked 2
     {
@@ -741,7 +760,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Sobrevivência, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: "L"
     },
     //Tekken 8®
     {
@@ -783,7 +803,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Sobrevivência, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 12
     },
     //Alan Wake 2
     {
@@ -819,7 +840,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Sobrevivência, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 18
     },
     //Red Dead Redemption 2
     {
@@ -859,7 +881,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Sobrevivência, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 18
     },
     //The Last of Us™ Part I - Deluxe
     {
@@ -897,7 +920,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Sobrevivência, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 18
     },
     //Battlefield
     {
@@ -947,7 +971,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Sobrevivência, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 16
     },
     //Hogwarts Lagacy
     {
@@ -997,7 +1022,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Sobrevivência, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 12
     },
     //Valorant
     {
@@ -1033,7 +1059,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Sobrevivência, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 14
     },
     //DEVIL MAY CRY 5
     {
@@ -1069,7 +1096,8 @@ export const jogos = [
             }
         },
         genero: "Ação",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 16
     },
     //Ghost of Tsushima
     {
@@ -1108,7 +1136,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Aventura",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 18
     },
     //Fallout 4
     {
@@ -1148,7 +1177,8 @@ export const jogos = [
             }
         },
         genero: "RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 18
     },
     //Hades
     {
@@ -1190,7 +1220,8 @@ export const jogos = [
             }
         },
         genero: "Ação, Indie, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 14
     },
     //Elden Ring
     {
@@ -1238,7 +1269,8 @@ export const jogos = [
             }
         },
         genero: "Ação, RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 16
     },
     //GTA V: Edição Premium
     {
@@ -1274,7 +1306,8 @@ export const jogos = [
             }
         },
         genero: "Ação",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 18
     },
     //EA SPORTS FC™ 24
     {
@@ -1318,7 +1351,8 @@ export const jogos = [
             }
         },
         genero: "Ação",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: "L"
     },
     //Baldur's Gate 3
     {
@@ -1364,7 +1398,8 @@ export const jogos = [
             }
         },
         genero: "Aventura, RPG, Estratégia",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 16
     },
     //Forza Horizon 4
     {
@@ -1412,7 +1447,8 @@ export const jogos = [
             }
         },
         genero: "Corrida",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: "L"
     },
     //The Witcher 3: Wild Hunt
     {
@@ -1448,7 +1484,8 @@ export const jogos = [
             }
         },
         genero: "RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 16
     },
     //CyberPunk 2077
     {
@@ -1489,7 +1526,8 @@ export const jogos = [
             }
         },
         genero: "RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 18
     },
     //Street Fighter 6
     {
@@ -1525,7 +1563,8 @@ export const jogos = [
             }
         },
         genero: "RPG",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 12
     },
     //Grand Theft Auto V
     {
@@ -1561,6 +1600,7 @@ export const jogos = [
             }
         },
         genero: "Ação",
-        recurso: "Online Multiplayer"
+        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 18
     },
 ];
