@@ -1,10 +1,5 @@
 import { jogos } from './jogos.js';
 
-ScrollReveal().reveal('.swiper-wrapper', {
-  origin: 'top',
-  duration: 1000,
-  distance: '20%'
-});
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -51,7 +46,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Obtém o parâmetro 'id' da URL
-  const id = getParameterByName('id');
+  const id = parseInt(getParameterByName('id'));
+ 
 
   var dateInput = document.getElementById("data");
   var validaBotao = document.querySelector(".btn__primary");
@@ -85,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Se for maior ou igual a 18 anos, permite acesso ou exibe outra mensagem
             setTimeout(() => {
               window.location.href = `descricao-jogos.html?id=${id}`;
-              ;
+              
             }, 600);
             loadLoadingScreen()
           }
@@ -160,6 +156,9 @@ document.querySelectorAll(".swiper-slide").forEach((element) => {
   element.addEventListener("click", function () {
     const id = this.getAttribute("data-id");
     const idMaior18 = this.getAttribute("data-id-maior18");
+    console.log(id);
+    console.log(idMaior18);
+
 
     // Só verifica se o iudmaior nao esta vazio e nem nulo, se isso for verade, acessa
     if (idMaior18 !== null && idMaior18 !== "") {
@@ -190,7 +189,7 @@ document.querySelectorAll(".swiper-slide").forEach((element) => {
 console.log(jogos)
 class Jogo {
   constructor({ nome, imagens, imagem1, imagem2, imagem3, imagem4, descricao, valor, lancamento, desenvolvido, 
-    sistemaOperacional, processador, memoria, placaVideo, armazenamento, observacoes, requisitos, minimos, recomendados, genero,recurso, classificacaoIndicativa }) {
+    sistemaOperacional, processador, memoria, placaVideo, armazenamento, observacoes, requisitos, minimos, recomendados, genero,recurso, classificacaoIndicativa,comentarios,positivos,usuario,comentario,negativo }) {
     this.nome = nome;
     this.imagens = imagens;
     this.imagem1 = imagem1;
@@ -213,6 +212,12 @@ class Jogo {
     this.genero = genero;
     this.recurso = recurso;
     this.classificacaoIndicativa = classificacaoIndicativa;
+    this.comentario = comentario;
+    this.comentarios = comentarios;
+    this.positivos = positivos;
+    this.usuario = usuario;
+    this.negativo = negativo;
+
   }
 
   mostraNomeJogo() {
@@ -360,6 +365,21 @@ class Jogo {
         break;
     } 
   }
+  
+  mostrarComentario() {
+    const usuario = document.querySelector('#nome-coment');
+    const comentario = document.querySelector('.comentario');
+    usuario.innerHTML += `${this.comentarios.positivos.usuario}`;
+    comentario.innerHTML += `${this.comentarios.positivos.comentario}`;
+
+    const usuarioNegativo = document.querySelector('#nome-coment1');
+    const comentarioNegativo = document.querySelector('.comentarioNegativo');
+    usuarioNegativo.innerHTML += `${this.comentarios.negativos.usuario}`;
+    comentarioNegativo.innerHTML += `${this.comentarios.negativos.comentario}`;
+
+
+
+  }
 
 
 }
@@ -400,6 +420,7 @@ document.addEventListener('DOMContentLoaded', () => {
         jogoInstanciado.requisitosMinimos();
         jogoInstanciado.mostrarGeneroERecurso();
         jogoInstanciado.mostraClassificacaoIndicativa();
+        jogoInstanciado.mostrarComentario();
       } else {
         console.log('Jogo não encontrado.');
       }
@@ -411,5 +432,13 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+
+
+
+ScrollReveal().reveal('.swiper', {
+  origin: 'left',
+  duration: 1000,
+  distance: '20%'
+});
 
 

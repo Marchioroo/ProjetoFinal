@@ -38,7 +38,18 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 18
+        classificacaoIndicativa: 18,
+        comentarios:{
+            positivos: { 
+                    usuario: "Marchioro",
+                    comentario: "Eu achei esse jogo muito legal e bem top. Os gráficos são incríveis e a jogabilidade é muito intuitiva. Recomendo para todos os meus amigos!"
+                },
+
+            negativos:{
+                usuario:"Luanna",
+                comentario: "Eu achei esse jogo muito merda. A interface é confusa e os controles não respondem bem. Além disso, o jogo trava frequentemente, tornando a experiência frustrante."
+            }
+        }
 
     },
     //Black Myth: Wukong
@@ -76,7 +87,18 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 16
+        classificacaoIndicativa: 16,
+        comentarios:{
+            positivos: { 
+                usuario: "AnaSilva",
+                comentario: "O jogo é incrível e super divertido! As missões são bem elaboradas e os personagens têm personalidades únicas. Não consigo parar de jogar!"
+            },
+
+            negativos:{
+                usuario: "PauloSilva",
+            comentario: "O jogo tem muitos bugs e erros. Toda vez que tento avançar para o próximo nível, algo dá errado e preciso reiniciar. Muito decepcionante."
+            }
+        }
     },
     //Final Fantasy 14: Dawntrail
     {
@@ -113,17 +135,17 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 16
+        classificacaoIndicativa: 16,
         recurso: "Online Multiplayer",
         comentarios:{
             positivos: { 
-                    usuario:"Marchioro",
-                    comentario:"Eu achei esse jogo muito legal e bem top"
+                   usuario: "CarlosSouza",
+            comentario: "Gostei muito dos gráficos e da jogabilidade. A história é envolvente e as batalhas são desafiadoras. Vale cada minuto investido."
             },
 
             negativos:{
-                usuario:"Marchioro",
-                    comentario:"Eu achei esse jogo muito merda"
+                usuario: "MariaSouza",
+            comentario: "Os gráficos são muito fracos. Esperava algo mais detalhado e realista. Parece que estou jogando um jogo de dez anos atrás."
             }
         }
     },
@@ -162,7 +184,19 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 12
+        classificacaoIndicativa: 12,
+        comentarios:{
+            positivos: { 
+                usuario: "MarianaLima",
+            comentario: "A história do jogo é cativante e envolvente. Cada missão revela mais sobre o universo do jogo e os personagens. Estou ansiosa para ver o que acontece a seguir."
+            },
+
+            negativos:{
+              usuario: "LucasFerreira",
+            comentario: "A história do jogo é muito chata. Não consegui me conectar com os personagens e a trama parece forçada. Esperava mais."
+            }
+        }
+    
     },
     //The legend of zelda: echoes
     {
@@ -199,7 +233,19 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: "L"
+        classificacaoIndicativa: "L",
+        comentarios:{
+            positivos: { 
+                usuario: "MarianaLima",
+            comentario: "A história do jogo é cativante e envolvente. Cada missão revela mais sobre o universo do jogo e os personagens. Estou ansiosa para ver o que acontece a seguir."
+            },
+
+            negativos:{
+              usuario: "LucasFerreira",
+            comentario: "A história do jogo é muito chata. Não consegui me conectar com os personagens e a trama parece forçada. Esperava mais."
+            }
+        }
+    
     },
     //Dragon Ball: Sparking! Zero
     {
@@ -236,7 +282,18 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 12
+        classificacaoIndicativa: 12,
+        comentarios:{
+            positivos: { 
+                usuario: "FernandaGomes",
+            comentario: "A trilha sonora do jogo é fantástica! Cada música combina perfeitamente com a atmosfera das diferentes fases. Realmente imersivo."
+            },
+
+            negativos:{
+                usuario: "JoanaLima",
+            comentario: "Achei o jogo muito repetitivo. Depois de algumas horas, parece que estou fazendo as mesmas coisas repetidamente. Faltam novidades."
+            }
+        }
     },
     //Call of Duty: Black Ops 6
     {
@@ -273,7 +330,18 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 18
+        classificacaoIndicativa: 18,
+        comentarios:{
+            positivos: { 
+                usuario: "JoaoFerreira",
+            comentario: "O suporte ao cliente é muito eficiente. Tive um problema e ele foi resolvido rapidamente. A equipe é muito atenciosa e prestativa."
+            },
+
+            negativos:{
+                usuario: "RicardoGomes",
+            comentario: "O suporte ao cliente é péssimo. Demoraram dias para responder ao meu problema e, quando responderam, não ofereceram uma solução adequada."
+            }
+        }
     },
     //Super Mario Party Jamboree
     {
@@ -310,7 +378,18 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: "L"
+        classificacaoIndicativa: "L",
+        comentarios:{
+            positivos: { 
+               usuario: "BrunaMartins",
+            comentario: "As atualizações constantes mantêm o jogo interessante. Sempre há algo novo para explorar e desafios para enfrentar. Adoro essa dedicação dos desenvolvedores."
+            },
+
+            negativos:{
+                 usuario: "BeatrizMartins",
+            comentario: "As atualizações estragam o jogo. Toda vez que sai uma nova versão, surgem mais bugs e problemas. Prefiro como era antes."
+            }
+        }
     },
     //Life is Strange: Double Exposure
     {
@@ -347,7 +426,18 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 16
+        classificacaoIndicativa: 16,
+        comentarios:{
+            positivos: { 
+                usuario: "PedroSantos",
+            comentario: "Adorei a comunidade online do jogo. As pessoas são muito amigáveis e prestativas, e é fácil encontrar alguém para jogar junto. Isso realmente melhora a experiência."
+            },
+
+            negativos:{
+                usuario: "PedroAlmeida",
+            comentario: "A comunidade online é muito tóxica. Há muitos jogadores rudes e mal-educados, o que torna difícil aproveitar o jogo em modo multiplayer."
+            }
+        }
     },
     //Mario & Luigi: Brothership
     {
@@ -384,7 +474,19 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: "L"
+        classificacaoIndicativa: "L",
+        comentarios:{
+            positivos: { 
+                usuario: "JulianaCosta",
+            comentario: "O design dos personagens é simplesmente espetacular. Cada personagem tem um visual único e detalhado, o que torna o jogo visualmente atraente."
+            },
+
+            negativos:{
+               
+            usuario: "JulioCosta",
+            comentario: "O design dos personagens é horrível. Eles parecem genéricos e sem personalidade. A arte do jogo precisa de uma grande melhoria."
+            }
+        }
     },
     //Dragon Quest III HD-2D Remake
     {
@@ -421,7 +523,18 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 12
+        classificacaoIndicativa: 12,
+        comentarios:{
+            positivos: { 
+                usuario: "ClaraMendes",
+            comentario: "O jogo é simplesmente fenomenal! A história me prendeu do começo ao fim e os personagens são muito bem desenvolvidos. Recomendo!"
+            },
+
+            negativos:{
+                usuario: "GabrielSilva",
+            comentario: "Achei o jogo extremamente decepcionante. A trama é previsível e a jogabilidade deixa muito a desejar. Não vale o investimento."
+            }
+        }
     },
     //Assassin’s Creed Shadows 
     {
@@ -458,7 +571,18 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 18
+        classificacaoIndicativa: 18,
+        comentarios:{
+            positivos: { 
+                 usuario: "BrunoCosta",
+            comentario: "Os gráficos são de cair o queixo! Cada detalhe é impressionante e a ambientação é perfeita. Parabéns aos desenvolvedores!"
+            },
+
+            negativos:{
+               usuario: "LiviaOliveira",
+            comentario: "O jogo é muito instável. Trava frequentemente e os bugs são inúmeros. Precisa de muitas atualizações para ser jogável."
+            }
+        }
     },
     //Epic Mickey: Rebrushed
     {
@@ -495,7 +619,18 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: "L"
+        classificacaoIndicativa: "L",
+        comentarios:{
+            positivos: { 
+               usuario: "CarlaFerreira",
+            comentario: "Adorei a jogabilidade fluida e os controles responsivos. É fácil de aprender e difícil de dominar, exatamente como um bom jogo deve ser."
+            },
+
+            negativos:{
+               usuario: "RobertoGomes",
+            comentario: "A trilha sonora é horrível. As músicas são repetitivas e irritantes, fazendo com que eu prefira jogar com o som desligado."
+            }
+        }
     },
     //Indiana Jones and the Great Circle
     {
@@ -532,7 +667,18 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: "Classificação Pendente"
+        classificacaoIndicativa: "Classificação Pendente",
+        comentarios:{
+            positivos: { 
+                 usuario: "ElenaMartins",
+            comentario: "As missões são variadas e desafiadoras, sempre trazendo algo novo para explorar. Nunca fica monótono!"
+            },
+
+            negativos:{
+                 usuario: "MarceloSantos",
+            comentario: "As missões são muito repetitivas e entediantes. Não há nenhuma inovação ou surpresa ao longo do jogo."
+            }
+        }
     },
     //Microsoft Flight Simulator 2024
     {
@@ -569,7 +715,18 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: "Classificação Pendente"
+        classificacaoIndicativa: "Classificação Pendente",
+        comentarios:{
+            positivos: { 
+                usuario: "NataliaLima",
+            comentario: "Os personagens são carismáticos e cheios de personalidade. É fácil se apegar a eles e se importar com suas histórias."
+            },
+
+            negativos:{
+                usuario: "ThiagoRibeiro",
+            comentario: "Os personagens são superficiais e sem graça. Não consegui me conectar com nenhum deles durante o jogo."
+            }
+        }
     },
     //Silent Hill 2 Remake
     {
@@ -613,7 +770,18 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 18
+        classificacaoIndicativa: 18,
+        comentarios:{
+            positivos: { 
+                usuario: "AndersonAlves",
+            comentario: "A mecânica de combate é muito bem desenvolvida. Cada luta é emocionante e exige estratégia e habilidade."
+            },
+
+            negativos:{
+                usuario: "VanessaDias",
+            comentario: "A mecânica de combate é desastrosa. Os controles são imprecisos e os inimigos são extremamente desequilibrados."
+            }
+        }
     },
     //HORIZON ZERO DAWN
     {
@@ -658,7 +826,18 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 14
+        classificacaoIndicativa: 14,
+        comentarios:{
+            positivos: { 
+                usuario: "IsabelaPereira",
+            comentario: "O modo multiplayer é incrível! Jogar com amigos torna a experiência ainda mais divertida e envolvente."
+            },
+
+            negativos:{
+                usuario: "GustavoRodrigues",
+            comentario: "O modo multiplayer é péssimo. Muitos problemas de conexão e a comunidade é tóxica. Não vale a pena."
+            }
+        }
     },
     //THE KING OF FIGHTER XV
     {
@@ -695,7 +874,18 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 12
+        classificacaoIndicativa: 12,
+        comentarios:{
+            positivos: { 
+                usuario: "LuizCarvalho",
+            comentario: "A customização dos personagens é excelente. É possível criar avatares únicos e personalizados. Muito divertido!"
+            },
+
+            negativos:{
+                 usuario: "RenataAraujo",
+            comentario: "A customização dos personagens é muito limitada. Poucas opções disponíveis, o que torna tudo muito genérico."
+            }
+        }
     },
     //Call of Duty®: Modern Warfare® III
     {
@@ -734,7 +924,18 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 18
+        classificacaoIndicativa: 18,
+        comentarios:{
+            positivos: { 
+                usuario: "FelipeFonseca",
+            comentario: "Os eventos sazonais são uma ótima adição! Sempre há algo novo para descobrir e desafios para completar."
+            },
+
+            negativos:{
+                usuario: "AlineBarros",
+            comentario: "Os eventos sazonais são desinteressantes e repetitivos. Não acrescentam nada de novo ou emocionante ao jogo."
+            }
+        }
     },
     //Overcooked 2
     {
@@ -773,7 +974,18 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: "L"
+        classificacaoIndicativa: "L",
+        comentarios:{
+            positivos: { 
+               usuario: "DaniloMoura",
+            comentario: "A interface do usuário é muito intuitiva e fácil de navegar. Não tive dificuldades para encontrar o que precisava."
+            },
+
+            negativos:{
+                 usuario: "PatriciaMoreira",
+            comentario: "A interface do usuário é confusa e mal projetada. Muitas vezes fiquei perdido tentando achar certas funcionalidades."
+            }
+        }
     },
     //Tekken 8®
     {
@@ -816,7 +1028,18 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 12
+        classificacaoIndicativa: 12,
+        comentarios:{
+            positivos: { 
+                  usuario: "RaquelTeixeira",
+            comentario: "O suporte técnico é excelente. Todas as minhas dúvidas foram resolvidas rapidamente e com muita eficiência."
+            },
+
+            negativos:{
+               usuario: "EduardoLopes",
+            comentario: "O suporte técnico é muito lento e ineficiente. Tive que esperar dias para receber uma resposta que nem solucionou meu problema."
+            }
+        }
     },
     //Alan Wake 2
     {
@@ -853,7 +1076,18 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 18
+        classificacaoIndicativa: 18,
+        comentarios:{
+            positivos: { 
+                usuario: "JoanaNascimento",
+            comentario: "Os gráficos em alta definição são de tirar o fôlego. A qualidade visual realmente eleva a experiência do jogo."
+            },
+
+            negativos:{
+                usuario: "LeonardoCamargo",
+            comentario: "Os gráficos são de baixa qualidade e parecem desatualizados. O jogo precisa de uma grande atualização visual."
+            }
+        }
     },
     //Red Dead Redemption 2
     {
@@ -894,7 +1128,18 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 18
+        classificacaoIndicativa: 18,
+        comentarios:{
+            positivos: { 
+                 usuario: "MartaSilva",
+            comentario: "O enredo é profundo e emocional. Fui completamente envolvida pela história e não consegui parar de jogar até terminar."
+            },
+
+            negativos:{
+                 usuario: "RenatoMendonça",
+            comentario: "O enredo é fraco e sem emoção. Não há nada que me prenda ou me faça querer continuar jogando."
+            }
+        }
     },
     //The Last of Us™ Part I - Deluxe
     {
@@ -933,7 +1178,18 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 18
+        classificacaoIndicativa: 18,
+        comentarios:{
+            positivos: { 
+                usuario: "ClaudioVasconcelos",
+            comentario: "Os quebra-cabeças são bem elaborados e desafiadores. Cada um exige pensamento crítico e é muito satisfatório resolver."
+            },
+
+            negativos:{
+              usuario: "LarissaCosta",
+            comentario: "Os quebra-cabeças são chatos e repetitivos. Fiquei entediada rapidamente e não senti nenhuma satisfação em resolvê-los."
+            }
+        }
     },
     //Battlefield
     {
@@ -984,7 +1240,18 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 16
+        classificacaoIndicativa: 16,
+        comentarios:{
+            positivos: { 
+                usuario: "MarcosAlmeida",
+            comentario: "A progressão de níveis é bem balanceada e recompensadora. Senti que estava sempre fazendo progresso significativo."
+            },
+
+            negativos:{
+                usuario: "BarbaraDias",
+            comentario: "A progressão de níveis é muito lenta e frustrante. Parece que estou sempre no mesmo lugar, sem fazer nenhum progresso real."
+            }
+        }
     },
     //Hogwarts Lagacy
     {
@@ -1035,7 +1302,18 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 12
+        classificacaoIndicativa: 12,
+        comentarios:{
+            positivos: { 
+               usuario: "HelenaPinto",
+            comentario: "O sistema de crafting é muito detalhado e intuitivo. É divertido coletar materiais e criar novos itens."
+            },
+
+            negativos:{
+               usuario: "FernandoSilva",
+            comentario: "O sistema de crafting é confuso e mal explicado. Passei horas tentando entender como funciona sem sucesso."
+            }
+        }
     },
     //Valorant
     {
@@ -1072,7 +1350,18 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 14
+        classificacaoIndicativa: 14,
+        comentarios:{
+            positivos: { 
+                 usuario: "DragonSlayer",
+            comentario: "O jogo é simplesmente fenomenal! A história me prendeu do começo ao fim e os personagens são muito bem desenvolvidos. Recomendo!"
+            },
+
+            negativos:{
+               usuario: "NoobMaster69",
+            comentario: "Achei o jogo extremamente decepcionante. A trama é previsível e a jogabilidade deixa muito a desejar. Não vale o investimento."
+            }
+        }
     },
     //DEVIL MAY CRY 5
     {
@@ -1109,7 +1398,18 @@ export const jogos = [
         },
         genero: "Ação",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 16
+        classificacaoIndicativa: 16,
+        comentarios:{
+            positivos: { 
+                usuario: "ShadowHunter",
+            comentario: "Os gráficos são de cair o queixo! Cada detalhe é impressionante e a ambientação é perfeita. Parabéns aos desenvolvedores!"
+            },
+
+            negativos:{
+                 usuario: "DarkAvenger",
+            comentario: "O jogo é muito instável. Trava frequentemente e os bugs são inúmeros. Precisa de muitas atualizações para ser jogável."
+            }
+        }
     },
     //Ghost of Tsushima
     {
@@ -1149,7 +1449,18 @@ export const jogos = [
         },
         genero: "Ação, Aventura",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 18
+        classificacaoIndicativa: 18,
+        comentarios:{
+            positivos: { 
+                usuario: "LightBringer",
+            comentario: "Adorei a jogabilidade fluida e os controles responsivos. É fácil de aprender e difícil de dominar, exatamente como um bom jogo deve ser."
+            },
+
+            negativos:{
+                usuario: "SilentKiller",
+            comentario: "A trilha sonora é horrível. As músicas são repetitivas e irritantes, fazendo com que eu prefira jogar com o som desligado."
+            }
+        }
     },
     //Fallout 4
     {
@@ -1190,7 +1501,18 @@ export const jogos = [
         },
         genero: "RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 18
+        classificacaoIndicativa: 18,
+        comentarios:{
+            positivos: { 
+                usuario: "PhoenixRising",
+            comentario: "As missões são variadas e desafiadoras, sempre trazendo algo novo para explorar. Nunca fica monótono!"
+            },
+
+            negativos:{
+                 usuario: "StormBringer",
+            comentario: "As missões são muito repetitivas e entediantes. Não há nenhuma inovação ou surpresa ao longo do jogo."
+            }
+        }
     },
     //Hades
     {
@@ -1233,7 +1555,18 @@ export const jogos = [
         },
         genero: "Ação, Indie, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 14
+        classificacaoIndicativa: 14,
+        comentarios:{
+            positivos: { 
+                usuario: "NightShade",
+            comentario: "Os personagens são carismáticos e cheios de personalidade. É fácil se apegar a eles e se importar com suas histórias."
+            },
+
+            negativos:{
+                 usuario: "DeathDealer",
+            comentario: "Os personagens são superficiais e sem graça. Não consegui me conectar com nenhum deles durante o jogo."
+            }
+        }
     },
     //Elden Ring
     {
@@ -1282,7 +1615,18 @@ export const jogos = [
         },
         genero: "Ação, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 16
+        classificacaoIndicativa: 16,
+        comentarios:{
+            positivos: { 
+                usuario: "BladeMaster",
+            comentario: "A mecânica de combate é muito bem desenvolvida. Cada luta é emocionante e exige estratégia e habilidade."
+            },
+
+            negativos:{
+                 usuario: "SoulReaper",
+            comentario: "A mecânica de combate é desastrosa. Os controles são imprecisos e os inimigos são extremamente desequilibrados."
+            }
+        }
     },
     //GTA V: Edição Premium
     {
@@ -1319,7 +1663,18 @@ export const jogos = [
         },
         genero: "Ação",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 18
+        classificacaoIndicativa: 18,
+        comentarios:{
+            positivos: { 
+              usuario: "ThunderGod",
+            comentario: "O modo multiplayer é incrível! Jogar com amigos torna a experiência ainda mais divertida e envolvente."
+            },
+
+            negativos:{
+                usuario: "GhostRider",
+            comentario: "O modo multiplayer é péssimo. Muitos problemas de conexão e a comunidade é tóxica. Não vale a pena."
+            }
+        }
     },
     //EA SPORTS FC™ 24
     {
@@ -1364,7 +1719,18 @@ export const jogos = [
         },
         genero: "Ação",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: "L"
+        classificacaoIndicativa: "L",
+        comentarios:{
+            positivos: { 
+                usuario: "IceQueen",
+            comentario: "A customização dos personagens é excelente. É possível criar avatares únicos e personalizados. Muito divertido!"
+            },
+
+            negativos:{
+                usuario: "FireMage",
+            comentario: "A customização dos personagens é muito limitada. Poucas opções disponíveis, o que torna tudo muito genérico."
+            }
+        }
     },
     //Baldur's Gate 3
     {
@@ -1411,7 +1777,18 @@ export const jogos = [
         },
         genero: "Aventura, RPG, Estratégia",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 16
+        classificacaoIndicativa: 16,
+        comentarios:{
+            positivos: { 
+                usuario: "WindWalker",
+                comentario: "Os eventos sazonais são uma ótima adição! Sempre há algo novo para descobrir e desafios para completar."
+            },
+
+            negativos:{
+                 usuario: "StoneGiant",
+            comentario: "Os eventos sazonais são desinteressantes e repetitivos. Não acrescentam nada de novo ou emocionante ao jogo."
+            }
+        }
     },
     //Forza Horizon 4
     {
@@ -1460,7 +1837,18 @@ export const jogos = [
         },
         genero: "Corrida",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: "L"
+        classificacaoIndicativa: "L",
+        comentarios:{
+            positivos: { 
+                 usuario: "IronKnight",
+            comentario: "A interface do usuário é muito intuitiva e fácil de navegar. Não tive dificuldades para encontrar o que precisava."
+            },
+
+            negativos:{
+                usuario: "BloodWarrior",
+            comentario: "A interface do usuário é confusa e mal projetada. Muitas vezes fiquei perdido tentando achar certas funcionalidades."
+            }
+        }
     },
     //The Witcher 3: Wild Hunt
     {
@@ -1497,7 +1885,18 @@ export const jogos = [
         },
         genero: "RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 16
+        classificacaoIndicativa: 16,
+        comentarios:{
+            positivos: { 
+                usuario: "GoldenEagle",
+            comentario: "O suporte técnico é excelente. Todas as minhas dúvidas foram resolvidas rapidamente e com muita eficiência."
+            },
+
+            negativos:{
+                usuario: "SilverFox",
+            comentario: "O suporte técnico é muito lento e ineficiente. Tive que esperar dias para receber uma resposta que nem solucionou meu problema."
+            }
+        }
     },
     //CyberPunk 2077
     {
@@ -1539,7 +1938,18 @@ export const jogos = [
         },
         genero: "RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 18
+        classificacaoIndicativa: 18,
+        comentarios:{
+            positivos: { 
+                usuario: "CrimsonBlade",
+            comentario: "Os gráficos em alta definição são de tirar o fôlego. A qualidade visual realmente eleva a experiência do jogo."
+            },
+
+            negativos:{
+                 usuario: "VoidWalker",
+            comentario: "Os gráficos são de baixa qualidade e parecem desatualizados. O jogo precisa de uma grande atualização visual."
+            }
+        }
     },
     //Street Fighter 6
     {
@@ -1576,7 +1986,18 @@ export const jogos = [
         },
         genero: "RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 12
+        classificacaoIndicativa: 12,
+        comentarios:{
+            positivos: { 
+                usuario: "SolarFlare",
+            comentario: "O enredo é profundo e emocional. Fui completamente envolvida pela história e não consegui parar de jogar até terminar."
+            },
+
+            negativos:{
+                 usuario: "DarkShadow",
+            comentario: "O enredo é fraco e sem emoção. Não há nada que me prenda ou me faça querer continuar jogando."
+            }
+        }
     },
     //Grand Theft Auto V
     {
@@ -1613,6 +2034,17 @@ export const jogos = [
         },
         genero: "Ação",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 18
+        classificacaoIndicativa: 18,
+        comentarios:{
+            positivos: { 
+                usuario: "CelestialDragon",
+            comentario: "Os quebra-cabeças são bem elaborados e desafiadores. Cada um exige pensamento crítico e é muito satisfatório resolver."
+            },
+
+            negativos:{
+                usuario: "InfernalDemon",
+            comentario: "Os quebra-cabeças são chatos e repetitivos. Fiquei entediada rapidamente e não senti nenhuma satisfação em resolvê-los."
+            }
+        }
     },
 ];
