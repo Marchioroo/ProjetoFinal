@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./style/style-home.css" />
   <link rel="stylesheet" href="./style/style-carrossel.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  
+  <link rel="stylesheet" href="./dist/index.css">
 </head>
 
 <body>
@@ -424,7 +424,9 @@
       </div>
       <div class="swiper-wrapper" id="swiper-big">
         <div class="swiper-slide" id="slide-big" data-id="17">
-          <img src="images/Talvez-voce-goset/horizon-4k.jpg" alt="" />
+          <div class="progressive">
+            <img data-src="images/Talvez-voce-goset/horizon-4k.jpg" src="https://cdn.pixabay.com/animation/2023/10/08/03/19/03-19-26-213_512.gif"  class="lazy" alt="" />
+          </div>
           <h3>HORIZON ZERO DOWN</h3>
           <div id="teste">
             <p>
@@ -438,7 +440,9 @@
         </div>
         
         <div class="swiper-slide" id="slide-big" data-id="28">
-          <img src="images/Talvez-voce-goset/devil-may-cry.jpg" alt="" />
+          <div class="progressive">
+          <img data-src="images/Talvez-voce-goset/devil-may-cry.jpg" alt="" src="https://cdn.pixabay.com/animation/2023/10/08/03/19/03-19-26-213_512.gif"  class="lazy" />
+        </div>
           <h3>DEVIL MAY CRY 5</h3>
           <div>
             <p>
@@ -451,7 +455,9 @@
         </div>
 
         <div class="swiper-slide" id="slide-big" data-id-maior18="29">
-          <img src="images/Talvez-voce-goset/got-4k.png" alt="" />
+          <div class="progressive">
+          <img data-src="images/Talvez-voce-goset/got-4k.png" alt="" src="https://cdn.pixabay.com/animation/2023/10/08/03/19/03-19-26-213_512.gif"  class="lazy" />
+          </div>
           <h3>GHOST OF TSUSHIMA</h3>
           <div>
             <p>
@@ -504,7 +510,7 @@
               <p>R$ 59,90</p>
               <span class="tag__promocao">- 5% OFF</span>
             </div>
-          </a>
+          
         </div>
 
         <div class="swiper-slide" data-id="25">
@@ -601,8 +607,10 @@
         </div>
       </div>
       <div class="swiper-wrapper">
-        <div class="swiper-slide" data-id="32">
-          <img src="./images/ranking/eldenRing.jpg" alt="" />
+        <div class="swiper-slide"  data-id="32">
+          <div class="progressive"> 
+          <img data-src="./images/ranking/eldenRing.jpg" alt=""  src="https://cdn.pixabay.com/animation/2023/10/08/03/19/03-19-26-213_512.gif"  class="lazy"/>
+        </div>
           <h2>1</h2>
           <h4>Elden Ring</h4>
           <div>
@@ -611,8 +619,11 @@
           </div>
         </div>
 
-        <div class="swiper-slide" data-id-maior18="33">
-          <img src="./images/ranking/gta5.webp" alt="" />
+        <div class="swiper-slide"  data-id-maior18="33">
+          <div class="progressive"> 
+            <img data-src="./images/ranking/gta5.webp" alt=""  src="https://cdn.pixabay.com/animation/2023/10/08/03/19/03-19-26-213_512.gif"  class="lazy"/>
+          </div>
+         
           <h2>2</h2>
           <h4>GTA V: Edição Premium</h4>
           <div>
@@ -622,7 +633,9 @@
         </div>
 
         <div class="swiper-slide" data-id-maior18="23">
-          <img src="./images/promocoes/Red Dead Redemption 2.jpeg" alt="" />
+          <div class="progressive"> 
+            <img data-src="./images/promocoes/Red Dead Redemption 2.jpeg" alt=""  src="https://cdn.pixabay.com/animation/2023/10/08/03/19/03-19-26-213_512.gif"  class="lazy"/>
+          </div>
           <h2>3</h2>
           <h4>Red Dead Redemption 2</h4>
           <div>
@@ -632,7 +645,9 @@
         </div>
 
         <div class="swiper-slide" data-id-maior18="40">
+          <div class="progressive"> 
           <img src="./images/ranking/gta52.webp" alt="" />
+        </div>
           <h2>4</h2>
           <h4>Grand Theft Auto V</h4>
           <div>
@@ -712,7 +727,19 @@
   <script src="main-loading.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/progressive-image/dist/index.js"></script>
+    <script>
+        (function(){
+          new Progressive({
+            el: '.swiper-slide',
+            lazyClass: 'lazy',
+            scale: true
+          }).fire()
+        })()
 
+       
+        
+      </script>
   <script>
     const swiper = new Swiper(".swiper", {
       slidesPerView: "auto",
