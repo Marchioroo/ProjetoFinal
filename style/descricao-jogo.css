@@ -194,91 +194,77 @@
     left: 30px;
 }
 
-<<<<<<< HEAD
-
-#info-genero, #info-recurso{
-    color:#595A5C
-}
-
-/* AQUI COMEÇA OS COMENTÁRIOS */
-/* AQUI COMEÇA OS COMENTÁRIOS */
-/* AQUI COMEÇA OS COMENTÁRIOS */
-/* AQUI COMEÇA OS COMENTÁRIOS */
-
-
-.comentarios{
-    width:100%;
-    height: auto; 
-    margin-bottom:20px;
-}
-
-.row-comentarios{
-    position: relative;
-    max-width: 67%;
-    height: 500px;
-    margin: 0 auto;
-   
-}
-
-.row-comentarios h2{
-    color:var(--white);
-    
-}
-
-.box-coment{
-        margin:20px 10px 10px 0px;
-        border-radius:10px;
-        width: 100%;
-        min-height: 100px;
-        border: 1px solid #17a;
-        display: flex;
-
-}
-.content-coment{
-    display: flex;
-    justify-items: center;
-}
-  .user {
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-  }
-  .user i{  
-    position: relative;
-    right: 40px;
-    top:15px;
-    font-size: 2rem;
-  }
-
-
-  #imagem-coment {
-    position: relative;
-    left:10px;
-    max-width: 100%; /* Para garantir que a imagem não ultrapasse os limites */
-    height: auto; /* Mantém a proporção da imagem */
-  }
-  #nome-coment{
-    display: flex;
-    position: relative;
-    left:25px;
-    bottom:30px;
-    font-size: 1.1rem;
-    border-bottom: 1px solid  #17a;
-  }
-
-  .comentario {
-    width: 80%;
-    position: relative;
-    display:flex;
-    top:25px;
-    left:30px;
-    height: 50px;
- 
-  }
-
-=======
 #info-genero,
 #info-recurso {
     color: #595A5C
 }
->>>>>>> b171d1526aa33d2a4344ed4b2df5d98a571fc244
+
+
+/* AQUI COMEÇA OS COMENTÁRIOS */
+
+.comentarios {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.row-comentarios {
+    max-width: 70%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.row-comentarios h2 {
+    color: var(--white);
+}
+
+.box-coment {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: 1px solid var(--blue);
+    background-color: var(--black-light);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.coment__avaliacao {
+    font-size: 1.5rem;
+    display: flex;
+}
+
+
+#imagem-coment {
+    max-width: 80%;
+    /* Para garantir que a imagem não ultrapasse os limites */
+    height: auto;
+    /* Mantém a proporção da imagem */
+}
+
+.content-coment {
+    width: fit-content;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#nome-coment {
+    font-size: 1.125rem;
+    font-weight: 500;
+}

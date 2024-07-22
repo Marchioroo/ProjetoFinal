@@ -1,12 +1,5 @@
 import { jogos } from './jogos.js';
 
-ScrollReveal().reveal('.swiper-wrapper', {
-  origin: 'top',
-  duration: 1000,
-  distance: '20%'
-});
-
-
 document.addEventListener("DOMContentLoaded", function () {
   const carousel = document.querySelector(".carousel");
   const slides = document.querySelectorAll(".carousel__item");
@@ -409,7 +402,6 @@ document.addEventListener('DOMContentLoaded', () => {
     exibirDetalhesDoJogo(idGameInt);
   }
 });
-
 
 
 

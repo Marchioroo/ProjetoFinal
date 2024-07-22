@@ -113,8 +113,7 @@ export const jogos = [
         },
         genero: "Ação, Sobrevivência, RPG",
         recurso: "Online Multiplayer",
-        classificacaoIndicativa: 16
-        recurso: "Online Multiplayer",
+        classificacaoIndicativa: 16,
         comentarios:{
             positivos: { 
                     usuario:"Marchioro",
