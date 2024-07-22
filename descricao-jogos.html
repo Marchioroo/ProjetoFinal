@@ -1,208 +1,356 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>CoderGame | Home</title>
     <!-- Nosso icone-->
-    <link rel="icon" type="image/x-icon" href="/images/logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style/style-home.css">
-    <link rel="stylesheet" href="style/descricao-jogo.css">
-</head>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style/style-home.css" />
+    <link rel="stylesheet" href="style/descricao-jogo.css" />
+  </head>
 
-<body>
+  <body>
     <div id="content-loading">
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <img src="./images/logo.png" alt="logo CoderGame" />
+          <h2>CoderGAME</h2>
+        </div>
 
-        <aside class="sidebar">
-            <div class="sidebar__header">
-                <img src="./images/logo.png" alt="logo CoderGame">
-                <h2>CoderGAME</h2>
+        <ul class="sidebar__lista">
+          <h4></h4>
+          <li>
+            <a href="#" class="sidebar__link" id="botaoHome">
+              <i class="ri-home-fill"></i>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#" class="sidebar__link">
+              <i class="ri-heart-fill"></i>
+              Favoritos
+            </a>
+          </li>
+          <li>
+            <a href="#" class="sidebar__link">
+              <i class="ri-shopping-cart-fill"></i>
+              Loja
+            </a>
+          </li>
+          <h4>
+            <span>Explorar</span>
+          </h4>
+          <li>
+            <a href="#" class="sidebar__link">
+              <i class="ri-search-line"></i>
+              Pesquisar
+            </a>
+          </li>
+          <li>
+            <a href="#" class="sidebar__link">
+              <i class="ri-discord-fill"></i>
+              Discord
+            </a>
+          </li>
+          <li>
+            <a href="#" class="sidebar__link">
+              <i class="ri-layout-grid-fill"></i>
+              Categorias
+            </a>
+          </li>
+          <li>
+            <a href="#" class="sidebar__link">
+              <i class="ri-bar-chart-2-fill"></i>
+              Mais vendidos
+            </a>
+          </li>
+
+          <h4>
+            <span>Equipe CoderGAME</span>
+          </h4>
+          <li>
+            <a href="#" class="sidebar__link">
+              <i class="ri-customer-service-2-fill"></i>
+              Suporte
+            </a>
+          </li>
+          <li>
+            <a href="#" class="sidebar__link" id="botaoSobrenos">
+              <i class="ri-team-fill"></i>
+              Sobre nós
+            </a>
+          </li>
+        </ul>
+        <div class="usuario__conta">
+          <i class="ri-shield-user-line"></i>
+
+          <a href="#" class="usuario__descricao">
+            <h3 id="SingUp">ENTRAR</h3>
+            <p>Game on, sempre!</p>
+          </a>
+        </div>
+      </aside>
+
+      <!-- AREA DE INFOAMÇÃO DO GAME -->
+      <main class="container__descricao-jogo">
+        <section class="jogo__info-vendas">
+          <div class="carousel">
+            <img class="carousel__item" src="" alt="Imagem 1" id="img1" />
+            <img class="carousel__item" src="" alt="Imagem 2" id="img2" />
+            <img class="carousel__item" src="" alt="Imagem 3" id="img3" />
+            <img class="carousel__item" src="" alt="Imagem 4" id="img4" />
+          </div>
+          <div class="info-vendas">
+            <div class="tag__faixa-etaria">
+              <p class="idade__jogar"></p>
+              <h4 class="idade__informacao"></h4>
+            </div>
+            <h4 class="info-vendas-lancamento">
+              <span id="h4">Lançamento: </span>
+            </h4>
+            <h4 class="info-vendas-desenvolvido">
+              <span id="h4">Desenvolvedora: </span>
+            </h4>
+            <h4 class="info-vendas-valor"><span id="h4">Valor: </span></h4>
+            <button class="btn__secondary">ADICIONAR AO CARRINHO</button>
+            <button class="btn__primary">COMPRE AGORA</button>
+          </div>
+        </section>
+        <section class="jogo__infos">
+          <h3 class="jogo__infos-nome"></h3>
+          <p class="jogo__infos-descricao"></p>
+
+          <div class="jogo__infos-genero">
+            <div class="genero">
+              <h4 class="info-genero"><span id="h4">Genero: </span></h4>
+            </div>
+            <div class="recurso">
+              <h4 class="info-recurso"><span id="h4">Recursos: </span></h4>
+            </div>
+          </div>
+
+          <br />
+          <h2>Requisitos:</h2>
+          <div class="requisitos-jogos">
+            <div class="minimos">
+              <div class="minimos-text">
+                <h5 class="sistemaOperacionalMinimo">
+                  <span id="h5">Sistema Operacional: </span>
+                </h5>
+                <h5 class="processadorMinimo">
+                  <span id="h5">Processador: </span>
+                </h5>
+                <h5 class="memoriaMinimo"><span id="h5">Memória: </span></h5>
+                <h5 class="placaDeVideoMinimo">
+                  <span id="h5"> Placa de Vídeo: </span>
+                </h5>
+                <h5 class="ArmazenamentoMinimo">
+                  <span id="h5"> Armazenamento: </span>
+                </h5>
+              </div>
             </div>
 
-            <ul class="sidebar__lista">
-                <h4>
-                </h4>
-                <li>
-                    <a href="#" class="sidebar__link" id="botaoHome">
-                        <i class="ri-home-fill"></i>
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="sidebar__link">
-                        <i class="ri-heart-fill"></i>
-                        Favoritos
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="sidebar__link">
-                        <i class="ri-shopping-cart-fill"></i>
-                        Loja
-                    </a>
-                </li>
-                <h4>
-                    <span>Explorar</span>
-                </h4>
-                <li>
-                    <a href="#" class="sidebar__link">
-                        <i class="ri-search-line"></i>
-                        Pesquisar
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="sidebar__link">
-                        <i class="ri-discord-fill"></i>
-                        Discord
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="sidebar__link">
-                        <i class="ri-layout-grid-fill"></i>
-                        Categorias
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="sidebar__link">
-                        <i class="ri-bar-chart-2-fill"></i>
-                        Mais vendidos
-                    </a>
-                </li>
-
-                <h4>
-                    <span>Equipe CoderGAME</span>
-                </h4>
-                <li>
-                    <a href="#" class="sidebar__link">
-                        <i class="ri-customer-service-2-fill"></i>
-                        Suporte
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="sidebar__link" id="botaoSobrenos">
-                        <i class="ri-team-fill"></i>
-                        Sobre nós
-                    </a>
-                </li>
-            </ul>
-            <div class="usuario__conta">
-                <i class="ri-shield-user-line"></i>
-
-                <a href="#" class="usuario__descricao">
-                    <h3 id="SingUp">ENTRAR</h3>
-                    <p>Game on, sempre!</p>
-                </a>
+            <div class="recomendados">
+              <div class="minimos-text">
+                <h5 class="sistemaOperacionalRecomendado">
+                  <span id="h5">Sistema Operacional: </span>
+                </h5>
+                <h5 class="processadorRecomendado">
+                  <span id="h5">Processador: </span>
+                </h5>
+                <h5 class="memoriaRecomendado">
+                  <span id="h5">Memória: </span>
+                </h5>
+                <h5 class="placaDeVideoRecomendado">
+                  <span id="h5"> Placa de Vídeo: </span>
+                </h5>
+                <h5 class="ArmazenamentoRecomendado">
+                  <span id="h5"> Armazenamento: </span>
+                </h5>
+              </div>
             </div>
-        </aside>
+          </div>
 
-        <!-- AREA DE INFOAMÇÃO DO GAME -->
-        <main class="container__descricao-jogo">
-            <section class="jogo__info-vendas">
-                <div class="carousel">
-                    <img class="carousel__item" src="" alt="Imagem 1" id="img1">
-                    <img class="carousel__item" src="" alt="Imagem 2" id="img2">
-                    <img class="carousel__item" src="" alt="Imagem 3" id="img3">
-                    <img class="carousel__item" src="" alt="Imagem 4" id="img4">
+          <div class="more-info">
+            <div class="more-info-text"></div>
+          </div>
+        </section>
+
+        <section class="comentarios">
+          <div class="row-comentarios">
+            <h2>Comentários:</h2>
+
+            <div class="box-coment">
+              <div class="user">
+                <img src="images/perfil.png" id="imagem-coment" alt="" />
+                <div>
+                  <div class="content-coment">
+                    <div id="nome-coment1">Marchioro</div>
+                    <div class="coment__avaliacao">
+                      <i class="ri-star-s-line"></i>
+                      <i class="ri-star-s-line"></i>
+                      <i class="ri-star-s-line"></i>
+                      <i class="ri-star-s-line"></i>
+                      <i class="ri-star-s-line"></i>
+                    </div>
+                  </div>
+                  <p class="">único problema pra mim são as raças não serem tão "dnd" (q n é
+                    pra ser msm mas coisas como goblin, orc e blablabla eu acho mais
+                    legal mas é frescura) assim como no wow, de resto, comunidade
+                    ♥♥♥♥ d+, só torcer pelo server br agr</p>
                 </div>
-                <div class="info-vendas">
-                    <div class="tag__faixa-etaria">
-                        <p class="idade__jogar"></p>
-                        <h4 class="idade__informacao"></h4>
+              </div>
+            </div>
+            
+            <div class="box-coment">
+              <div class="user">
+                <img src="images/perfil.png" id="imagem-coment" alt="" />
+                <div>
+                  <div class="content-coment">
+                    <div id="nome-coment1">Marchioro</div>
+                    <div class="coment__avaliacao">
+                      <i class="ri-star-s-line"></i>
+                      <i class="ri-star-s-line"></i>
+                      <i class="ri-star-s-line"></i>
+                      <i class="ri-star-s-line"></i>
+                      <i class="ri-star-s-line"></i>
                     </div>
-                    <h4 class="info-vendas-lancamento"><span id='h4'>Lançamento: </span></h4>
-                    <h4 class="info-vendas-desenvolvido"><span id='h4'>Desenvolvedora: </span></h4>
-                    <h4 class="info-vendas-valor"><span id='h4'>Valor: </span></h4>
-                    <button class="btn__secondary">ADICIONAR AO CARRINHO</button>
-                    <button class="btn__primary">COMPRE AGORA</button>
+                  </div>
+                  <p class="">único problema pra mim são as raças não serem tão "dnd" (q n é
+                    pra ser msm mas coisas como goblin, orc e blablabla eu acho mais
+                    legal mas é frescura) assim como no wow, de resto, comunidade
+                    ♥♥♥♥ d+, só torcer pelo server br agr</p>
                 </div>
-            </section>
-            <section class="jogo__infos">
+              </div>
+            </div>
 
-                <h3 class="jogo__infos-nome"></h3>
-                <p class="jogo__infos-descricao"></p>
-
-                <div class="jogo__infos-genero">
-
-                    <div class="genero">
-                        <h4 class="info-genero"><span id='h4'>Genero: </span></h4>
+            <div class="box-coment">
+              <div class="user">
+                <img src="images/perfil.png" id="imagem-coment" alt="" />
+                <div>
+                  <div class="content-coment">
+                    <div id="nome-coment1">Marchioro</div>
+                    <div class="coment__avaliacao">
+                      <i class="ri-star-s-line"></i>
+                      <i class="ri-star-s-line"></i>
+                      <i class="ri-star-s-line"></i>
+                      <i class="ri-star-s-line"></i>
+                      <i class="ri-star-s-line"></i>
                     </div>
-                    <div class="recurso">
-                        <h4 class="info-recurso"><span id='h4'>Recursos: </span></h4>
-                    </div>
-
-                </div>
-
-                <br>
-                <h2>Requisitos:</h2>
-                <div class="requisitos-jogos">
-
-                    <div class="minimos">
-                        <div class="minimos-text">
-                            <h5 class="sistemaOperacionalMinimo"><span id='h5'>Sistema Operacional: </span></h5>
-                            <h5 class="processadorMinimo"><span id='h5'>Processador: </span></h5>
-                            <h5 class="memoriaMinimo"><span id='h5'>Memória: </span></h5>
-                            <h5 class="placaDeVideoMinimo"><span id='h5'> Placa de Vídeo: </span></h5>
-                            <h5 class="ArmazenamentoMinimo"><span id='h5'> Armazenamento: </span></h5>
-
-                        </div>
-                    </div>
-
-                    <div class="recomendados">
-                        <div class="minimos-text">
-                            <h5 class="sistemaOperacionalRecomendado"><span id='h5'>Sistema Operacional: </span></h5>
-                            <h5 class="processadorRecomendado"><span id='h5'>Processador: </span></h5>
-                            <h5 class="memoriaRecomendado"><span id='h5'>Memória: </span></h5>
-                            <h5 class="placaDeVideoRecomendado"><span id='h5'> Placa de Vídeo: </span></h5>
-                            <h5 class="ArmazenamentoRecomendado"><span id='h5'> Armazenamento: </span></h5>
-
-                        </div>
-
-                    </div>
-
+                  </div>
+                  <p class="">único problema pra mim são as raças não serem tão "dnd" (q n é
+                    pra ser msm mas coisas como goblin, orc e blablabla eu acho mais
+                    legal mas é frescura) assim como no wow, de resto, comunidade
+                    ♥♥♥♥ d+, só torcer pelo server br agr</p>
                 </div>
 
-                <div class="more-info">
-                    <div class="more-info-text">
+          <br />
+          <h2>Requisitos:</h2>
+          <div class="requisitos-jogos">
+            <div class="minimos">
+              <div class="minimos-text">
+                <h5 class="sistemaOperacionalMinimo">
+                  <span id="h5">Sistema Operacional: </span>
+                </h5>
+                <h5 class="processadorMinimo">
+                  <span id="h5">Processador: </span>
+                </h5>
+                <h5 class="memoriaMinimo"><span id="h5">Memória: </span></h5>
+                <h5 class="placaDeVideoMinimo">
+                  <span id="h5"> Placa de Vídeo: </span>
+                </h5>
+                <h5 class="ArmazenamentoMinimo">
+                  <span id="h5"> Armazenamento: </span>
+                </h5>
+              </div>
+            </div>
 
+            <div class="recomendados">
+              <div class="minimos-text">
+                <h5 class="sistemaOperacionalRecomendado">
+                  <span id="h5">Sistema Operacional: </span>
+                </h5>
+                <h5 class="processadorRecomendado">
+                  <span id="h5">Processador: </span>
+                </h5>
+                <h5 class="memoriaRecomendado">
+                  <span id="h5">Memória: </span>
+                </h5>
+                <h5 class="placaDeVideoRecomendado">
+                  <span id="h5"> Placa de Vídeo: </span>
+                </h5>
+                <h5 class="ArmazenamentoRecomendado">
+                  <span id="h5"> Armazenamento: </span>
+                </h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="more-info">
+            <div class="more-info-text"></div>
+          </div>
+        </section>
+
+        <section class="comentarios">
+          <div class="row-comentarios">
+            <h2>Comentários:</h2>
+            <div class="box-coment">
+              <div class="user">
+                <img src="images/perfil.png" id="imagem-coment" alt="" />
+                <div>
+                  <div class="content-coment">
+                    <div id="nome-coment1">Marchioro</div>
+                    <div class="coment__avaliacao">
+                      <i class="ri-star-s-line"></i>
+                      <i class="ri-star-s-line"></i>
+                      <i class="ri-star-s-line"></i>
+                      <i class="ri-star-s-line"></i>
+                      <i class="ri-star-s-line"></i>
                     </div>
+                  </div>
+                  <p class="">único problema pra mim são as raças não serem tão "dnd" (q n é
+                    pra ser msm mas coisas como goblin, orc e blablabla eu acho mais
+                    legal mas é frescura) assim como no wow, de resto, comunidade
+                    ♥♥♥♥ d+, só torcer pelo server br agr</p>
                 </div>
-
-            </section>
-
-            <section class="comentarios">
-
-                <div class="row-comentarios">
-                    <h2>Comentários:</h2>
-
-                    <div class="box-coment">
-                        <div class="user">
-                                <img src="images/perfil.png" id="imagem-coment" alt="">
-                                <div class="content-coment">
-                                <div id="nome-coment"></div>
-                                <i class="fa-solid fa-thumbs-up" style="color: #f7f7f7;"></i>
-                            </div>
-                        </div>
-                        <div class="comentario">  
-                         
-                        </div>
+              </div>
+            </div>
+            
+            <div class="box-coment">
+              <div class="user">
+                <img src="images/perfil.png" id="imagem-coment" alt="" />
+                <div>
+                  <div class="content-coment">
+                    <div id="nome-coment1">Marchioro</div>
+                    <div class="coment__avaliacao">
+                      <i class="ri-star-s-line"></i>
+                      <i class="ri-star-s-line"></i>
+                      <i class="ri-star-s-line"></i>
+                      <i class="ri-star-s-line"></i>
+                      <i class="ri-star-s-line"></i>
                     </div>
-
-                    <div class="box-coment">
-                        <div class="user">
-                                <img src="images/perfil.png" id="imagem-coment" alt="">
-                                <div class="content-coment">
-                                <div id="nome-coment1"></div>
-                                <i class="fa-solid fa-thumbs-down" style="color: #ffffff;"></i>
-                            </div>
-                        </div>
-                        <div class="comentarioNegativo"> 
-                           
-                        </div>
-                    </div>
+                  </div>
+                  <p class="">único problema pra mim são as raças não serem tão "dnd" (q n é
+                    pra ser msm mas coisas como goblin, orc e blablabla eu acho mais
+                    legal mas é frescura) assim como no wow, de resto, comunidade
+                    ♥♥♥♥ d+, só torcer pelo server br agr</p>
                 </div>
+              </div>
+            </div>
+
             </section>
 
         </main>
@@ -212,9 +360,11 @@
 
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script type="module" src="main.js"></script>
     <script type="module" src="jogos.js"></script>
     <script src="main-loading.js"></script>

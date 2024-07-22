@@ -1,7 +1,6 @@
 import { jogos } from './jogos.js';
 
 
-
 document.addEventListener("DOMContentLoaded", function () {
   const carousel = document.querySelector(".carousel");
   const slides = document.querySelectorAll(".carousel__item");
@@ -431,14 +430,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-
-
-
-
 ScrollReveal().reveal('.swiper', {
   origin: 'left',
   duration: 1000,
   distance: '20%'
 });
+
+
+
+
 
 
