@@ -202,7 +202,6 @@
 /* 
 /AQUI COMEÇA OS COMENTÁRIOS / */
 
-
 .comentarios {
     width: 100%;
     max-width: 1160px;
@@ -225,7 +224,6 @@
     align-items: center;
     justify-content: flex-start;
     gap: 2rem;
-
 }
 
 .user {
@@ -258,7 +256,55 @@
     margin-bottom: 1rem;
 }
 
-#nome-coment, #nome-coment1 {
+#nome-coment, #nome-coment1, #comentario__user {
     font-size: 1.125rem;
     font-weight: 500;
+}
+
+.form__comentario {
+    background-color: var(--black-light);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
+
+.form__item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form__item label {
+    font-size: 1.5rem;
+    line-height: 140%;
+    font-weight: 500;
+    color: var(--blue);
+}
+
+.form__item textarea {
+    width: 100%;
+    border-radius: .5rem;
+    background-color: var(--black-dark);
+    padding: 1rem;
+    border: none;
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.form__textarea::placeholder {
+    font-size: 1rem;
+}
+
+.form__buttons {
+    display: flex;
+    justify-content: end;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+.form__hidden {
+    display: none;
+}
+
+.comentarios__lista li { 
+    margin-bottom: 1.5rem;
 }

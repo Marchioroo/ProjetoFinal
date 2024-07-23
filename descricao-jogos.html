@@ -223,14 +223,33 @@
               </div>
             </div>
           </div>
+
+          <ul class="comentarios__lista">
           
+          </ul>
+
+          <form class="form__comentario form__hidden">
+            <div class="form__item">
+              <label>Adicionando Comentário</label>
+              <textarea
+                required
+                class="form__textarea"
+                rows="6"
+                placeholder="O que você está achando do jogo?"
+              ></textarea>
+            </div>
+
+            <div class="form__buttons">
+              <button type="button" class="btn__secondary form__btn-cancelar">
+                Cancelar
+              </button>
+              <button class="btn__primary form__btn-save">Salvar</button>
+            </div>
+          </form>
+
+          <button class="btn__primary form__btn-add">Acidionar um novo Comentário</button>
         </section>
-
-        </main>
-
-
-
-
+      </main>
     </div>
 
     <script
@@ -240,10 +259,9 @@
     ></script>
     <script type="module" src="main.js"></script>
     <script type="module" src="jogos.js"></script>
+    <script type="module" src="js/jogos-cometarios.js"></script>
+
     <script src="main-loading.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-
-
-</body>
-
+  </body>
 </html>
