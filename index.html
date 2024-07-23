@@ -1,538 +1,675 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoderGame | Home</title>
+    <!-- Nosso icone-->
+    <link rel="icon" type="image/x-icon" href="./images/logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style-home.css" />
+    <link rel="stylesheet" href="./style/style-carrossel.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./dist/index.css" />
+  </head>
 
-  <title>CoderGame | Home</title>
-  <!-- Nosso icone-->
-  <link rel="icon" type="image/x-icon" href="./images/logo.png" />
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./style/style-home.css" />
-  <link rel="stylesheet" href="./style/style-carrossel.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./dist/index.css">
-</head>
+  <body>
+    <div id="content-loading">
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <img src="./images/logo.png" alt="logo CoderGame" />
+          <h2>CoderGAME</h2>
+        </div>
 
-<body>
-  <div id="content-loading">
-    <aside class="sidebar">
-      <div class="sidebar__header">
-        <img src="./images/logo.png" alt="logo CoderGame" />
-        <h2>CoderGAME</h2>
-      </div>
+        <ul class="sidebar__lista">
+          <h4></h4>
+          <li>
+            <a href="./index.html" class="sidebar__link">
+              <i class="ri-home-fill"></i>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#" class="sidebar__link">
+              <i class="ri-discord-fill"></i>
+              Discord
+            </a>
+          </li>
+          <li>
+            <a href="#" class="sidebar__link">
+              <i class="ri-shopping-cart-fill"></i>
+              Meu Carrinho
+            </a>
+          </li>
 
-      <ul class="sidebar__lista">
-        <h4></h4>
-        <li>
-          <a href="./index.html" class="sidebar__link">
-            <i class="ri-home-fill"></i>
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="#" class="sidebar__link">
-            <i class="ri-heart-fill"></i>
-            Favoritos
-          </a>
-        </li>
-        <li>
-          <a href="#" class="sidebar__link">
-            <i class="ri-shopping-cart-fill"></i>
-            Loja
-          </a>
-        </li>
-        <h4>
-          <span>Explorar</span>
-        </h4>
-        <li>
-          <a href="#" class="sidebar__link">
-            <i class="ri-search-line"></i>
-            Pesquisar
-          </a>
-        </li>
-        <li>
-          <a href="#" class="sidebar__link">
-            <i class="ri-discord-fill"></i>
-            Discord
-          </a>
-        </li>
-        <li>
-          <a href="#" class="sidebar__link">
-            <i class="ri-layout-grid-fill"></i>
-            Categorias
-          </a>
-        </li>
-        <li>
-          <a href="#" class="sidebar__link">
-            <i class="ri-bar-chart-2-fill"></i>
-            Mais vendidos
-          </a>
-        </li>
+          <h4>
+            <span>Explorar</span>
+          </h4>
+          <li>
+            <a href="#" class="sidebar__link">
+              <i class="ri-search-line"></i>
+              Pesquisar
+            </a>
+          </li>
+          <li>
+            <a href="#lancamentos-home" class="sidebar__link">
+              <i class="ri-layout-grid-fill"></i>
+              Lançamentos
+            </a>
+          </li>
+          <li>
+            <a href="#ranking-home" class="sidebar__link">
+              <i class="ri-bar-chart-2-fill"></i>
+              Mais vendidos
+            </a>
+          </li>
 
-        <h4>
-          <span>Equipe CoderGAME</span>
-        </h4>
-        <li>
-          <a href="#" class="sidebar__link">
-            <i class="ri-customer-service-2-fill"></i>
-            Suporte
-          </a>
-        </li>
-        <li>
-          <a href="#" class="sidebar__link" id="botaoSobrenos">
-            <i class="ri-team-fill"></i>
-            Sobre nós
-          </a>
-        </li>
-      </ul>
-      <div class="usuario__conta">
-        <i class="ri-shield-user-line"></i>
+          <h4>
+            <span>Equipe CoderGAME</span>
+          </h4>
+          <li>
+            <a href="#" class="sidebar__link">
+              <i class="ri-customer-service-2-fill"></i>
+              Suporte
+            </a>
+          </li>
+          <li>
+            <a href="#" class="sidebar__link" id="botaoSobrenos">
+              <i class="ri-team-fill"></i>
+              Sobre nós
+            </a>
+          </li>
+        </ul>
+        <div class="usuario__conta">
+          <i class="ri-shield-user-line"></i>
 
-        <a href="#" class="usuario__descricao">
-          <h3 id="SingUp">ENTRAR</h3>
-          <p>Game on, sempre!</p>
-        </a>
-      </div>
-    </aside>
+          <a href="#" class="usuario__descricao">
+            <h3 id="SingUp">ENTRAR</h3>
+            <p>Game on, sempre!</p>
+          </a>
+        </div>
+      </aside>
 
-    <!-- HERO HEADER -->
-    <section class="wrapper__home">
-      <div class="container__home">
-        <input type="radio" name="slide" id="c1" checked />
-        <label for="c1" class="card">
-          <div class="card__info">
-            <div class="icon-card">1</div>
-            <div class="descricao__card">
-              <h4>THE KING OF FIGHTER XV <span id="value">R$157,99</span></h4>
+      <!-- HERO HEADER -->
+      <section class="wrapper__home">
+        <div class="container__home">
+          <input type="radio" name="slide" id="c1" checked />
+          <label for="c1" class="card">
+            <div class="card__info">
+              <div class="icon-card">1</div>
+              <div class="descricao__card">
+                <h4>THE KING OF FIGHTER XV <span id="value">R$157,99</span></h4>
+                <p>
+                  Desde a estreia em 1994, a série de jogos de luta KOF tem
+                  oferecido emoções pelo mundo com personagens cativantes e um
+                  sistema de jogo incomparável.
+                </p>
+              </div>
+            </div>
+          </label>
+
+          <input type="radio" name="slide" id="c2" />
+          <label for="c2" class="card">
+            <div class="card__info">
+              <div class="icon-card">2</div>
+              <div class="descricao__card">
+                <h4>Horizon Forbidden West<span id="value">R$299,90</span></h4>
+                <p>
+                  Em uma era na qual máquinas vagam livremente e a humanidade
+                  deixou de ser a espécie dominante, Aloy inicia uma jornada na
+                  qual desvendará o seu destino.
+                </p>
+              </div>
+            </div>
+          </label>
+
+          <input type="radio" name="slide" id="c3" />
+          <label for="c3" class="card">
+            <div class="card__info">
+              <div class="icon-card">3</div>
+              <div class="descricao__card">
+                <h4>
+                  Call of Duty®: Modern Warfare® III<span id="value"
+                    ><span
+                      id="value-oldprice"
+                      style="text-decoration: line-through"
+                      >R$299,90</span
+                    >
+                    por R$194,35</span
+                  >
+                </h4>
+                <p>
+                  Na sequência direta do recordista Call of Duty®: Modern
+                  Warfare® II, Capitão Price e a Força-tarefa 141 enfrentam a
+                  ameaça definitiva.
+                </p>
+              </div>
+            </div>
+          </label>
+
+          <input type="radio" name="slide" id="c4" />
+          <label for="c4" class="card">
+            <div class="card__info">
+              <div class="icon-card">4</div>
+              <div class="descricao__card">
+                <h4>
+                  Overcooked 2<span id="value"
+                    ><span
+                      id="value-oldprice"
+                      style="text-decoration: line-through"
+                      >R$39,90</span
+                    >
+                    por R$7,99</span
+                  >
+                </h4>
+                <p>
+                  "Overcooked é um jogo caótico de cozinha cooperativa local
+                  para um a quatro jogadores."
+                </p>
+              </div>
+            </div>
+          </label>
+
+          <input type="radio" name="slide" id="c5" />
+          <label for="c5" class="card">
+            <div class="card__info">
+              <div class="icon-card">5</div>
+              <div class="descricao__card">
+                <h4>
+                  Tekken 8®<span id="value"
+                    ><span
+                      id="value-oldprice"
+                      style="text-decoration: line-through"
+                      >R$269,90</span
+                    >
+                    por R$153,99</span
+                  >
+                </h4>
+                <p>
+                  Tekken 8 é um jogo eletrônico de luta desenvolvido pela Bandai
+                  Namco Studios e Arika. Disponivél para Ps5 e PC
+                </p>
+              </div>
+            </div>
+          </label>
+          <input type="radio" name="slide" id="c6" />
+          <label for="c6" class="card">
+            <div class="card__info">
+              <div class="icon-card">6</div>
+              <div class="descricao__card">
+                <h4>
+                  Alan Wake 2<span id="value"
+                    ><span
+                      id="value-oldprice"
+                      style="text-decoration: line-through"
+                      >R$269,90</span
+                    >
+                    por R$272,96</span
+                  >
+                </h4>
+                <p>
+                  Alan Wake II é um jogo de survival horror desenvolvido pela
+                  Remedy Entertainment e publicado pela Epic Games Publishing
+                </p>
+              </div>
+            </div>
+          </label>
+        </div>
+      </section>
+
+      <!-- LANÇAMENTOS -->
+      <section class="swiper" id="lancamentos-home">
+        <div class="swiper-title">
+          <h2>Principais novos lançamentos</h2>
+          <div class="swiper-navagation">
+            <i class="ri-arrow-left-line btn-prev"></i>
+            <i class="ri-arrow-right-line btn-next"></i>
+          </div>
+        </div>
+
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" data-id="3">
+            <div class="progressive">
+              <img
+                data-src="./images/lancamentos/Final Fantasy-14-Dawntrail.jpg"
+                alt=""
+                src="./images/lancamentos/lazy-Final Fantasy-14-Dawntrail.jpg"
+                class="lazy"
+              />
+            </div>
+            <div class="informacoes">
+              <h5>JOGO BASE</h5>
+              <span
+                ><i class="ri-computer-line"></i><i class="ri-xbox-fill"></i
+                ><i class="ri-playstation-line"></i
+              ></span>
+            </div>
+            <h4>Final Fantasy 14: Dawntrail</h4>
+            <div>
+              <p>R$ 107,99</p>
+              <span class="tag__promocao"></span>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-id="2">
+            <div class="progressive">
+              <img
+                data-src="./images/lancamentos/Black-Myth-Wukong.jpg"
+                alt=""
+                src="./images/lancamentos/lazy-Black-Myth-Wukong.jpg"
+                class="lazy"
+              />
+            </div>
+            <div class="informacoes">
+              <h5>JOGO BASE</h5>
+              <span
+                ><i class="ri-computer-line"></i><i class="ri-xbox-fill"></i
+                ><i class="ri-playstation-line"></i
+              ></span>
+            </div>
+            <h4>Black Myth: Wukong</h4>
+            <div>
+              <p>R$ 299,90</p>
+              <span class="tag__promocao"></span>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-id="4">
+            <div class="progressive">
+              <img
+                data-src="./images/lancamentos/WORD-warcraft.jpeg"
+                alt=""
+                src="./images/lancamentos/lazy-WORD-warcraft.jpg"
+                class="lazy"
+              />
+            </div>
+            <div class="informacoes">
+              <h5>EPIC EDITION</h5>
+              <span><i class="ri-computer-line"></i></span>
+            </div>
+            <h4>World of Warcraft: The War Within</h4>
+            <div>
+              <p>R$ 319,00</p>
+              <span class="tag__promocao"></span>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-id="5">
+            <div class="progressive">
+              <img
+                data-src="./images/lancamentos/the-legend-of-zelda.jpg"
+                alt=""
+                src="./images/lancamentos/lazy-the-legend-of-zelda.jpg"
+                class="lazy"
+              />
+            </div>
+            <div class="informacoes">
+              <h5>JOGO BASE</h5>
+              <span><i class="ri-switch-line"></i></span>
+            </div>
+            <h4>The Legend of Zelda: Echoes</h4>
+            <div>
+              <p>R$ 229,90</p>
+              <span class="tag__promocao"></span>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-id="6">
+            <div class="progressive">
+              <img
+                data-src="./images/lancamentos/dragon-ball.webp"
+                alt=""
+                src="./images/lancamentos/lazy-dragon-ball.jpg"
+                class="lazy"
+              />
+            </div>
+            <div class="informacoes">
+              <h5>JOGO BASE</h5>
+              <span
+                ><i class="ri-computer-line"></i><i class="ri-xbox-fill"></i
+                ><i class="ri-playstation-line"></i
+              ></span>
+            </div>
+            <h4>Dragon Ball: Sparking! Zero</h4>
+            <div>
+              <p>R$ 299,90</p>
+              <span class="tag__promocao"></span>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-id-maior18="7">
+            <div class="progressive">
+              <img
+                data-src="./images/lancamentos/COD-6.png"
+                alt=""
+                src="./images/lancamentos/lazy-COD-6.jpg"
+                class="lazy"
+              />
+            </div>
+            <div class="informacoes">
+              <h5>VAULT EDITION</h5>
+              <span
+                ><i class="ri-computer-line"></i><i class="ri-xbox-fill"></i
+                ><i class="ri-playstation-line"></i
+              ></span>
+            </div>
+            <h4>Call of Duty: Black Ops 6</h4>
+            <div>
+              <p>R$ 479,00</p>
+              <span class="tag__promocao"></span>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-id="8">
+            <div class="progressive">
+              <img
+                data-src="./images/lancamentos/super-mario-jamboree.jpg"
+                alt=""
+                src="./images/lancamentos/lazy-super-mario-jamboree.jpg"
+                class="lazy"
+              />
+            </div>
+            <div class="informacoes">
+              <h5>JOGO BASE</h5>
+              <span><i class="ri-switch-line"></i></span>
+            </div>
+            <h4>Super Mario Party Jamboree</h4>
+            <div>
+              <p>R$ 299,90</p>
+              <span class="tag__promocao"></span>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-id="9">
+            <div class="progressive">
+              <img
+                data-src="./images/lancamentos/LIFE-IS-STRANGE.webp"
+                alt=""
+                src="./images/lancamentos/lazy-LIFE-IS-STRANGE.jpg"
+                class="lazy"
+              />
+            </div>
+            <div class="informacoes">
+              <h5>JOGO BASE</h5>
+              <span
+                ><i class="ri-computer-line"></i><i class="ri-xbox-fill"></i
+                ><i class="ri-playstation-line"></i
+              ></span>
+            </div>
+            <h4>Life is Strange: Double Exposure</h4>
+            <div>
+              <p>R$ 219,90</p>
+              <span class="tag__promocao"></span>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-id="10">
+            <div class="progressive">
+              <img
+                data-src="./images/lancamentos/mario-and-luigi.jpg"
+                alt=""
+                src="./images/lancamentos/lazy-mario-and-luigi.jpg"
+                class="lazy"
+              />
+            </div>
+            <div class="informacoes">
+              <h5>JOGO BASE</h5>
+              <span><i class="ri-switch-line"></i></span>
+            </div>
+            <h4>Mario & Luigi: Brothership</h4>
+            <div>
+              <p>R$ 299,90</p>
+              <span class="tag__promocao"></span>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-id="11">
+            <div class="progressive">
+              <img
+                data-src="./images/lancamentos/dragon-quest-iii.webp"
+                alt=""
+                src="./images/lancamentos/lazy-dragon-quest-iii.jpg"
+                class="lazy"
+              />
+            </div>
+            <div class="informacoes">
+              <h5>JOGO BASE</h5>
+              <span><i class="ri-switch-line"></i></span>
+            </div>
+            <h4>Dragon Quest III HD-2D Remake</h4>
+            <div>
+              <p>R$ 299,90</p>
+              <span class="tag__promocao"></span>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-id-maior18="12">
+            <div class="progressive">
+              <img
+                data-src="./images/lancamentos/Assassins_Creed_shadows_cover.jpg"
+                alt=""
+                src="./images/lancamentos/lazy-Assassins_Creed_shadows_cover.jpg"
+                class="lazy"
+              />
+            </div>
+            <div class="informacoes">
+              <h5>JOGO BASE</h5>
+              <span
+                ><i class="ri-computer-line"></i><i class="ri-xbox-fill"></i
+                ><i class="ri-playstation-line"></i
+              ></span>
+            </div>
+            <h4>Assassin’s Creed Shadows</h4>
+            <div>
+              <p>R$ 299,90</p>
+              <span class="tag__promocao"></span>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-id="13">
+            <div class="progressive">
+              <img
+                data-src="./images/lancamentos/mickey-mouse.jpg"
+                alt=""
+                src="./images/lancamentos/lazy-mickey-mouse.jpg"
+                class="lazy"
+              />
+            </div>
+            <div class="informacoes">
+              <h5>PRÉ-VENDA</h5>
+              <span
+                ><i class="ri-switch-line"></i><i class="ri-computer-line"></i
+                ><i class="ri-xbox-fill"></i><i class="ri-playstation-line"></i
+              ></span>
+            </div>
+            <h4>Epic Mickey: Rebrushed</h4>
+            <div>
+              <p>R$ 162,00</p>
+              <span class="tag__promocao"></span>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-id="14">
+            <div class="progressive">
+              <img
+                data-src="./images/lancamentos/indiana-jones-and-the-great.jpg"
+                alt=""
+                src="./images/lancamentos/lazy-indiana-jones-and-the-great.jpg"
+                class="lazy"
+              />
+            </div>
+            <div class="informacoes">
+              <h5>JOGO BASE</h5>
+              <span
+                ><i class="ri-computer-line"></i><i class="ri-xbox-fill"></i
+              ></span>
+            </div>
+            <h4>Indiana Jones and the Great Circle</h4>
+            <div>
+              <p>R$ 199,90</p>
+              <span class="tag__promocao"></span>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-id="15">
+            <div class="progressive">
+              <img
+                data-src="./images/lancamentos/flight-simulator.jpg"
+                alt=""
+                src="./images/lancamentos/lazy-flight-simulator.jpg"
+                class="lazy"
+              />
+            </div>
+            <div class="informacoes">
+              <h5>JOGO BASE</h5>
+              <span
+                ><i class="ri-computer-line"></i><i class="ri-xbox-fill"></i
+              ></span>
+            </div>
+            <h4>Microsoft Flight Simulator 2024</h4>
+            <div>
+              <p>R$ 399,90</p>
+              <span class="tag__promocao"></span>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-id-maior18="16">
+            <div class="progressive">
+              <img
+                data-src="./images/lancamentos/silent-hill.jpg"
+                alt=""
+                src="./images/lancamentos/lazy-silent-hill.jpg"
+                class="lazy"
+              />
+            </div>
+            <div class="informacoes">
+              <h5>JOGO BASE</h5>
+              <span
+                ><i class="ri-computer-line"></i
+                ><i class="ri-playstation-line"></i
+              ></span>
+            </div>
+            <h4>Silent Hill 2 Remake</h4>
+            <div>
+              <p>R$ 299,90</p>
+              <span class="tag__promocao"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DESTAQUES -->
+      <section class="swiper">
+        <div class="swiper-title">
+          <h2>Talvez seja do seu interesse</h2>
+          <div class="swiper-navagation">
+            <i class="ri-arrow-left-line btn-prev"></i>
+            <i class="ri-arrow-right-line btn-next"></i>
+          </div>
+        </div>
+        <div class="swiper-wrapper" id="swiper-big">
+          <div class="swiper-slide" id="slide-big" data-id="17">
+            <div class="progressive">
+              <img
+                data-src="images/Talvez-voce-goset/horizon-4k.jpg"
+                src="images/Talvez-voce-goset/lazy-horizon-4k.jpg"
+                class="lazy"
+                alt=""
+              />
+            </div>
+            <h3>HORIZON ZERO DOWN</h3>
+            <div id="teste">
               <p>
-                Desde a estreia em 1994, a série de jogos de luta KOF tem
-                oferecido emoções pelo mundo com personagens cativantes e um
-                sistema de jogo incomparável.
+                Segue a trama de Aloy, uma caçadora em um mundo invadido por
+                máquinas, que decide descobrir seu passado, explorando o mundo
+                para descobrir locais e realizar missões secundárias. Horizon
+                Zero Dawn é a primeira propriedade intelectual da Guerrilla
+                Games desde Killzone, de 2004, e seu primeiro jogo de RPG.
               </p>
             </div>
           </div>
-        </label>
 
-        <input type="radio" name="slide" id="c2" />
-        <label for="c2" class="card">
-          <div class="card__info">
-            <div class="icon-card">2</div>
-            <div class="descricao__card">
-              <h4>Horizon Forbidden West<span id="value">R$299,90</span></h4>
+          <div class="swiper-slide" id="slide-big" data-id="28">
+            <div class="progressive">
+              <img
+                data-src="images/Talvez-voce-goset/devil-may-cry.jpg"
+                alt=""
+                src="images/Talvez-voce-goset/lazy-devil-may-cry.jpg"
+                class="lazy"
+              />
+            </div>
+            <h3>DEVIL MAY CRY 5</h3>
+            <div>
               <p>
-                Em uma era na qual máquinas vagam livremente e a humanidade
-                deixou de ser a espécie dominante, Aloy inicia uma jornada na
-                qual desvendará o seu destino.
+                O jogo acontece cinco anos depois de Devil May Cry 4 e segue um
+                trio de personagens com poderes demoníacos: Dante, Nero e um
+                novo protagonista chamado V. Eles tentam impedir que o Rei
+                Demoníaco Urizen, destrua o mundo humano.
               </p>
             </div>
           </div>
-        </label>
 
-        <input type="radio" name="slide" id="c3" />
-        <label for="c3" class="card">
-          <div class="card__info">
-            <div class="icon-card">3</div>
-            <div class="descricao__card">
-              <h4>
-                Call of Duty®: Modern Warfare® III<span id="value"><span id="value-oldprice"
-                    style="text-decoration: line-through">R$299,90</span>
-                  por R$194,35</span>
-              </h4>
+          <div class="swiper-slide" id="slide-big" data-id-maior18="29">
+            <div class="progressive">
+              <img
+                data-src="images/Talvez-voce-goset/got-4k.png"
+                alt=""
+                src="images/Talvez-voce-goset/lazy-got-4k.jpg"
+                class="lazy"
+              />
+            </div>
+            <h3>GHOST OF TSUSHIMA</h3>
+            <div>
               <p>
-                Na sequência direta do recordista Call of Duty®: Modern
-                Warfare® II, Capitão Price e a Força-tarefa 141 enfrentam a
-                ameaça definitiva.
+                No game desenvolvido pela Sucker Punch, o jogador assume o papel
+                do samurai Jim Kasai, que vê sua terra natal, a ilha de
+                Tsushima, ser tomada por invasores mongóis. Praticamente
+                sozinho, o samurai deve dominar a katana, o arco e táticas
+                furtivas para restaurar a liberdade de seu povo.
               </p>
             </div>
           </div>
-        </label>
+        </div>
+      </section>
 
-        <input type="radio" name="slide" id="c4" />
-        <label for="c4" class="card">
-          <div class="card__info">
-            <div class="icon-card">4</div>
-            <div class="descricao__card">
-              <h4>
-                Overcooked 2<span id="value"><span id="value-oldprice"
-                    style="text-decoration: line-through">R$39,90</span>
-                  por R$7,99</span>
-              </h4>
-              <p>
-                "Overcooked é um jogo caótico de cozinha cooperativa local
-                para um a quatro jogadores."
-              </p>
+      <!-- PROMOÇÕES -->
+      <section class="swiper">
+        <div class="swiper-title">
+          <h2>Descontos em destaque</h2>
+          <div class="swiper-navagation">
+            <i class="ri-arrow-left-line btn-prev"></i>
+            <i class="ri-arrow-right-line btn-next"></i>
+          </div>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" data-id-maior18="23">
+            <img src="./images/promocoes/Red Dead Redemption 2.jpeg" alt="" />
+            <h5>JOGO BASE</h5>
+            <h4>Red Dead Redemption 2</h4>
+            <div>
+              <p>R$ 99,99</p>
+              <span class="tag__promocao">- 67% OFF</span>
             </div>
           </div>
-        </label>
 
-        <input type="radio" name="slide" id="c5" />
-        <label for="c5" class="card">
-          <div class="card__info">
-            <div class="icon-card">5</div>
-            <div class="descricao__card">
-              <h4>
-                Tekken 8®<span id="value"><span id="value-oldprice"
-                    style="text-decoration: line-through">R$269,90</span>
-                  por R$153,99</span>
-              </h4>
-              <p>
-                Tekken 8 é um jogo eletrônico de luta desenvolvido pela Bandai
-                Namco Studios e Arika. Disponivél para Ps5 e PC
-              </p>
+          <div class="swiper-slide" data-id-maior18="24">
+            <img src="./images/promocoes/thelastOfUs.webp" alt="" />
+            <h5>EDIÇÃO DIGITAL</h5>
+            <h4>The Last of Us™ Part I - Deluxe</h4>
+            <div>
+              <p>R$ 249,90</p>
+              <span class="tag__promocao">- 5% OFF</span>
             </div>
           </div>
-        </label>
-        <input type="radio" name="slide" id="c6" />
-        <label for="c6" class="card">
-          <div class="card__info">
-            <div class="icon-card">6</div>
-            <div class="descricao__card">
-              <h4>
-                Alan Wake 2<span id="value"><span id="value-oldprice"
-                    style="text-decoration: line-through">R$269,90</span>
-                  por R$272,96</span>
-              </h4>
-              <p>
-                Alan Wake II é um jogo de survival horror desenvolvido pela
-                Remedy Entertainment e publicado pela Epic Games Publishing
-              </p>
-            </div>
-          </div>
-        </label>
-      </div>
-    </section>
 
-    <!-- LANÇAMENTOS -->
-    <section class="swiper">
-      <div class="swiper-title">
-        <h2>Principais novos lançamentos</h2>
-        <div class="swiper-navagation">
-          <i class="ri-arrow-left-line btn-prev"></i>
-          <i class="ri-arrow-right-line btn-next"></i>
-        </div>
-      </div>
-
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" data-id="3">
-          <div class="progressive">
-          <img data-src="./images/lancamentos/Final Fantasy-14-Dawntrail.jpg" alt="" src="./images/lancamentos/lazy-Final Fantasy-14-Dawntrail.jpg" class="lazy" />
-        </div>
-          <div class="informacoes">
-            <h5>JOGO BASE</h5>
-            <span><i class="ri-computer-line"></i><i class="ri-xbox-fill"></i><i class="ri-playstation-line"></i></span>
-          </div>
-          <h4>Final Fantasy 14: Dawntrail</h4>
-          <div>
-            <p>R$ 107,99</p>
-            <span class="tag__promocao"></span>
-          </div>
-        </div>
-
-        <div class="swiper-slide" data-id="2">
-          <div class="progressive">
-          <img data-src="./images/lancamentos/Black-Myth-Wukong.jpg" alt="" src="./images/lancamentos/lazy-Black-Myth-Wukong.jpg" class="lazy" />
-        </div>
-          <div class="informacoes">
-            <h5>JOGO BASE</h5>
-            <span><i class="ri-computer-line"></i><i class="ri-xbox-fill"></i><i class="ri-playstation-line"></i></span>
-          </div>
-          <h4>Black Myth: Wukong</h4>
-          <div>
-            <p>R$ 299,90</p>
-            <span class="tag__promocao"></span>
-          </div>
-        </div>
-
-        <div class="swiper-slide" data-id="4">
-          <div class="progressive">
-          <img data-src="./images/lancamentos/WORD-warcraft.jpeg" alt="" src="./images/lancamentos/lazy-WORD-warcraft.jpg" class="lazy" />
-        </div>
-          <div class="informacoes">
-            <h5>EPIC EDITION</h5>
-            <span><i class="ri-computer-line"></i></span>
-          </div>
-          <h4>World of Warcraft: The War Within</h4>
-          <div>
-            <p>R$ 319,00</p>
-            <span class="tag__promocao"></span>
-          </div>
-        </div>
-
-        <div class="swiper-slide" data-id="5">
-          <div class="progressive">
-          <img data-src="./images/lancamentos/the-legend-of-zelda.jpg" alt=""  src="./images/lancamentos/lazy-the-legend-of-zelda.jpg" class="lazy"/>
-        </div>
-          <div class="informacoes">
-            <h5>JOGO BASE</h5>
-            <span><i class="ri-switch-line"></i></span>
-          </div>
-          <h4>The Legend of Zelda: Echoes</h4>
-          <div>
-            <p>R$ 229,90</p>
-            <span class="tag__promocao"></span>
-          </div>
-        </div>
-
-        <div class="swiper-slide" data-id="6">
-          <div class="progressive">
-          <img data-src="./images/lancamentos/dragon-ball.webp" alt="" src="./images/lancamentos/lazy-dragon-ball.jpg" class="lazy" />
-        </div>
-          <div class="informacoes">
-            <h5>JOGO BASE</h5>
-            <span><i class="ri-computer-line"></i><i class="ri-xbox-fill"></i><i class="ri-playstation-line"></i></span>
-          </div>
-          <h4>Dragon Ball: Sparking! Zero</h4>
-          <div>
-            <p>R$ 299,90</p>
-            <span class="tag__promocao"></span>
-          </div>
-        </div>
-
-        <div class="swiper-slide" data-id-maior18="7">
-          <div class="progressive">
-          <img data-src="./images/lancamentos/COD-6.png" alt="" src="./images/lancamentos/lazy-COD-6.jpg" class="lazy"/>
-        </div>
-          <div class="informacoes">
-            <h5>VAULT EDITION</h5>
-            <span><i class="ri-computer-line"></i><i class="ri-xbox-fill"></i><i class="ri-playstation-line"></i></span>
-          </div>
-          <h4>Call of Duty: Black Ops 6</h4>
-          <div>
-            <p>R$ 479,00</p>
-            <span class="tag__promocao"></span>
-          </div>
-        </div>
-
-        <div class="swiper-slide" data-id="8">
-          <div class="progressive">
-          <img data-src="./images/lancamentos/super-mario-jamboree.jpg" alt="" src="./images/lancamentos/lazy-super-mario-jamboree.jpg" class="lazy"/>
-        </div>
-          <div class="informacoes">
-            <h5>JOGO BASE</h5>
-            <span><i class="ri-switch-line"></i></span>
-          </div>
-          <h4>Super Mario Party Jamboree</h4>
-          <div>
-            <p>R$ 299,90</p>
-            <span class="tag__promocao"></span>
-          </div>
-        </div>
-
-        <div class="swiper-slide" data-id="9">
-          <div class="progressive">
-          <img data-src="./images/lancamentos/LIFE-IS-STRANGE.webp" alt="" src="./images/lancamentos/lazy-LIFE-IS-STRANGE.jpg" class="lazy"/>
-        </div>
-          <div class="informacoes">
-            <h5>JOGO BASE</h5>
-            <span><i class="ri-computer-line"></i><i class="ri-xbox-fill"></i><i class="ri-playstation-line"></i></span>
-          </div>
-          <h4>Life is Strange: Double Exposure</h4>
-          <div>
-            <p>R$ 219,90</p>
-            <span class="tag__promocao"></span>
-          </div>
-        </div>
-
-        <div class="swiper-slide" data-id="10">
-          <div class="progressive">
-          <img data-src="./images/lancamentos/mario-and-luigi.jpg" alt="" src="./images/lancamentos/lazy-mario-and-luigi.jpg" class="lazy"/>
-        </div>
-          <div class="informacoes">
-            <h5>JOGO BASE</h5>
-            <span><i class="ri-switch-line"></i></span>
-          </div>
-          <h4>Mario & Luigi: Brothership</h4>
-          <div>
-            <p>R$ 299,90</p>
-            <span class="tag__promocao"></span>
-          </div>
-        </div>
-
-        <div class="swiper-slide" data-id="11">
-          <div class="progressive">
-          <img data-src="./images/lancamentos/dragon-quest-iii.webp" alt="" src="./images/lancamentos/lazy-dragon-quest-iii.jpg" class="lazy"/>
-        </div>
-          <div class="informacoes">
-            <h5>JOGO BASE</h5>
-            <span><i class="ri-switch-line"></i></span>
-          </div>
-          <h4>Dragon Quest III HD-2D Remake</h4>
-          <div>
-            <p>R$ 299,90</p>
-            <span class="tag__promocao"></span>
-          </div>
-        </div>
-
-        <div class="swiper-slide" data-id-maior18="12">
-          <div class="progressive">
-          <img data-src="./images/lancamentos/Assassins_Creed_shadows_cover.jpg" alt=""  src="./images/lancamentos/lazy-Assassins_Creed_shadows_cover.jpg" class="lazy"/>
-        </div>
-          <div class="informacoes">
-            <h5>JOGO BASE</h5>
-            <span><i class="ri-computer-line"></i><i class="ri-xbox-fill"></i><i class="ri-playstation-line"></i></span>
-          </div>
-          <h4>Assassin’s Creed Shadows</h4>
-          <div>
-            <p>R$ 299,90</p>
-            <span class="tag__promocao"></span>
-          </div>
-        </div>
-
-        <div class="swiper-slide" data-id="13">
-          <div class="progressive">
-          <img data-src="./images/lancamentos/mickey-mouse.jpg" alt="" src="./images/lancamentos/lazy-mickey-mouse.jpg" class="lazy"/>
-        </div>
-          <div class="informacoes">
-            <h5>PRÉ-VENDA</h5>
-            <span><i class="ri-switch-line"></i><i class="ri-computer-line"></i><i class="ri-xbox-fill"></i><i
-                class="ri-playstation-line"></i></span>
-          </div>
-          <h4>Epic Mickey: Rebrushed</h4>
-          <div>
-            <p>R$ 162,00</p>
-            <span class="tag__promocao"></span>
-          </div>
-        </div>
-
-        <div class="swiper-slide" data-id="14">
-          <div class="progressive">
-          <img data-src="./images/lancamentos/indiana-jones-and-the-great.jpg" alt="" src="./images/lancamentos/lazy-indiana-jones-and-the-great.jpg" class="lazy"/>
-        </div>
-          <div class="informacoes">
-            <h5>JOGO BASE</h5>
-            <span><i class="ri-computer-line"></i><i class="ri-xbox-fill"></i></span>
-          </div>
-          <h4>Indiana Jones and the Great Circle</h4>
-          <div>
-            <p>R$ 199,90</p>
-            <span class="tag__promocao"></span>
-          </div>
-        </div>
-
-        <div class="swiper-slide" data-id="15">
-          <div class="progressive">
-          <img data-src="./images/lancamentos/flight-simulator.jpg" alt="" src="./images/lancamentos/lazy-flight-simulator.jpg" class="lazy" />
-        </div>
-          <div class="informacoes">
-            <h5>JOGO BASE</h5>
-            <span><i class="ri-computer-line"></i><i class="ri-xbox-fill"></i></span>
-          </div>
-          <h4>Microsoft Flight Simulator 2024</h4>
-          <div>
-            <p>R$ 399,90</p>
-            <span class="tag__promocao"></span>
-          </div>
-        </div>
-
-        <div class="swiper-slide" data-id-maior18="16">
-          <div class="progressive">
-          <img data-src="./images/lancamentos/silent-hill.jpg" alt="" src="./images/lancamentos/lazy-silent-hill.jpg" class="lazy" />
-        </div>
-          <div class="informacoes">
-            <h5>JOGO BASE</h5>
-            <span><i class="ri-computer-line"></i><i class="ri-playstation-line"></i></span>
-          </div>
-          <h4>Silent Hill 2 Remake</h4>
-          <div>
-            <p>R$ 299,90</p>
-            <span class="tag__promocao"></span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- DESTAQUES -->
-    <section class="swiper">
-      <div class="swiper-title">
-        <h2>Talvez seja do seu interesse</h2>
-        <div class="swiper-navagation">
-          <i class="ri-arrow-left-line btn-prev"></i>
-          <i class="ri-arrow-right-line btn-next"></i>
-        </div>
-      </div>
-      <div class="swiper-wrapper" id="swiper-big">
-        <div class="swiper-slide" id="slide-big" data-id="17">
-          <div class="progressive">
-            <img data-src="images/Talvez-voce-goset/horizon-4k.jpg" src="images/Talvez-voce-goset/lazy-horizon-4k.jpg"  class="lazy" alt="" />
-          </div>
-          <h3>HORIZON ZERO DOWN</h3>
-          <div id="teste">
-            <p>
-              Segue a trama de Aloy, uma caçadora em um mundo invadido por
-              máquinas, que decide descobrir seu passado, explorando o mundo
-              para descobrir locais e realizar missões secundárias. Horizon
-              Zero Dawn é a primeira propriedade intelectual da Guerrilla
-              Games desde Killzone, de 2004, e seu primeiro jogo de RPG.
-            </p>
-          </div>
-        </div>
-        
-        <div class="swiper-slide" id="slide-big" data-id="28">
-          <div class="progressive">
-          <img data-src="images/Talvez-voce-goset/devil-may-cry.jpg" alt="" src="images/Talvez-voce-goset/lazy-devil-may-cry.jpg"  class="lazy" />
-        </div>
-          <h3>DEVIL MAY CRY 5</h3>
-          <div>
-            <p>
-              O jogo acontece cinco anos depois de Devil May Cry 4 e segue um
-              trio de personagens com poderes demoníacos: Dante, Nero e um
-              novo protagonista chamado V. Eles tentam impedir que o Rei
-              Demoníaco Urizen, destrua o mundo humano.
-            </p>
-          </div>
-        </div>
-
-        <div class="swiper-slide" id="slide-big" data-id-maior18="29">
-          <div class="progressive">
-          <img data-src="images/Talvez-voce-goset/got-4k.png" alt="" src="images/Talvez-voce-goset/lazy-got-4k.jpg"  class="lazy" />
-          </div>
-          <h3>GHOST OF TSUSHIMA</h3>
-          <div>
-            <p>
-              No game desenvolvido pela Sucker Punch, o jogador assume o papel
-              do samurai Jim Kasai, que vê sua terra natal, a ilha de
-              Tsushima, ser tomada por invasores mongóis. Praticamente
-              sozinho, o samurai deve dominar a katana, o arco e táticas
-              furtivas para restaurar a liberdade de seu povo.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROMOÇÕES -->
-    <section class="swiper">
-      <div class="swiper-title">
-        <h2>Descontos em destaque</h2>
-        <div class="swiper-navagation">
-          <i class="ri-arrow-left-line btn-prev"></i>
-          <i class="ri-arrow-right-line btn-next"></i>
-        </div>
-      </div>
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" data-id-maior18="23">
-          <img src="./images/promocoes/Red Dead Redemption 2.jpeg" alt="" />
-          <h5>JOGO BASE</h5>
-          <h4>Red Dead Redemption 2</h4>
-          <div>
-            <p>R$ 99,99</p>
-            <span class="tag__promocao">- 67% OFF</span>
-          </div>
-        </div>
-
-        <div class="swiper-slide" data-id-maior18="24">
-          <img src="./images/promocoes/thelastOfUs.webp" alt="" />
-          <h5>EDIÇÃO DIGITAL</h5>
-          <h4>The Last of Us™ Part I - Deluxe</h4>
-          <div>
-            <p>R$ 249,90</p>
-            <span class="tag__promocao">- 5% OFF</span>
-          </div>
-        </div>
-
-        <div class="swiper-slide" data-id-maior18="1">
+          <div class="swiper-slide" data-id-maior18="1">
             <img src="./images/promocoes/Dead by Daylight.jpeg" alt="" />
             <h5>JOGO BASE</h5>
             <h4>Dead by Daylight</h4>
@@ -540,273 +677,351 @@
               <p>R$ 59,90</p>
               <span class="tag__promocao">- 5% OFF</span>
             </div>
-          
-        </div>
+          </div>
 
-        <div class="swiper-slide" data-id="25">
-          <img src="./images/promocoes/battlefield.jpeg" alt="" />
-          <h5>JOGO BASE</h5>
-          <h4>Battlefield</h4>
-          <div>
-            <p>R$ 24,90</p>
-            <span class="tag__promocao">- 90% OFF</span>
+          <div class="swiper-slide" data-id="25">
+            <img src="./images/promocoes/battlefield.jpeg" alt="" />
+            <h5>JOGO BASE</h5>
+            <h4>Battlefield</h4>
+            <div>
+              <p>R$ 24,90</p>
+              <span class="tag__promocao">- 90% OFF</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-id="26">
+            <img src="./images/promocoes/Hogwarts Legacy.avif" alt="" />
+            <h5>JOGO BASE</h5>
+            <h4>Hogwarts Lagacy</h4>
+            <div>
+              <p>R$ 99,00</p>
+              <span class="tag__promocao">- 60% OFF</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-id-maior18="30">
+            <img src="./images/promocoes/fallout4.webp" alt="" />
+            <h5>JOGO BASE</h5>
+            <h4>Fallout 4</h4>
+            <div>
+              <p>R$ 47,99</p>
+              <span class="tag__promocao">- 60% OFF</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-id="31">
+            <img src="./images/promocoes/hades.avif " alt="" />
+            <h5>JOGO BASE</h5>
+            <h4>Hades</h4>
+            <div>
+              <p>R$ 29,59</p>
+              <span class="tag__promocao">- 60% OFF</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-id="39">
+            <img src="./images/promocoes/street.png" alt="" />
+            <h5>JOGO BASE</h5>
+            <h4>Street Fighter 6</h4>
+            <div>
+              <p>R$ 124,50</p>
+              <span class="tag__promocao">- 50% OFF</span>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="swiper-slide" data-id="26">
-          <img src="./images/promocoes/Hogwarts Legacy.avif" alt="" />
-          <h5>JOGO BASE</h5>
-          <h4>Hogwarts Lagacy</h4>
-          <div>
-            <p>R$ 99,00</p>
-            <span class="tag__promocao">- 60% OFF</span>
+      <!-- Aqui ficarão apenas dois jogos, sem carrosel -->
+      <section class="container__card">
+        <div class="content__card">
+          <div class="carousel">
+            <img
+              class="carousel__item"
+              src="images/Pre-venda/codbO6.webp"
+              alt="Imagem 1"
+            />
+            <img
+              class="carousel__item"
+              src="images/Pre-venda/codbO6-2.webp"
+              alt="Imagem 2"
+            />
+            <img
+              class="carousel__item"
+              src="images/Pre-venda/codbO6-3.webp"
+              alt="Imagem 3"
+            />
+            <img
+              class="carousel__item"
+              src="images/Pre-venda/codbO6-4.webp"
+              alt="Imagem 4"
+            />
+          </div>
+
+          <h4>Call of Duty®: Black Ops 6</h4>
+          <p>
+            A clandestinidade é a única opção. Na mira do seu próprio pessoal.
+            Esse é Black Ops 6.
+          </p>
+          <span class="tag__promocao">Comprar na pré-venda</span>
+        </div>
+
+        <div class="content__card">
+          <div class="carousel">
+            <img
+              class="carousel__item-1"
+              src="images/Pre-venda/stella1.webp"
+              alt="Imagem 1"
+            />
+            <img
+              class="carousel__item-1"
+              src="images/Pre-venda/stella2.webp"
+              alt="Imagem 2"
+            />
+            <img
+              class="carousel__item-1"
+              src="images/Pre-venda/stella3.webp"
+              alt="Imagem 3"
+            />
+            <img
+              class="carousel__item-1"
+              src="images/Pre-venda/stella4.webp"
+              alt="Imagem 4"
+            />
+          </div>
+
+          <h4>Stellar Blade™</h4>
+          <p>
+            Reconquiste a terra para a humanidade com esse incrível game para
+            PS5
+          </p>
+          <span class="tag__promocao">Comprar na pré-venda</span>
+        </div>
+      </section>
+
+      <!-- JOGOS MAIS JOGADOS -->
+      <section class="swiper" id="ranking-home">
+        <div class="swiper-title">
+          <h2>Ranking semanal</h2>
+          <div class="swiper-navagation">
+            <i class="ri-arrow-left-line btn-prev"></i>
+            <i class="ri-arrow-right-line btn-next"></i>
           </div>
         </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" data-id="32">
+            <div class="progressive">
+              <img
+                data-src="./images/ranking/eldenRing.jpg"
+                alt=""
+                src="./images/ranking/lazy-eldenRing.jpg"
+                class="lazy"
+              />
+            </div>
+            <h2>1</h2>
+            <h4>Elden Ring</h4>
+            <div>
+              <p>R$ 160,93</p>
+              <span class="tag__promocao">- 30% OFF</span>
+            </div>
+          </div>
 
-        <div class="swiper-slide" data-id-maior18="30">
-          <img src="./images/promocoes/fallout4.webp" alt="" />
-          <h5>JOGO BASE</h5>
-          <h4>Fallout 4</h4>
-          <div>
-            <p>R$ 47,99</p>
-            <span class="tag__promocao">- 60% OFF</span>
+          <div class="swiper-slide" data-id-maior18="33">
+            <div class="progressive">
+              <img
+                data-src="./images/ranking/gta5.webp"
+                src="./images/ranking/lazy-gta5.jpg"
+                class="lazy"
+              />
+            </div>
+
+            <h2>2</h2>
+            <h4>GTA V: Edição Premium</h4>
+            <div>
+              <p>R$ 249,90</p>
+              <span class="tag__promocao">- 5% OFF</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-id-maior18="23">
+            <div class="progressive">
+              <img
+                data-src="./images/promocoes/Red Dead Redemption 2.jpeg"
+                src="./images/promocoes/lazy-Red Dead Redemption 2.jpg"
+                class="lazy"
+              />
+            </div>
+            <h2>3</h2>
+            <h4>Red Dead Redemption 2</h4>
+            <div>
+              <p>R$ 99,99</p>
+              <span class="tag__promocao">- 67% OFF</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-id-maior18="40">
+            <div class="progressive">
+              <img
+                data-src="./images/ranking/gta52.webp"
+                src="./images/ranking/lazy-gta52.1.jpg"
+                class="lazy"
+              />
+            </div>
+            <h2>4</h2>
+            <h4>Grand Theft Auto V</h4>
+            <div>
+              <p>R$ 38,63</p>
+              <span class="tag__promocao">- 65% OFF</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-id="34">
+            <div class="progressive">
+              <img
+                data-src="./images/ranking/fifa.jpeg"
+                src="./images/ranking/lazy-fifa.jpg"
+                class="lazy"
+              />
+            </div>
+            <h2>5</h2>
+            <h4>EA SPORTS FC™ 24</h4>
+            <div>
+              <p>R$ 71,80</p>
+              <span class="tag__promocao">- 80% OFF</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-id="35">
+            <div class="progressive">
+              <img
+                data-src="./images/ranking/baldur.avif"
+                alt=""
+                src="./images/ranking/lazy-baldur.jpg"
+                class="lazy"
+              />
+            </div>
+            <h2>6</h2>
+            <h4>Baldur's Gate 3</h4>
+            <div>
+              <p>R$ 159,00</p>
+              <span class="tag__promocao">- 20% OFF</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-id="36">
+            <div class="progressive">
+              <img
+                data-src="./images/ranking/forza.1feb0fed-abe9-4849-b638-8d7eca69cff4"
+                src="./images/ranking/lazy-eldenRing.jpg"
+                class="lazy"
+              />
+            </div>
+            <h2>7</h2>
+            <h4>Forza Horizon 4</h4>
+            <div>
+              <p>R$ 49,80</p>
+              <span class="tag__promocao">- 80% OFF</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-id="37">
+            <div class="progressive">
+              <img
+                data-src="./images/ranking/theWitcher.webp"
+                alt=""
+                src="./images/ranking/lazy-theWitcher.jpg"
+                class="lazy"
+              />
+            </div>
+            <h2>8</h2>
+            <h4>The Witcher 3: Wild Hunt</h4>
+            <div>
+              <p>R$ 12,99</p>
+              <span class="tag__promocao">- 90% OFF</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-id="26">
+            <div class="progressive">
+              <img
+                data-src="./images/promocoes/Hogwarts Legacy.avif"
+                alt=""
+                src="./images/promocoes/lazy-Hogwarts Legacy.jpg"
+                class="lazy"
+              />
+            </div>
+            <h2>9</h2>
+            <h4>Hogwarts Lagacy</h4>
+            <div>
+              <p>R$ 99,00</p>
+              <span class="tag__promocao">- 60% OFF</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-id-maior18="38">
+            <div class="progressive">
+              <img
+                data-src="./images/ranking/cyber.jpeg"
+                alt=""
+                src="./images/ranking/lazy-cyber.jpg"
+                class="lazy"
+              />
+            </div>
+            <h2>10</h2>
+            <h4>CyberPunk 2077</h4>
+            <div>
+              <p>R$ 99,00</p>
+              <span class="tag__promocao">- 50% OFF</span>
+            </div>
           </div>
         </div>
+      </section>
+    </div>
 
-        <div class="swiper-slide" data-id="31">
-          <img src="./images/promocoes/hades.avif " alt="" />
-          <h5>JOGO BASE</h5>
-          <h4>Hades</h4>
-          <div>
-            <p>R$ 29,59</p>
-            <span class="tag__promocao">- 60% OFF</span>
-          </div>
-        </div>
-
-        <div class="swiper-slide" data-id="39">
-          <img src="./images/promocoes/street.png" alt="" />
-          <h5>JOGO BASE</h5>
-          <h4>Street Fighter 6</h4>
-          <div>
-            <p>R$ 124,50</p>
-            <span class="tag__promocao">- 50% OFF</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Aqui ficarão apenas dois jogos, sem carrosel -->
-    <section class="container__card">
-      <div class="content__card">
-
-        <div class="carousel">
-          <img class="carousel__item" src="images/Pre-venda/codbO6.webp" alt="Imagem 1">
-          <img class="carousel__item" src="images/Pre-venda/codbO6-2.webp" alt="Imagem 2">
-          <img class="carousel__item" src="images/Pre-venda/codbO6-3.webp" alt="Imagem 3">
-          <img class="carousel__item" src="images/Pre-venda/codbO6-4.webp" alt="Imagem 4">
-        </div>
-
-        <h4>Call of Duty®: Black Ops 6</h4>
-        <p>
-          A clandestinidade é a única opção. Na mira do seu próprio pessoal. Esse é Black Ops 6.
-        </p>
-        <span class="tag__promocao">Comprar na pré-venda</span>
-      </div>
-
-      <div class="content__card">
-        <div class="carousel">
-          <img class="carousel__item-1" src="images/Pre-venda/stella1.webp" alt="Imagem 1">
-          <img class="carousel__item-1" src="images/Pre-venda/stella2.webp" alt="Imagem 2">
-          <img class="carousel__item-1" src="images/Pre-venda/stella3.webp" alt="Imagem 3">
-          <img class="carousel__item-1" src="images/Pre-venda/stella4.webp" alt="Imagem 4">
-        </div>
-
-        <h4>Stellar Blade™</h4>
-        <p>Reconquiste a terra para a humanidade com esse incrível game para PS5</p>
-        <span class="tag__promocao">Comprar na pré-venda</span>
-      </div>
-    </section>
-
-    <!-- JOGOS MAIS JOGADOS -->
-    <section class="swiper">
-      <div class="swiper-title">
-        <h2>Ranking semanal</h2>
-        <div class="swiper-navagation">
-          <i class="ri-arrow-left-line btn-prev"></i>
-          <i class="ri-arrow-right-line btn-next"></i>
-        </div>
-      </div>
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"  data-id="32">
-          <div class="progressive"> 
-          <img data-src="./images/ranking/eldenRing.jpg" alt=""  src="./images/ranking/lazy-eldenRing.jpg"  class="lazy"/>
-        </div>
-          <h2>1</h2>
-          <h4>Elden Ring</h4>
-          <div>
-            <p>R$ 160,93</p>
-            <span class="tag__promocao">- 30% OFF</span>
-          </div>
-        </div>
-
-        <div class="swiper-slide"  data-id-maior18="33">
-          <div class="progressive"> 
-            <img data-src="./images/ranking/gta5.webp" src="./images/ranking/lazy-gta5.jpg"  class="lazy"/>
-          </div>
-         
-          <h2>2</h2>
-          <h4>GTA V: Edição Premium</h4>
-          <div>
-            <p>R$ 249,90</p>
-            <span class="tag__promocao">- 5% OFF</span>
-          </div>
-        </div>
-
-        <div class="swiper-slide" data-id-maior18="23">
-          <div class="progressive"> 
-            <img data-src="./images/promocoes/Red Dead Redemption 2.jpeg" src="./images/promocoes/lazy-Red Dead Redemption 2.jpg"  class="lazy"/>
-          </div>
-          <h2>3</h2>
-          <h4>Red Dead Redemption 2</h4>
-          <div>
-            <p>R$ 99,99</p>
-            <span class="tag__promocao">- 67% OFF</span>
-          </div>
-        </div>
-        
-        <div class="swiper-slide" data-id-maior18="40">
-          <div class="progressive"> 
-          <img data-src="./images/ranking/gta52.webp" src="./images/ranking/lazy-gta52.1.jpg"  class="lazy" />
-         </div>
-          <h2>4</h2>
-          <h4>Grand Theft Auto V</h4>
-          <div>
-            <p>R$ 38,63</p>
-            <span class="tag__promocao">- 65% OFF</span>
-          </div>
-       
-        </div>
-      
-
-        <div class="swiper-slide" data-id="34">
-          <div class="progressive"> 
-          <img data-src="./images/ranking/fifa.jpeg" src="./images/ranking/lazy-fifa.jpg"  class="lazy" />
-          </div>
-          <h2>5</h2>
-          <h4>EA SPORTS FC™ 24</h4>
-          <div>
-            <p>R$ 71,80</p>
-            <span class="tag__promocao">- 80% OFF</span>
-          </div>
-        </div>
-
-        <div class="swiper-slide" data-id="35">
-          <div class="progressive"> 
-          <img data-src="./images/ranking/baldur.avif" alt="" src="./images/ranking/lazy-baldur.jpg"  class="lazy" />
-        </div>
-          <h2>6</h2>
-          <h4>Baldur's Gate 3</h4>
-          <div>
-            <p>R$ 159,00</p>
-            <span class="tag__promocao">- 20% OFF</span>
-          </div>
-        </div>
-
-        <div class="swiper-slide" data-id="36">
-          <div class="progressive"> 
-          <img data-src="./images/ranking/forza.1feb0fed-abe9-4849-b638-8d7eca69cff4" src="./images/ranking/lazy-eldenRing.jpg"  class="lazy" />
-        </div>
-          <h2>7</h2>
-          <h4>Forza Horizon 4</h4>
-          <div>
-            <p>R$ 49,80</p>
-            <span class="tag__promocao">- 80% OFF</span>
-          </div>
-        </div>
-
-        <div class="swiper-slide" data-id="37">
-          <div class="progressive">
-          <img data-src="./images/ranking/theWitcher.webp" alt=""  src="./images/ranking/lazy-theWitcher.jpg"  class="lazy"/>
-        </div>
-          <h2>8</h2>
-          <h4>The Witcher 3: Wild Hunt</h4>
-          <div>
-            <p>R$ 12,99</p>
-            <span class="tag__promocao">- 90% OFF</span>
-          </div>
-        </div>
-
-        <div class="swiper-slide" data-id="26">
-          <div class="progressive">
-          <img data-src="./images/promocoes/Hogwarts Legacy.avif" alt="" src="./images/promocoes/lazy-Hogwarts Legacy.jpg"  class="lazy"/>
-        </div>
-          <h2>9</h2>
-          <h4>Hogwarts Lagacy</h4>
-          <div>
-            <p>R$ 99,00</p>
-            <span class="tag__promocao">- 60% OFF</span>
-          </div>
-        </div>
-
-        <div class="swiper-slide" data-id-maior18="38">
-          <div class="progressive">
-          <img data-src="./images/ranking/cyber.jpeg" alt="" src="./images/ranking/lazy-cyber.jpg"  class="lazy"/>
-        </div>
-          <h2>10</h2>
-          <h4>CyberPunk 2077</h4>
-          <div>
-            <p>R$ 99,00</p>
-            <span class="tag__promocao">- 50% OFF</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script type="module" src="main.js"></script>
-  <script src="main-loading.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="https://unpkg.com/progressive-image/dist/index.js"></script>
-  <script src="js/service-worker.js"></script>
-  <script>
-      if ('serviceWorker' in navigator) {
-          navigator.serviceWorker.register('js/service-worker.js')
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="main.js"></script>
+    <script src="main-loading.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/progressive-image/dist/index.js"></script>
+    <script src="js/service-worker.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("js/service-worker.js")
           .then(() => {
-              console.log('Service Worker registrado com sucesso!');
+            console.log("Service Worker registrado com sucesso!");
           })
           .catch((error) => {
-              console.error('Service Worker nao registrou com sucesso!', error);
+            console.error("Service Worker nao registrou com sucesso!", error);
           });
       }
-  </script>
+    </script>
     <script>
-        (function(){
-          new Progressive({
-            el: '.swiper-slide',
-            lazyClass: 'lazy',
-            scale: true,
-            removePreview: true
-          }).fire()
-        })()
-      </script>
-  <script>
-    const swiper = new Swiper(".swiper", {
-      slidesPerView: "auto",
-      spaceBeteween: 32,
-      grabCursor: true,
-      direction: "horizontal",
+      (function () {
+        new Progressive({
+          el: ".swiper-slide",
+          lazyClass: "lazy",
+          scale: true,
+          removePreview: true,
+        }).fire();
+      })();
+    </script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        slidesPerView: "auto",
+        spaceBeteween: 32,
+        grabCursor: true,
+        direction: "horizontal",
 
-      navigation: {
-        nextEl: ".btn-next",
-        prevEl: ".btn-prev",
-      },
-    });
-  </script>
-</body>
-
+        navigation: {
+          nextEl: ".btn-next",
+          prevEl: ".btn-prev",
+        },
+      });
+    </script>
+  </body>
 </html>
