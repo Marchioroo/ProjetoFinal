@@ -375,12 +375,7 @@ class Jogo {
     const comentarioNegativo = document.querySelector('.comentarioNegativo');
     usuarioNegativo.innerHTML += `${this.comentarios.negativos.usuario}`;
     comentarioNegativo.innerHTML += `${this.comentarios.negativos.comentario}`;
-
-
-
   }
-
-
 }
 
 
@@ -435,7 +430,6 @@ ScrollReveal().reveal('.swiper', {
   duration: 1000,
   distance: '20%'
 });
-
 
 
 

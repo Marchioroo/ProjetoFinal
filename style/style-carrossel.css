@@ -50,12 +50,15 @@
     
 }
 
+
 .swiper-slide img {
     width: 100%;
     height: 350px;
     border-radius: .5rem;
     margin-bottom: .5rem;
 }
+
+
 
 .swiper-slide .informacoes{
     margin:0;
@@ -107,7 +110,6 @@
     
 }
 #slide-big img{
-    
     height: 550px;
 }
 
