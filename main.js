@@ -2,9 +2,9 @@ import { jogos } from './jogos.js';
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  const carousel = document.querySelector(".carousel");
-  const slides = document.querySelectorAll(".carousel__item");
-  const slides1 = document.querySelectorAll(".carousel__item-1");
+  const carrossel = document.querySelector(".carrossel");
+  const slides = document.querySelectorAll(".carrossel__item");
+  const slides1 = document.querySelectorAll(".carrossel__item-1");
 
   let index = 0;
   let index1 = 0;

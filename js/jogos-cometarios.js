@@ -34,7 +34,7 @@ const criaComentario = (comentario) => {
           <i class="ri-star-s-line"></i>
         </div>
       </div>
-      <p>${comentario}</p>
+      <p class="comentario__p">${comentario}</p>
     </div>
   </div>
 

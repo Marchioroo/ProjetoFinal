@@ -31,7 +31,7 @@
     gap: 2rem;
 }
 
-.carousel {
+.carrossel {
     display: flex;
     overflow: hidden;
     width: 100%;
@@ -43,7 +43,7 @@
     position: relative;
 }
 
-.carousel__item {
+.carrossel__item {
     min-width: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
@@ -119,7 +119,6 @@
 
 .jogo__info-vendas button {
     width: 100%;
-
 }
 
 .btn__secondary:hover {
@@ -138,9 +137,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
-
 }
 
 .minimos,
@@ -148,23 +144,20 @@
     margin: 20px 10px 80px 0px;
     border-radius: 10px;
     width: 100%;
-    height: 300px;
+    padding: 1rem;
     background-color: var(--black-light);
 }
 
 .minimos-text {
-    position: relative;
-    overflow: auto;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
 }
 
 .minimos-text h5 {
-    font-size: 15px;
-    margin-bottom: 20px;
+    font-size: 1rem;
     color: #d2dbe9;
-    margin: 30px;
-
+    padding: .5rem;
 }
 
 #h5 {
@@ -174,24 +167,20 @@
 .jogo__infos-genero {
     display: flex;
     flex-direction: row;
+    gap: 5rem;
 
+    margin: 3rem 0;
 }
 
 .genero,
 .recurso {
-    width: 100%;
+    width: fit-content;
+    height: 100%;
+    padding: 1rem;
     border-left: 3px solid white;
-    margin: 60px 10px 40px 0px;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
-}
 
-.info-genero,
-.info-recurso {
-    position: relative;
-    top: 5px;
-    left: 30px;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 
@@ -308,3 +297,61 @@
 .comentarios__lista li { 
     margin-bottom: 1.5rem;
 }
+
+@media (max-width: 1440px) {
+    .tag__faixa-etaria p {
+        font-size: 1.8rem;
+    }
+    .tag__faixa-etaria h4 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 960px) {
+
+    .container__descricao-jogo {
+        margin-top: 2rem;
+    }
+
+    .jogo__info-vendas {
+        flex-direction: column;
+    }
+
+    .info-vendas, .jogo__infos, .comentarios {
+        width: 90%;
+    }
+
+    .user img {
+        width: 10%;
+    }
+
+    .content-coment {
+        margin-bottom: .5rem;
+    }
+
+    .comentario, .comentarioNegativo, .comentario__p {
+        font-size: .875rem;
+    }
+
+    .form__item textarea {
+        max-height: 8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .container__descricao-jogo {
+        width: 100%;
+        left: 0%;
+    }
+
+    .jogo__info-vendas {
+        width: 100%;
+    }
+
+    .jogo__infos-genero {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+}
+
