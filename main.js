@@ -1,5 +1,13 @@
 import { jogos } from './jogos.js';
 
+const menuMobile = document.querySelector('.menu__mobile-lista');
+const iconMenu = document.querySelector('.menu__humburguer');
+
+iconMenu.addEventListener('click', ()=> {
+    menuMobile.classList.toggle('menu__mobile-lista-ativo');
+    iconMenu.classList.toggle('ativo-bx');
+});
+
 
 document.addEventListener("DOMContentLoaded", function () {
   const carrossel = document.querySelector(".carrossel");

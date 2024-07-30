@@ -28,6 +28,10 @@ i {
     font-size: 1.4rem;
 }
 
+li {
+    list-style: none;
+}
+
 .btn__primary {
     padding: 1rem 2rem;
     border: none;
@@ -40,11 +44,12 @@ i {
     transition: transform 0.3s ease;
     box-shadow: 0 0 10px rgba(7, 2, 34, 0.1);
 }
-.btn__primary:hover{
+
+.btn__primary:hover {
     transform: scale(1.01);
     box-shadow: 0 0 0px rgba(0, 0, 0, 0.3);
-   
-} 
+
+}
 
 .btn__secondary {
     display: block;
@@ -225,14 +230,14 @@ i {
     font-size: .775rem;
 }
 
-.usuario__conta .usuario__perfil .ri-shield-user-line{
+.usuario__conta .usuario__perfil .ri-shield-user-line {
     font-size: 250%;
-    margin:4px;
+    margin: 4px;
 }
 
 .usuario__perfil .usuario__descricao a {
     text-decoration: none;
-    color: inherit; 
+    color: inherit;
 }
 
 
@@ -262,7 +267,7 @@ i {
     display: none;
 }
 
-.container__home input:checked + label {
+.container__home input:checked+label {
     width: 1000px;
 }
 
@@ -312,26 +317,28 @@ i {
     transition: all .3s ease;
     overflow: visible;
 }
-.descricao__card span #value{
+
+.descricao__card span #value {
     width: 100%;
 }
 
-.descricao__card #value{
-   width: auto;
-   font-weight: 600;
-   padding: 3px;
-   font-size: 1rem;
-   border: none;
-   color:var(--white);
+.descricao__card #value {
+    width: auto;
+    font-weight: 600;
+    padding: 3px;
+    font-size: 1rem;
+    border: none;
+    color: var(--white);
 }
-#value-oldprice{
-    color:red;
+
+#value-oldprice {
+    color: red;
 }
 
 .descricao__card h4 {
     display: flex;
     justify-content: space-between;
-    flex-direction: reverse; 
+    flex-direction: reverse;
     font-size: 1.125rem;
     width: auto;
 }
@@ -341,7 +348,7 @@ i {
     font-size: 1rem;
 }
 
-.container__home input:checked + label .descricao__card {
+.container__home input:checked+label .descricao__card {
     opacity: 1 !important;
 }
 
@@ -349,6 +356,7 @@ i {
     background-image: url(../images/kof-home.jpg);
     background-position: center;
 }
+
 .card[for="c2"] {
     background-image: url(../images/horizon-home.jpg);
     background-position: center;
@@ -368,6 +376,7 @@ i {
     background-image: url(../images/tekken-home.jpg);
     background-position: center;
 }
+
 .card[for="c6"] {
     background-image: url(../images/allan-wake.avif);
     background-position: center;
@@ -387,7 +396,7 @@ i {
         display: none;
     }
 
-    .container__home input:checked + label {
+    .container__home input:checked+label {
         width: 760px;
     }
 
@@ -405,15 +414,17 @@ i {
     }
 }
 
-@media(max-width: 960px){
+@media(max-width: 960px) {
     .container__home {
         flex-direction: column;
         gap: .5rem;
     }
 
-    .card[for="c5"] { display: none;}
+    .card[for="c5"] {
+        display: none;
+    }
 
-    .container__home input:checked + label {
+    .container__home input:checked+label {
         height: 600px;
     }
 
@@ -440,38 +451,124 @@ i {
 }
 
 @media(max-width: 600px) {
+    .wrapper__home {
+        display: none;
+    }
+
     .sidebar {
-      display: none;
+        display: none;
     }
 
     .menu__mobile {
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: .875rem 1.2rem;
         color: var(--blue);
-
-        border-bottom: 1px solid var(--gray-1);
+        padding: 1rem;
+        position: relative;
     }
 
-    .menu__mobile a {
-        color: var(--blue);
+    .bx {
+        width: 3rem;
+        height: 3rem;
+        cursor: pointer;
+        z-index: 999;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 40%;
+            left: 16%;
+
+            width: 70%;
+            height: 2px;
+            background: var(--gradient-dark);
+            transition: .7s ease;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 60%;
+            left: 16%;
+
+            width: 70%;
+            height: 2px;
+            background: var(--gradient-dark);
+            transition: .7s ease;
+        }
+
+    }
+
+    .ativo-bx {
+        width: 36px;
+        height: 36px;
+
+        position: relative;
+        cursor: pointer;
+        z-index: 999;
+        transition: .7s ease;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 16%;
+
+            width: 70%;
+            height: 2px;
+            background-color: var(--gradient-dark);
+
+            transform: rotate(-135deg);
+
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 16%;
+
+            width: 70%;
+            height: 2px;
+            background-color: var(--gradient-dark);
+
+            transform: rotate(-405deg);
+        }
+    }
+
+    .menu__mobile-lista {
+        position: absolute;
+        top: 0;
+        left: 30%;
+        width: 70%;
+        height: 100vh;
+        padding: 6rem 2rem;
+        background-color: var(--black-light);
+        z-index: 990;
+    }
+
+    .menu__mobile-lista-ativo {
+        display: none;
+    }
+
+    .menu__mobile-item {
         display: flex;
         align-items: center;
-        gap: .5rem;
-        text-decoration: none;
-        font-size: 1rem;
-        font-weight: 600;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 3rem;
+        cursor: pointer;
     }
 
+    .menu__mobile-item i {
+        font-size: 2.2rem;
+    }
 
     .menu__mobile img {
         width: 2.5rem;
-    }
-
-    .menu__mobile i {
-        font-size: 2.5rem;
-        cursor: pointer;
     }
 
     .wrapper__home {
@@ -483,7 +580,8 @@ i {
         font-size: .875rem;
     }
 
-    .card, .container__home input:checked + label{
+    .card,
+    .container__home input:checked+label {
         width: 480px;
     }
 
