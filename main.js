@@ -193,7 +193,7 @@ document.querySelectorAll(".swiper-slide").forEach((element) => {
 // ===================================================================TRABALHANDO COM CLASS PARA EXIBIR AS INFORMAÇÕES DO GAME=============================================================================
 
 
-console.log(jogos)
+// console.log(jogos)
 class Jogo {
   constructor({ nome, imagens, imagem1, imagem2, imagem3, imagem4, descricao, valor, lancamento, desenvolvido, 
     sistemaOperacional, processador, memoria, placaVideo, armazenamento, observacoes, requisitos, minimos, recomendados, genero,recurso, classificacaoIndicativa,comentarios,positivos,usuario,comentario,negativo }) {
@@ -408,9 +408,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
     function exibirDetalhesDoJogo(idGame) {
-      console.log(`ID do jogo para exibir detalhes: ${idGame}`);
+      // console.log(`ID do jogo para exibir detalhes: ${idGame}`);
       const jogo = jogos.find(jogo => jogo.id === idGame);
-      console.log(`Jogo encontrado: ${JSON.stringify(jogo)}`); 
+      // console.log(`Jogo encontrado: ${JSON.stringify(jogo)}`); 
       if (jogo) {
         const jogoInstanciado = new Jogo(jogo);
         jogoInstanciado.mostraNomeJogo();
