@@ -1,5 +1,29 @@
 import { jogos } from './jogos.js';
 
+// // script.js
+
+// // Obtém os elementos
+// var modal = document.getElementById("myModal");
+// var btn = document.getElementById("openModal");
+// var span = document.getElementsByClassName("close")[0];
+
+// // Quando o usuário clicar no botão, abre o modal
+// btn.onclick = function() {
+//     modal.classList.add("show");
+// }
+
+// // Quando o usuário clicar no "x" (fechar), fecha o modal
+// span.onclick = function() {
+//     modal.classList.remove("show");
+// }
+
+// // Quando o usuário clicar fora do modal, fecha o modal
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.classList.remove("show");
+//     }
+// }
+
 const menuMobile = document.querySelector('.menu__mobile-lista');
 const iconMenu = document.querySelector('.menu__humburguer');
 
@@ -193,7 +217,7 @@ document.querySelectorAll(".swiper-slide").forEach((element) => {
 // ===================================================================TRABALHANDO COM CLASS PARA EXIBIR AS INFORMAÇÕES DO GAME=============================================================================
 
 
-console.log(jogos)
+// console.log(jogos)
 class Jogo {
   constructor({ nome, imagens, imagem1, imagem2, imagem3, imagem4, descricao, valor, lancamento, desenvolvido, 
     sistemaOperacional, processador, memoria, placaVideo, armazenamento, observacoes, requisitos, minimos, recomendados, genero,recurso, classificacaoIndicativa,comentarios,positivos,usuario,comentario,negativo }) {
@@ -408,9 +432,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
     function exibirDetalhesDoJogo(idGame) {
-      console.log(`ID do jogo para exibir detalhes: ${idGame}`);
+      // console.log(`ID do jogo para exibir detalhes: ${idGame}`);
       const jogo = jogos.find(jogo => jogo.id === idGame);
-      console.log(`Jogo encontrado: ${JSON.stringify(jogo)}`); 
+      // console.log(`Jogo encontrado: ${JSON.stringify(jogo)}`); 
       if (jogo) {
         const jogoInstanciado = new Jogo(jogo);
         jogoInstanciado.mostraNomeJogo();
