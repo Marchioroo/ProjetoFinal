@@ -467,6 +467,7 @@ li {
         color: var(--blue);
         padding: 1rem;
         position: relative;
+       
     }
 
     .bx {
@@ -475,13 +476,14 @@ li {
         cursor: pointer;
         z-index: 999;
         position: relative;
+        transition: all .2 ease;
 
         &::after {
             content: '';
             position: absolute;
             top: 40%;
             left: 16%;
-
+            transition: all .2 ease;
             width: 70%;
             height: 2px;
             background: var(--gradient-dark);
@@ -574,6 +576,7 @@ li {
     .wrapper__home {
         width: 100%;
         left: 0;
+       
     }
 
     .descricao__card p {
