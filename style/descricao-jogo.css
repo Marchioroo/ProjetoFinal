@@ -368,6 +368,7 @@
     overflow: hidden; /* Adiciona rolagem se necessário */
     background-color: rgba(0,0,0,0.4);
     opacity: 1; /* Começa invisível */
+    display:hidden;
     
     transition: opacity 0.3s ease, visibility 0.3s ease; /* Transições para opacidade e visibilidade */
 }
@@ -375,27 +376,31 @@
     .modal-content {
         background-color:var(--black-dark);
         margin: 8% 8% 8% 16%;  
-        border: 1px solid #888;
         border-radius:10px;
         width: 70%;
+      
+        background: #0d111a;
+        box-shadow:  7px 7px 14px #1e1f1f,
+                     -2px 7px 14px #0a1327;
         height: 70%; 
         transform: translateY(-30px); 
     }
     .close {
         color: #aaa;
         width: auto;
-        font-size: 22px;
+        font-size: 25px;
         float: right;
         height: 0;
         z-index: 0;
         margin-right: 10px;
+      
         font-weight: bold;
        
     }
     
     .close:hover,
     .close:focus {
-        color: black;
+        color: #888;
         text-decoration: none;
         cursor: pointer;
     }
@@ -422,13 +427,49 @@
         height: 35rem; 
         border-radius:10px;
     }
-    .left span{
+  
+    .modal-patronicador{
+        display: flex;
+        width: 95%;
+        height: 20%;
+        
+        align-items: center;
+        justify-content: flex-start;
+        
+       
 
+    }
+    .modal-patronicador img{
+        width: 30%;
+        display: flex;
+    
+        align-items: flex-start;
+    }
+
+    .left span{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        width: 91%;
+        height: %;
+        border-bottom:3px solid var(--blue);
+        font-size:2rem
+    }
+   
+
+    .left p{
+        width: 100%;
+        height: auto;
+        margin-left:5px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        font-size: .9rem;
     }
     
     .right {
         flex: 2; 
-        background-color: blue;
+        
         max-width: 50rem; 
         height: 35rem; 
         border-radius:10px;
@@ -447,6 +488,7 @@
         margin-bottom:2rem;
         
     }
+    
 
     .modal-button{
         display: flex;
@@ -460,8 +502,11 @@
         border: 2px solid var(--lightBulue);
         
         &:hover{
-            background-color: #041046;
+            background-color: #151B26;
         }
+    }
+    .modal-button.active{
+        background-color:#151B26; 
     }
    
     @media (max-width: 768px) {
@@ -492,4 +537,155 @@
             height: auto; /* Ajusta a altura automaticamente para manter a proporção */
         }
     }
+
+
+.modal-informations{
+    display: flex;
+    flex-direction: row;
+    padding:10px;
+    box-sizing: border-box; 
+    font-size:1.1rem;
+}
+
+.modal-informations img{
+    width: 35%;
+    height: auto;
+    flex:1;
+    border-radius:1.2rem;
+}
+
+.modal-info-game{
+    flex:2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding:10px; 
     
+   
+}
+.modal-name{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 28%;
+    
+    width: 100%;
+    font-size: 2.2rem;
+}
+.modal-developement{
+display: flex;
+justify-content: center;
+width: 100%;
+height: 40%;
+}
+
+
+
+.modal-info-game {
+    display: flex;
+    flex-direction: red;
+  }
+  
+  .modal-price-container,
+  .modal-desconto-container,
+  .modal-total-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; 
+    
+    margin:10px auto;  
+  }
+  .modal-desconto-container{
+    height: 11%;
+    border-bottom: 2.5px solid var(--blue);
+  }
+  
+ 
+  
+  .modal-price p,
+  .modal-desconto p,
+  .modal-total p {
+    margin: 0;
+  }
+
+  .modal-descricao-game{
+    width: 100%;
+    margin-top:5px;
+    padding:15px;
+    height: 20%;
+    background-color: #111622;
+    border-radius:20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+/* BOTAO DE FINALIZAR COMPRA */ /* BOTAO DE FINALIZAR COMPRA */ /* BOTAO DE FINALIZAR COMPRA */
+.modal-button-finalizar{
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+button {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    margin-top:20px;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+   button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border:none;
+    background-color: #051a35;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+   
+   }
+   
+   button:hover {
+    color: #e8e8e8;
+    cursor:pointer;
+   }
+   
+   button:hover::before {
+    width: 100%;
+   }
+
+    
+   .modal-pagamento-seguro {
+    display: flex;
+    padding:5px;
+    width: 70%;
+    margin:0;
+    
+    border-radius: 5px; 
+    font-size: 10px; 
+    color: #979696; 
+    
+  }
+
+   .imagem-pagarme img{
+
+    width: 30%;
+
+
+   }
+ 
