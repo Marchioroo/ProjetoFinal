@@ -802,7 +802,7 @@ export const jogos = [
         Lance ataques táticos devastadores contra Máquinas e também tribos rivais, enquanto explora um mundo aberto cheio de vida selvagem e perigos.
         <br>
         Horizon Zero Dawn™ é um RPG de aventura e ação vencedor de vários prêmios – e esta Edição Completa inclui a expansão The Frozen Wilds, com novos territórios e novas habilidades, armas e Máquinas`,
-        valor: 299.90,
+        valor: 199.90,
         lancamento: "07/08/2020",
         desenvolvido: "Guerrilla",
         requisitos: {

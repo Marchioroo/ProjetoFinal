@@ -1,5 +1,29 @@
 import { jogos } from './jogos.js';
 
+// // script.js
+
+// // Obtém os elementos
+// var modal = document.getElementById("myModal");
+// var btn = document.getElementById("openModal");
+// var span = document.getElementsByClassName("close")[0];
+
+// // Quando o usuário clicar no botão, abre o modal
+// btn.onclick = function() {
+//     modal.classList.add("show");
+// }
+
+// // Quando o usuário clicar no "x" (fechar), fecha o modal
+// span.onclick = function() {
+//     modal.classList.remove("show");
+// }
+
+// // Quando o usuário clicar fora do modal, fecha o modal
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.classList.remove("show");
+//     }
+// }
+
 const menuMobile = document.querySelector('.menu__mobile-lista');
 const iconMenu = document.querySelector('.menu__humburguer');
 
