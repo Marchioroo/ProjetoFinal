@@ -370,7 +370,7 @@
     opacity: 1; /* Começa invisível */
     display:hidden;
     
-    transition: opacity 0.3s ease, visibility 0.3s ease; /* Transições para opacidade e visibilidade */
+    transition:  opacity 0.3s ease,  visibility 0.3s ease; /* Transições para opacidade e visibilidade */
 }
 
     .modal-content {
