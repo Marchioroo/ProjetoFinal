@@ -3,26 +3,12 @@ import { jogos } from './jogos.js';
 // // script.js
 
 // // Obtém os elementos
-// var modal = document.getElementById("myModal");
-// var btn = document.getElementById("openModal");
-// var span = document.getElementsByClassName("close")[0];
+let modal = document.getElementById("meuModal");
+let btn = document.getElementById("abrirModal");
+let span = document.getElementsByClassName("close")[0];
 
-// // Quando o usuário clicar no botão, abre o modal
-// btn.onclick = function() {
-//     modal.classList.add("show");
-// }
 
-// // Quando o usuário clicar no "x" (fechar), fecha o modal
-// span.onclick = function() {
-//     modal.classList.remove("show");
-// }
 
-// // Quando o usuário clicar fora do modal, fecha o modal
-// window.onclick = function(event) {
-//     if (event.target == modal) {
-//         modal.classList.remove("show");
-//     }
-// }
 
 const menuMobile = document.querySelector('.menu__mobile-lista');
 const iconMenu = document.querySelector('.menu__humburguer');
@@ -187,6 +173,8 @@ document.querySelectorAll(".swiper-slide").forEach((element) => {
   element.addEventListener("click", function () {
     const id = this.getAttribute("data-id");
     const idMaior18 = this.getAttribute("data-id-maior18");
+    
+
     console.log(id);
     console.log(idMaior18);
 
@@ -408,12 +396,110 @@ class Jogo {
     usuarioNegativo.innerHTML += `${this.comentarios.negativos.usuario}`;
     comentarioNegativo.innerHTML += `${this.comentarios.negativos.comentario}`;
   }
+
+
+  // MODAL MODAL MODAL  MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL
+
+  mostraNomeJogoModal() {
+    const nomeJogoModal = document.querySelector(".modal-name");
+    nomeJogoModal.innerHTML = `${this.nome}`;
+    return nomeJogoModal;
+  }
+
+  mostraProdutoraGameModal() {
+    const produtoraGameModal = document.querySelector(".modal-developement");
+    produtoraGameModal.innerHTML = `${this.desenvolvido}`;
+    return produtoraGameModal;
+  }
+
+  precoGameModal(){
+    const precoGameModal = document.querySelector('.modal-price-value');
+    precoGameModal.innerHTML = `R$ ${this.valor}`;
+    return precoGameModal;
+  }
+
+  descontoGameModal(){
+    const descontoGameModal = document.querySelector('.modal-desconto-value');
+    const mensagens = document.getElementsByClassName('mensagemSuccess');
+    const randomValue = Math.floor(Math.random() * 10) + 1;
+    const botaoPromocional = document.querySelector('#botaoPromocional');
+    const codigoPromocional = document.querySelector('#codigoPromocional');
+    const cuponsUsados = [];
+
+    descontoGameModal.innerHTML = `${parseInt(randomValue)}%`;
+    
+    const totalGameModal = document.querySelector('.modal-total-value');
+    let valorGame = parseInt(this.valor);
+    let total = (valorGame - (valorGame * randomValue)/100);
+    console.log(total);
+    totalGameModal.innerHTML = `R$ ${total}`;
+
+    if (botaoPromocional) {
+      botaoPromocional.addEventListener('click', () => {
+        const mensagens = document.getElementsByClassName('mensagemSuccess');
+        
+        if (mensagens.length > 0) {
+          const mensagem = mensagens[0];
+          
+          mensagem.classList.remove('success', 'error');
+
+          const codigo = codigoPromocional.value.toUpperCase();
+
+          if (codigo === '') {
+            mensagem.textContent = "Por favor, insira um código promocional.";
+            mensagem.classList.add('show', 'error'); 
+
+          } else if (cuponsUsados.includes(codigo)) {
+            mensagem.textContent = "Este código promocional já foi usado.";
+            mensagem.classList.add('show', 'error'); 
+          }else if (codigo === "CODERGAME"){
+            mensagem.textContent = "Código promocional de 5% aplicado com sucesso!";
+            let valorNovo = randomValue + 5;
+            console.log('Desconto antigo' . randomValue);
+            console.log('Desconto novo' . valorNovo);
+
+            descontoGameModal.innerHTML = `${valorNovo}%`;
+            let total = (valorGame - (valorGame * valorNovo)/100);
+            totalGameModal.innerHTML = `R$ ${total}`;
+            cuponsUsados.push(codigo);
+            mensagem.classList.add('show', 'success'); 
+            codigoPromocional.value = "";
+
+        } else {
+            mensagem.textContent = "Código promocional inválido.";
+            mensagem.classList.add('show', 'error'); 
+            //como fui burro, mds
+            codigoPromocional.value = "";
+           
+          }
+        }
+      });
+    }
+    //blindagem pra quando abrir o modal, ele limpar o campo
+    const mensagem = mensagens[0];
+    mensagem.textContent = "";
+
+  }
+
+  descricaoGameModal(){
+    const descontoGameModal = document.querySelector('.modal-descricao-game');
+    descontoGameModal.innerHTML = `${this.descricao}`;
+  }
+
+  imagemGameModal(){
+    const imagemGameModal = document.querySelector('.modal-imagem');
+    imagemGameModal.src = this.imagens.imagem3;
+    
+  
+  }
+
+
 }
 
 
 
 
-document.addEventListener('DOMContentLoaded', () => {
+
   // Função para obter o valor de um parâmetro da URL
   function getParameterByName(name, url = window.location.href) {
     name = name.replace(/[\[\]]/g, '\\$&');
@@ -434,7 +520,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function exibirDetalhesDoJogo(idGame) {
       // console.log(`ID do jogo para exibir detalhes: ${idGame}`);
       const jogo = jogos.find(jogo => jogo.id === idGame);
-      // console.log(`Jogo encontrado: ${JSON.stringify(jogo)}`); 
+      
       if (jogo) {
         const jogoInstanciado = new Jogo(jogo);
         jogoInstanciado.mostraNomeJogo();
@@ -455,8 +541,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     exibirDetalhesDoJogo(idGameInt);
   }
-});
-
+  
 ScrollReveal().reveal('.swiper', {
   origin: 'left',
   duration: 1000,
@@ -464,6 +549,43 @@ ScrollReveal().reveal('.swiper', {
 });
 
 
+
+
+function infoModalGame(){
+  const idGameModal = getParameterByName('id');
+  const idGameIntModal = parseInt(idGameModal, 10);
+
+  const jogo = jogos.find(jogo => jogo.id === idGameIntModal);
+  // console.log(jogo);
+  if(jogo){
+    const jogoInstanciadoModal = new Jogo(jogo);
+    jogoInstanciadoModal.mostraNomeJogoModal();
+    jogoInstanciadoModal.precoGameModal();
+    jogoInstanciadoModal.descontoGameModal();
+    jogoInstanciadoModal.descricaoGameModal();
+    jogoInstanciadoModal.imagemGameModal();
+
+  }
+ 
+}
+
+
+if(btn){
+  btn.onclick = function() {
+    modal.classList.add("show");
+    infoModalGame();
+}
+span.onclick = function() {
+  modal.classList.remove("show");
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+      modal.classList.remove("show");
+  }
+}
+
+}
 
 
 
