@@ -574,6 +574,7 @@ if(btn){
   btn.onclick = function() {
     modal.classList.add("show");
     infoModalGame();
+    
 }
 span.onclick = function() {
   modal.classList.remove("show");
