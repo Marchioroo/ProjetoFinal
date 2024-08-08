@@ -1,5 +1,6 @@
 import { jogos } from './jogos.js';
 
+
 // // script.js
 
 // // Obtém os elementos
@@ -7,15 +8,41 @@ let modal = document.getElementById("meuModal");
 let btn = document.getElementById("abrirModal");
 let span = document.getElementsByClassName("close")[0];
 
+//mensagem de sucesso!//mensagem de sucesso!//mensagem de sucesso!
+function sucessoMensagem(message) {
+  const notification = document.getElementById('success-notification');
+  const messageElement = document.getElementById('success-message');
+  
+  messageElement.textContent = message;
+  notification.classList.add('sucesso');
+  
+
+  setTimeout(() => {
+    notification.classList.remove('sucesso');
+  }, 5000);
+}
+
+function falhaMensagem(message) {
+  const notification = document.getElementById('success-notification');
+  const messageElement = document.getElementById('success-message');
+  
+  messageElement.textContent = message;
+  notification.classList.add('erro');
+  
+
+  setTimeout(() => {
+    notification.classList.remove('erro');
+  }, 5000);
+}
 
 
 
 const menuMobile = document.querySelector('.menu__mobile-lista');
 const iconMenu = document.querySelector('.menu__humburguer');
 
-iconMenu.addEventListener('click', ()=> {
-    menuMobile.classList.toggle('menu__mobile-lista-ativo');
-    iconMenu.classList.toggle('ativo-bx');
+iconMenu.addEventListener('click', () => {
+  menuMobile.classList.toggle('menu__mobile-lista-ativo');
+  iconMenu.classList.toggle('ativo-bx');
 });
 
 
@@ -64,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Obtém o parâmetro 'id' da URL
   const id = parseInt(getParameterByName('id'));
- 
+
 
   var dateInput = document.getElementById("data");
   var validaBotao = document.querySelector(".btn__primary");
@@ -98,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Se for maior ou igual a 18 anos, permite acesso ou exibe outra mensagem
             setTimeout(() => {
               window.location.href = `descricao-jogos.html?id=${id}`;
-              
+
             }, 600);
             loadLoadingScreen()
           }
@@ -173,7 +200,7 @@ document.querySelectorAll(".swiper-slide").forEach((element) => {
   element.addEventListener("click", function () {
     const id = this.getAttribute("data-id");
     const idMaior18 = this.getAttribute("data-id-maior18");
-    
+
 
     console.log(id);
     console.log(idMaior18);
@@ -191,11 +218,11 @@ document.querySelectorAll(".swiper-slide").forEach((element) => {
     if (id !== null && id !== "") {
       setTimeout(() => {
         window.location.href = `descricao-jogos.html?id=${id}`;
-        
-      }, 600); 
+
+      }, 600);
       loadLoadingScreen();
     }
-    
+
   });
 });
 
@@ -207,8 +234,8 @@ document.querySelectorAll(".swiper-slide").forEach((element) => {
 
 // console.log(jogos)
 class Jogo {
-  constructor({ nome, imagens, imagem1, imagem2, imagem3, imagem4, descricao, valor, lancamento, desenvolvido, 
-    sistemaOperacional, processador, memoria, placaVideo, armazenamento, observacoes, requisitos, minimos, recomendados, genero,recurso, classificacaoIndicativa,comentarios,positivos,usuario,comentario,negativo }) {
+  constructor({ nome, imagens, imagem1, imagem2, imagem3, imagem4, descricao, valor, lancamento, desenvolvido,
+    sistemaOperacional, processador, memoria, placaVideo, armazenamento, observacoes, requisitos, minimos, recomendados, genero, recurso, classificacaoIndicativa, comentarios, positivos, usuario, comentario, negativo }) {
     this.nome = nome;
     this.imagens = imagens;
     this.imagem1 = imagem1;
@@ -353,7 +380,7 @@ class Jogo {
 
     const recurso = document.querySelector(".info-recurso");
     recurso.innerHTML += `${this.recurso}`;
-    
+
   }
 
   mostraClassificacaoIndicativa() {
@@ -361,30 +388,30 @@ class Jogo {
     const idadeInformacao = document.querySelector(".idade__informacao");
     idade.innerHTML += `${this.classificacaoIndicativa}`;
 
-    switch(this.classificacaoIndicativa) {
-      case 18: 
+    switch (this.classificacaoIndicativa) {
+      case 18:
         idade.classList.add("mais18");
         idadeInformacao.innerHTML += 'Violência Extrema';
         break;
-      case 16: 
-        idade.classList.add("mais16"); 
+      case 16:
+        idade.classList.add("mais16");
         idadeInformacao.innerHTML += `Linguagem imprópria, <br> temas sensíveis e violência`
         break;
-      case 14: 
-        idade.classList.add("mais14"); 
+      case 14:
+        idade.classList.add("mais14");
         idadeInformacao.innerHTML += `Temas sensíveis e violência`
         break;
-      case 12: 
+      case 12:
         idade.classList.add("mais12");
         idadeInformacao.innerHTML += `Violência e conteúdo sexual`
         break;
-      case "L": 
+      case "L":
         idade.classList.add("livre");
         idadeInformacao.innerHTML += `Livre`
         break;
-    } 
+    }
   }
-  
+
   mostrarComentario() {
     const usuario = document.querySelector('#nome-coment');
     const comentario = document.querySelector('.comentario');
@@ -412,13 +439,13 @@ class Jogo {
     return produtoraGameModal;
   }
 
-  precoGameModal(){
+  precoGameModal() {
     const precoGameModal = document.querySelector('.modal-price-value');
     precoGameModal.innerHTML = `R$ ${this.valor}`;
     return precoGameModal;
   }
 
-  descontoGameModal(){
+  descontoGameModal() {
     const descontoGameModal = document.querySelector('.modal-desconto-value');
     const mensagens = document.getElementsByClassName('mensagemSuccess');
     const randomValue = Math.floor(Math.random() * 10) + 1;
@@ -427,70 +454,63 @@ class Jogo {
     const cuponsUsados = [];
 
     descontoGameModal.innerHTML = `${parseInt(randomValue)}%`;
-    
+
     const totalGameModal = document.querySelector('.modal-total-value');
     let valorGame = parseInt(this.valor);
-    let total = (valorGame - (valorGame * randomValue)/100);
+    let total = (valorGame - (valorGame * randomValue) / 100);
     console.log(total);
     totalGameModal.innerHTML = `R$ ${total}`;
 
     if (botaoPromocional) {
       botaoPromocional.addEventListener('click', () => {
         const mensagens = document.getElementsByClassName('mensagemSuccess');
-        
+    
         if (mensagens.length > 0) {
           const mensagem = mensagens[0];
-          
-          mensagem.classList.remove('success', 'error');
-
+         
+    
           const codigo = codigoPromocional.value.toUpperCase();
-
+    
           if (codigo === '') {
-            mensagem.textContent = "Por favor, insira um código promocional.";
-            mensagem.classList.add('show', 'error'); 
-
+            falhaMensagem("Por favor, insira um código promocional.");
           } else if (cuponsUsados.includes(codigo)) {
-            mensagem.textContent = "Este código promocional já foi usado.";
-            mensagem.classList.add('show', 'error'); 
-          }else if (codigo === "CODERGAME"){
-            mensagem.textContent = "Código promocional de 5% aplicado com sucesso!";
+            falhaMensagem("Este código promocional já foi usado.");
+          } else if (codigo === "CODERGAME") {
             let valorNovo = randomValue + 5;
-            console.log('Desconto antigo' . randomValue);
-            console.log('Desconto novo' . valorNovo);
-
+            console.log('Desconto antigo', randomValue);
+            console.log('Desconto novo', valorNovo);
+    
             descontoGameModal.innerHTML = `${valorNovo}%`;
-            let total = (valorGame - (valorGame * valorNovo)/100);
+            let total = (valorGame - (valorGame * valorNovo) / 100);
             totalGameModal.innerHTML = `R$ ${total}`;
             cuponsUsados.push(codigo);
-            mensagem.classList.add('show', 'success'); 
+            sucessoMensagem("Código promocional de 5% aplicado com sucesso!");
             codigoPromocional.value = "";
-
-        } else {
-            mensagem.textContent = "Código promocional inválido.";
-            mensagem.classList.add('show', 'error'); 
-            //como fui burro, mds
+          } else {
+            falhaMensagem("Código promocional inválido.");
             codigoPromocional.value = "";
-           
           }
         }
       });
     }
+    
+
     //blindagem pra quando abrir o modal, ele limpar o campo
     const mensagem = mensagens[0];
     mensagem.textContent = "";
 
   }
 
-  descricaoGameModal(){
+  descricaoGameModal() {
     const descontoGameModal = document.querySelector('.modal-descricao-game');
     descontoGameModal.innerHTML = `${this.descricao}`;
   }
 
-  imagemGameModal(){
+  imagemGameModal() {
     const imagemGameModal = document.querySelector('.modal-imagem');
     imagemGameModal.src = this.imagens.imagem3;
-    
-  
+
+
   }
 
 
@@ -500,48 +520,48 @@ class Jogo {
 
 
 
-  // Função para obter o valor de um parâmetro da URL
-  function getParameterByName(name, url = window.location.href) {
-    name = name.replace(/[\[\]]/g, '\\$&');
-    const regex = new RegExp(`[?&]${name}(=([^&#]*)|&|#|$)`);
-    const results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, ' '));
-  }
+// Função para obter o valor de um parâmetro da URL
+function getParameterByName(name, url = window.location.href) {
+  name = name.replace(/[\[\]]/g, '\\$&');
+  const regex = new RegExp(`[?&]${name}(=([^&#]*)|&|#|$)`);
+  const results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return '';
+  return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
 
-  // Obtém o parâmetro 'id' da URL
-  const idGame = getParameterByName('id');
-  if (idGame) {
-    const idGameInt = parseInt(idGame, 10);
-    console.log(`ID do jogo obtido: ${idGameInt}`);
+// Obtém o parâmetro 'id' da URL
+const idGame = getParameterByName('id');
+if (idGame) {
+  const idGameInt = parseInt(idGame, 10);
+  console.log(`ID do jogo obtido: ${idGameInt}`);
 
-    
-    function exibirDetalhesDoJogo(idGame) {
-      // console.log(`ID do jogo para exibir detalhes: ${idGame}`);
-      const jogo = jogos.find(jogo => jogo.id === idGame);
-      
-      if (jogo) {
-        const jogoInstanciado = new Jogo(jogo);
-        jogoInstanciado.mostraNomeJogo();
-        jogoInstanciado.mostrarImagens();
-        jogoInstanciado.mostraDescricaoJogo();
-        jogoInstanciado.mostraLancamentoJogo();
-        jogoInstanciado.mostraValorJogo();
-        jogoInstanciado.mostraDesenvolvidoJogo();
-        jogoInstanciado.requisitosMinimos();
-        jogoInstanciado.mostrarGeneroERecurso();
-        jogoInstanciado.mostraClassificacaoIndicativa();
-        jogoInstanciado.mostrarComentario();
-      } else {
-        console.log('Jogo não encontrado.');
-      }
+
+  function exibirDetalhesDoJogo(idGame) {
+    // console.log(`ID do jogo para exibir detalhes: ${idGame}`);
+    const jogo = jogos.find(jogo => jogo.id === idGame);
+
+    if (jogo) {
+      const jogoInstanciado = new Jogo(jogo);
+      jogoInstanciado.mostraNomeJogo();
+      jogoInstanciado.mostrarImagens();
+      jogoInstanciado.mostraDescricaoJogo();
+      jogoInstanciado.mostraLancamentoJogo();
+      jogoInstanciado.mostraValorJogo();
+      jogoInstanciado.mostraDesenvolvidoJogo();
+      jogoInstanciado.requisitosMinimos();
+      jogoInstanciado.mostrarGeneroERecurso();
+      jogoInstanciado.mostraClassificacaoIndicativa();
+      jogoInstanciado.mostrarComentario();
+    } else {
+      console.log('Jogo não encontrado.');
     }
-
-    
-    exibirDetalhesDoJogo(idGameInt);
   }
-  
+
+
+  exibirDetalhesDoJogo(idGameInt);
+}
+
 ScrollReveal().reveal('.swiper', {
   origin: 'left',
   duration: 1000,
@@ -551,13 +571,13 @@ ScrollReveal().reveal('.swiper', {
 
 
 
-function infoModalGame(){
+function infoModalGame() {
   const idGameModal = getParameterByName('id');
   const idGameIntModal = parseInt(idGameModal, 10);
 
   const jogo = jogos.find(jogo => jogo.id === idGameIntModal);
   // console.log(jogo);
-  if(jogo){
+  if (jogo) {
     const jogoInstanciadoModal = new Jogo(jogo);
     jogoInstanciadoModal.mostraNomeJogoModal();
     jogoInstanciadoModal.precoGameModal();
@@ -566,27 +586,67 @@ function infoModalGame(){
     jogoInstanciadoModal.imagemGameModal();
 
   }
- 
+
 }
 
 
-if(btn){
-  btn.onclick = function() {
+if (btn) {
+  btn.onclick = function () {
     modal.classList.add("show");
-    infoModalGame();
-    
-}
-span.onclick = function() {
-  modal.classList.remove("show");
-}
+    infoModalGame(); // funcao que chama a informação do game
+    selecionarPagamento(); // funcao que seleciona a forma de pagamento
 
-window.onclick = function(event) {
-  if (event.target == modal) {
-      modal.classList.remove("show");
+
   }
-}
+  span.onclick = function () {
+    modal.classList.remove("show");
+  }
+
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.classList.remove("show");
+    }
+  }
 
 }
 
 
+//Funcao do clicque da forma de pagamento
+
+
+let selecionarPagamento = () => {
+  const modalPayment = document.getElementsByClassName('modal-button');
+  const botaoFinalizarVenda = document.getElementById('comprar');
+
+  if (botaoFinalizarVenda) {
+    botaoFinalizarVenda.addEventListener('click', () => {
+      let formaDePagamentoAtiva = false;
+  
+      Array.from(modalPayment).forEach(e => {
+        if (e.classList.contains('active')) {
+          formaDePagamentoAtiva = true;
+        }
+      });
+  
+      if (formaDePagamentoAtiva) {
+        sucessoMensagem('Operação realizada com sucesso!');
+      } else {
+        falhaMensagem('Por favor, selecione uma forma de pagamento!');
+      }
+    });
+  }
+  
+
+  Array.from(modalPayment).forEach(e => {
+
+    e.addEventListener('click', botao => {
+      Array.from(modalPayment).forEach(botao => {
+        botao.classList.remove('active');
+      })
+
+      botao.target.classList.add('active');
+    });
+  });
+
+}
 
