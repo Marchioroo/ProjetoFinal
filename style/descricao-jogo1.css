@@ -406,7 +406,7 @@
     visibility: hidden;
     overflow: hidden; 
     background-color: rgba(0, 0, 0, 0.4);
-    transition: opacity 0.5s ease, visibility 0.5s ease; 
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
 }
 
 .modal.show {
@@ -434,25 +434,9 @@
         height: 0;
         z-index: 0;
         margin-right: 10px;
+      
         font-weight: bold;
        
-    }
-    .closePagamento{
-        position: absolute;
-        font-size: 25px;
-        top: 0; 
-        right: 10px;
-        font-weight: 700;
-        font-size: 24px; 
-        cursor: pointer; 
-        transition: all .3s ease;
-    }
-
-    .closePagamento:hover,
-    .closePagamento:focus {
-        color: #888;
-        text-decoration: none;
-        cursor: pointer;
     }
     
     .close:hover,
@@ -600,6 +584,7 @@
 
 .modal-informations{
     display: flex;
+    
     padding:10px;
     box-sizing: border-box; 
     font-size:1.1rem;
@@ -616,21 +601,19 @@
     flex:2;
     width: 100%;
     display: flex;
-
-    justify-content: space-between;
     flex-direction: column;
     
-
+    
+   
 }
 .modal-name{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: fle;
     height: auto;
     width: 100%;
-    margin-left: 10px;
-    
     margin-bottom:50px;
+    hyphens: auto; 
     font-size: 29px;
 }
 
@@ -712,26 +695,21 @@ align-items: flex-start;
     
     flex-direction: row;
   }
-
+ 
 
 .campo-promocional {
     display: flex;
     margin-right: 0;
     align-items: center;
-    justify-content: flex-end;
-    width: 100%;
-    position: absolute;
-    right: 40px;
+    width: 50%;
 
     
     
-    
+    justify-content: space-evenly;
 }
 
 .campo-promocional input{
-    padding:5px;
-    margin-right:15px;
-    width: 25%;
+    padding:7px;
     border-radius:10px;
     border:none;
     outline: #041046;
@@ -739,18 +717,9 @@ align-items: flex-start;
     text-transform: uppercase;
 
 }
-.campo-promocional input::placeholder{
-    font-size: 12px;
-    text-align: center;
-
-    color:#747683;
-}
 
 .botao-promocional{
-    padding:7px 10px 7px 10px;
-    font-size: 14px;
-    border-radius:10px;
-    
+    padding:7px 15px;
 
 }
 
@@ -784,8 +753,8 @@ align-items: flex-start;
     top: 0;
     width: 100%; 
     height: 100%;
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    visibility: visible;
     overflow: hidden; 
     background-color: rgba(0, 0, 0, 0.9);
     transition: opacity 0.3s ease, visibility 0.3s ease; 
@@ -804,31 +773,160 @@ align-items: flex-start;
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    font-family: 'Raleway';
 
 }
 
+.modalPagamento-left{
+    display: flex;
+    flex:1;
+    margin:10px;
+    width: 100%;
+    height: 95%;
+    
+    box-sizing: border-box;
+}
+.modalPagamento-right{
+    display: flex;
+    flex:2;
+    margin:10px;
+    width: 100%;
+    height: 95%;
+
+    box-sizing: border-box;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=josefin+Sans:wght@400;500;600;700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
 
+.container {
+    
+   width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 500px;
+    height: 300px;
+    color: #fff;
+    cursor: pointer;
+    perspective: 1000px;
+    border-radius:1.2rem;
+    border:none;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.front, .back {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, #0045c7, #ff2c7d);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+    backface-visibility: hidden;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.map-img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.card-no {
+    font-size: 35px;
+    margin-top: 60px;
+}
+
+.card-holder {
+    font-size: 12px;
+    margin-top: 40px;
+}
+
+.name {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.bar {
+    background: #222;
+    margin-left: -30px;
+    margin-right: -30px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.card-cvv {
+    margin-top: 20px;
+}
+
+.card-cvv div {
+    flex: 1;
+}
+
+.card-cvv img {
+    width: 100%;
+    display: block;
+    line-height: 0;
+}
+
+.card-cvv p {
+    background: #fff;
+    color: #000;
+    font-size: 22px;
+    padding: 10px 20px;
+}
+
+.card-text {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.signature {
+    margin-top: 30px;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.card:hover .card-inner {
+    transform: rotateY(-180deg);
+}
+
+
+
+
+
+
+
+  
 /* BOTAO DE FINALIZAR COMPRA */ /* BOTAO DE FINALIZAR COMPRA */ /* BOTAO DE FINALIZAR COMPRA */
 
 button {
@@ -836,6 +934,7 @@ button {
     border: unset;
     border-radius: 15px;
     color: #212121;
+    
     z-index: 1;
     margin-top:20px;
     background: #e8e8e8;
@@ -894,530 +993,3 @@ button {
 
    }
  
-
-
-
-
-
-   .payment-title {
-    width: 100%;
-    text-align: center;
-}
-
-.form-container .field-container:first-of-type {
-    grid-area: name;
-}
-
-.form-container .field-container:nth-of-type(2) {
-    grid-area: number;
-}
-
-.form-container .field-container:nth-of-type(3) {
-    grid-area: expiration;
-}
-
-.form-container .field-container:nth-of-type(4) {
-    grid-area: security;
-}
-
-.field-container input {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.field-container {
-    position: relative;
-}
-
-.form-container {
-    display: grid;
-    grid-column-gap: 10px;
-    grid-template-columns: auto auto;
-    grid-template-rows: 90px 90px 90px;
-    grid-template-areas: "name name""number number""expiration security";
-    max-width: 400px;
-    padding: 20px;
-    color: #707070;
-}
-
-label {
-    padding-bottom: 5px;
-    font-size: 13px;
-}
-
-input {
-    margin-top: 3px;
-    padding: 15px;
-    font-size: 16px;
-    width: 100%;
-    border-radius: 3px;
-    border: 1px solid #dcdcdc;
-}
-
-.ccicon {
-    height: 38px;
-    position: absolute;
-    right: 6px;
-    top: calc(50% - 17px);
-    width: 60px;
-}
-
-/* CREDIT CARD IMAGE STYLING */
-.preload * {
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -ms-transition: none !important;
-    -o-transition: none !important;
-}
-
-.container {
-    width: 100%;
-    max-width: 400px;
-    max-height: 251px;
-    height: 54vw;
-    padding: 20px;
-}
-
-#ccsingle {
-    position: absolute;
-    right: 15px;
-    top: 20px;
-}
-
-#ccsingle svg {
-    width: 100px;
-    max-height: 60px;
-}
-
-.creditcard svg#cardfront,
-.creditcard svg#cardback {
-    width: 100%;
-    -webkit-box-shadow: 1px 5px 6px 0px black;
-    box-shadow: 1px 5px 6px 0px black;
-    border-radius: 22px;
-}
-
-#generatecard{
-    cursor: pointer;
-    float: right;
-    font-size: 12px;
-    color: #fff;
-    padding: 2px 4px;
-    background-color: #909090;
-    border-radius: 4px;
-    cursor: pointer;
-    float:right;
-}
-
-/* CHANGEABLE CARD ELEMENTS */
-.creditcard .lightcolor,
-.creditcard .darkcolor {
-    -webkit-transition: fill .5s;
-    transition: fill .5s;
-}
-
-.creditcard .lightblue {
-    fill: #03A9F4;
-}
-
-.creditcard .lightbluedark {
-    fill: #0288D1;
-}
-
-.creditcard .red {
-    fill: #ef5350;
-}
-
-.creditcard .reddark {
-    fill: #d32f2f;
-}
-
-.creditcard .purple {
-    fill: #ab47bc;
-}
-
-.creditcard .purpledark {
-    fill: #7b1fa2;
-}
-
-.creditcard .cyan {
-    fill: #26c6da;
-}
-
-.creditcard .cyandark {
-    fill: #0097a7;
-}
-
-.creditcard .green {
-    fill: #66bb6a;
-}
-
-.creditcard .greendark {
-    fill: #388e3c;
-}
-
-.creditcard .lime {
-    fill: #d4e157;
-}
-
-.creditcard .limedark {
-    fill: #afb42b;
-}
-
-.creditcard .yellow {
-    fill: #ffeb3b;
-}
-
-.creditcard .yellowdark {
-    fill: #f9a825;
-}
-
-.creditcard .orange {
-    fill: #ff9800;
-}
-
-.creditcard .orangedark {
-    fill: #ef6c00;
-}
-
-.creditcard .grey {
-    fill: #bdbdbd;
-}
-
-.creditcard .greydark {
-    fill: #616161;
-}
-
-/* FRONT OF CARD */
-#svgname {
-    text-transform: uppercase;
-}
-
-#cardfront .st2 {
-    fill: #FFFFFF;
-}
-
-#cardfront .st3 {
-    font-family: 'Source Code Pro', monospace;
-    font-weight: 600;
-}
-
-#cardfront .st4 {
-    font-size: 54.7817px;
-}
-
-#cardfront .st5 {
-    font-family: 'Source Code Pro', monospace;
-    font-weight: 400;
-}
-
-#cardfront .st6 {
-    font-size: 33.1112px;
-}
-
-#cardfront .st7 {
-    opacity: 0.6;
-    fill: #FFFFFF;
-}
-
-#cardfront .st8 {
-    font-size: 24px;
-}
-
-#cardfront .st9 {
-    font-size: 36.5498px;
-}
-
-#cardfront .st10 {
-    font-family: 'Source Code Pro', monospace;
-    font-weight: 300;
-}
-
-#cardfront .st11 {
-    font-size: 16.1716px;
-}
-
-#cardfront .st12 {
-    fill: #4C4C4C;
-    font-family: 'Raleway';
-}
-
-/* BACK OF CARD */
-#cardback .st0 {
-    fill: none;
-    stroke: #0F0F0F;
-    stroke-miterlimit: 10;
-}
-
-#cardback .st2 {
-    fill: #111111;
-}
-
-#cardback .st3 {
-    fill: #F2F2F2;
-}
-
-#cardback .st4 {
-    fill: #D8D2DB;
-}
-
-#cardback .st5 {
-    fill: #C4C4C4;
-}
-
-#cardback .st6 {
-    font-family: 'Source Code Pro', monospace;
-    font-weight: 400;
-}
-
-#cardback .st7 {
-    font-size: 27px;
-}
-
-#cardback .st8 {
-    opacity: 0.6;
-}
-
-#cardback .st9 {
-    fill: #FFFFFF;
-}
-
-#cardback .st10 {
-    font-size: 24px;
-}
-
-#cardback .st11 {
-    fill: #EAEAEA;
-}
-
-#cardback .st12 {
-    font-family: 'Rock Salt', cursive;
-}
-
-#cardback .st13 {
-    font-size: 37.769px;
-}
-
-/* FLIP ANIMATION */
-.container {
-    perspective: 1000px;
-}
-
-.creditcard {
-    width: 100%;
-    max-width: 400px;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    transition: -webkit-transform 0.6s;
-    -webkit-transition: -webkit-transform 0.6s;
-    transition: transform 0.6s;
-    transition: transform 0.6s, -webkit-transform 0.6s;
-    cursor: pointer;
-}
-
-.creditcard .front,
-.creditcard .back {
-    position: absolute;
-    width: 100%;
-    max-width: 400px;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-font-smoothing: antialiased;
-    color: #47525d;
-}
-
-.creditcard .back {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-}
-
-.creditcard.flipped {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-}
-
-
-.button-pagamento{
-    position: absolute;
-    font-size: 15px;
-    bottom: 10px; 
-    right: 10px;
-    padding: 3px; 
-    font-weight: 800;
-    padding: 10px;
-    color:black;
-    border-radius:12px;
-    background-color: white;
-    cursor: pointer; 
-    transition: all .3s ease;
-    
-}
-
-.modalPagamento.show{
-    visibility: visible;
-    opacity: 1;
-
-}
-
-
-/* TELA DE AVISO QUE O PAGAMENTO FOI OK */
-
-
-.modal-confirm {		
-	color: #636363;
-	width: 325px;
-	font-size: 14px;
-}
-.modal-confirm .modal-content2 {
-	padding: 20px;
-	border-radius: 5px;
-	border: none;
-}
-.modal-confirm .modal-header {
-	border-bottom: none;   
-	position: relative;
-}
-.modal-confirm h4 {
-	text-align: center;
-	font-size: 26px;
-	margin: 30px 0 -15px;
-}
-.modal-confirm .form-control, .modal-confirm .btn {
-	min-height: 40px;
-	border-radius: 3px; 
-}
-.modal-confirm .close {
-	position: absolute;
-	top: -5px;
-	right: -5px;
-}	
-.modal-confirm .modal-footer {
-	border: none;
-	text-align: center;
-	border-radius: 5px;
-	font-size: 13px;
-}	
-.modal-confirm .icon-box {
-	color: #fff;		
-	position: absolute;
-	margin: 0 auto;
-	left: 0;
-	right: 0;
-	top: -70px;
-	width: 95px;
-	height: 95px;
-	border-radius: 50%;
-	z-index: 9;
-	background: #82ce34;
-	padding: 15px;
-	text-align: center;
-	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
-}
-.modal-confirm .icon-box i {
-	font-size: 58px;
-	position: relative;
-	top: 3px;
-}
-.modal-confirm.modal-dialog {
-	margin-top: 80px;
-}
-.modal-confirm .btn {
-	color: #fff;
-	border-radius: 4px;
-	background: #82ce34;
-	text-decoration: none;
-	transition: all 0.4s;
-	line-height: normal;
-	border: none;
-}
-.modal-confirm .btn:hover, .modal-confirm .btn:focus {
-	background: #6fb32b;
-	outline: none;
-}
-.trigger-btn {
-	display: inline-block;
-	margin: 100px auto;
-}
-
-/* Modal container */
-.modalSucess {
-    position: fixed; /* Use fixed para manter o modal fixo na tela */
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    opacity: 0;
-    visibility: hidden;
-    overflow: auto; /* Use auto para permitir rolagem se necessário */
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    display: flex; /* Use flexbox para centralizar o conteúdo */
-    align-items: center; /* Centralize verticalmente */
-    justify-content: center; /* Centralize horizontalmente */
-}
-
-.modalSucess.active{
-    opacity: 1;
-    visibility: visible;
-}
-
-/* Modal content */
-.modalSucess-content {
-    width: 50%; /* Ajuste a largura conforme necessário */
-    max-width: 500px; /* Define um limite máximo para a largura */
-    background-color: white; /* Cor de fundo do conteúdo do modal */
-    padding: 20px; /* Adicione algum espaçamento interno */
-    border-radius: 5px; /* Adicione bordas arredondadas */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adicione uma sombra para o efeito de profundidade */
-    text-align: center; /* Centralize o texto dentro do modal */
-    color:green;
-}
-
-#closeBtn{
-    color:white;
-    font-weight: 500;
-    padding:7px;
-    margin-top:15px;
-    background-color: green;
-    transition:  all .2s ease;
-    opacity: 1;
-    display: block;
-    transition: opacity 0.8s ease, visibility 0.8s ease;
-
-    &:hover{
-        background-color: rgb(2, 61, 2);
-    }
-}
-
-.modalSucess-content p{
-    margin-top:10px;
-}
-
-
-/* Loader da tela de pagamento */
-
-.loader {
-    margin: 0 auto;
-    border: 8px solid #d4d1d1; 
-    border-top: 8px solid green; 
-    border-radius: 50%;
-    width: 60px;
-    opacity: 1;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    visibility: visible;
-    display: block;
-    height: 60px;
-    animation: spin 1s linear infinite;
-}
-
-.loader.disabled{
-    opacity: 0;
-    visibility: hidden;
-    display: none;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
