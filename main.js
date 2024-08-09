@@ -443,9 +443,9 @@ class Jogo {
   }
 
   mostraProdutoraGameModal() {
-    const produtoraGameModal = document.querySelector(".modal-developement");
-    produtoraGameModal.innerHTML = `${this.desenvolvido}`;
-    return produtoraGameModal;
+    const produtoraGameModal = document.querySelector(".modal-mensagem-produtora");
+    produtoraGameModal.innerHTML = `Desenvolvedora: ${this.desenvolvido}`;
+    
   }
 
   precoGameModal() {
@@ -614,6 +614,7 @@ function infoModalGame() {
     jogoInstanciadoModal.descontoGameModal();
     jogoInstanciadoModal.descricaoGameModal();
     jogoInstanciadoModal.imagemGameModal();
+    jogoInstanciadoModal.mostraProdutoraGameModal();
 
   }
 
