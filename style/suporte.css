@@ -45,7 +45,7 @@ a {
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-
+   
     border-radius: .5rem;
     border-bottom: 1px solid var(--blue);
 }
@@ -67,6 +67,7 @@ a {
 .accordion__description-active {
     padding: 2rem;
     height: auto;
+    color:white;
 }
 
 .accordion__item:hover {
