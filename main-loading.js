@@ -36,6 +36,17 @@
         loadLoadingScreen();
       });
     }
+
+         // ====================AQUI COMEÇA O LOADING AO CLICAR NO SUPORTE ====================
+  let botaoSuporte = document.getElementById('botaoSuporte')
+  if(botaoSuporte) {
+    botaoSuporte.addEventListener('click', () => {
+        setTimeout(() => {
+          window.location.href = "suporte.html";
+        }, 600); // Tempo
+        loadLoadingScreen();
+      });
+    }
    // ====================AQUI TERMINA  O LOADING AO CLICAR NO BOTÃO SOBRENOS ====================
 
 

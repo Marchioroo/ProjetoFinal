@@ -1,0 +1,477 @@
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.box-header{
+    position: relative;
+    top: 40px;
+    display: grid;
+    grid-template-areas: 
+    
+    "boxLeft boxRight ";
+
+    grid-template-columns: 1fr 2fr ;
+    grid-template-rows: 100%; 
+   
+    grid-gap: 10px;
+    width: calc(90% - 100px);
+    
+    height: 300px;
+    background-color: white;
+    border-radius:20px;
+    color:rgb(0, 0, 0);
+    margin-left: 3rem;
+    box-shadow: 0 4px 8px rgba(126, 124, 124, 0.6);
+
+}
+
+.box-header-left {
+    
+    grid-area: boxLeft;
+    border-radius: 10px;
+    background-image: url(/images/icons/discord.gif);
+    background-repeat: no-repeat;
+    background-position: center; /* Centraliza a imagem */
+    background-size: contain; /* Ajusta o tamanho da imagem para caber na div */
+    width: 100%;
+    height: 100%;
+    
+}
+
+.box-header-right{
+    grid-area:boxRight ;
+    border-radius:50px 10px 10px 50px;
+    background-color:#5865F2;
+    padding:40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    
+}
+
+.box-header-right h1{
+    font-size: 40px;
+}
+.box-header-right h1 p{
+    font-size: 30px;
+    
+}
+.box-header-right h4{
+    color:white;
+    font-weight: 400;
+    
+}
+.box-header-right h1 span{
+    color:white;
+}
+.box-body{
+    position: relative;
+    top: 50px;
+    display: grid;
+    grid-template-areas: 
+    
+    "boxRight boxLeft ";
+
+    grid-template-columns: 2fr 2fr ;
+    grid-template-rows: 100%; 
+   
+    grid-gap: 10px;
+    width: calc(90% - 100px);
+    
+    height: 100%;
+    background-color: white;
+    border-radius:20px;
+    color:rgb(0, 0, 0);
+    margin-left: 3rem;
+    box-shadow: 0 4px 8px rgba(126, 124, 124, 0.6);
+}
+
+.box-body-left {
+    grid-area: boxLeft;
+  
+}
+.box-body-left .discord{
+    margin-top:10px;
+
+}
+
+.box-body-right{
+    grid-area:boxRight ;
+    border-radius:10px 50px 50px 10px;
+    background-color:#5865F2;
+    display:grid;
+    grid-template-areas:
+    "tocipo1"
+    "tocipo2"
+    "tocipo3";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    height: auto;
+    gap:20px;
+   padding: 20px 20px 20px 20px;
+    
+    
+}
+
+.topic-1 {
+    grid-area: tocipo1;
+    min-height: 7rem; 
+    width: 100%;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(64, 130, 228, 0.6);
+    background-color: #38429b;
+   
+}
+
+.topic-1 span {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.topic-1 p {
+    font-size: 14px;
+    margin: 0; /* Remove a margem padrão para evitar excesso de espaço */
+}
+
+
+.topic-2{
+    box-shadow: 0 4px 8px rgba(245, 245, 245, 0.6);
+    grid-area:tocipo2;
+    min-height: 12rem; 
+    width: 100%;
+    color: #ffffff;
+    padding: 20px;
+    border-radius:40px;
+    background-color: rgb(255, 255, 255);
+}
+
+.topic-2 span{
+    font-weight: 700;
+    font-size: 20px;
+    color:#5865F2
+
+}
+
+.topic-2 li{
+    margin:2px;
+    font-weight: 400;
+    font-size: 14px;
+    
+    color:#5865F2
+
+}
+.topic-3{
+    grid-area:tocipo3;
+    min-height: 8rem; 
+    width: 100%;
+    color: #ffffff;
+    padding: 20px;
+    border-radius:40px;
+    background-color: #38429b;
+    box-shadow: 0 4px 8px rgba(60, 118, 224, 0.6);
+    display:flex;
+    
+}
+
+.topic-3 p{
+    display: flex;
+    flex:4;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px 0 0;
+    font-size: 17px;
+}
+
+.topic-3 .button{
+    display: flex;
+    flex:1;
+    width: 100%;
+    height: 100%;
+    padding:10px;
+    background-color: rgb(255, 255, 255);
+    border-radius:30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease;
+    color:#38429b;
+
+    
+}
+.button:hover{
+    color:white;
+    background-color: #053080;
+    transform: scale(1.09);
+
+}
+    
+
+
+.button p {
+margin:0;
+padding:0;
+ font-weight: 700;  
+ font-size: 16px;
+ 
+}
+
+
+iframe{
+    position: absolute;
+    width: 49%;
+    height: 97%;
+
+} 
+
+
+
+
+@media only screen and (max-width:1200px) {
+    .box-header{
+        display: grid;
+        grid-template-areas: 
+        
+        "boxLeft"
+        "boxRight";
+    
+        grid-template-columns: 1fr ;
+        grid-template-rows: 2fr 2fr; 
+        margin-left:70px;
+        grid-gap: 10px;
+        width: calc(90% - 80px);    
+        height: 500px;
+        background-color: white;
+        border-radius:40px;
+    
+}
+
+.box-header-right{
+border-radius:30px;
+}
+.box-body{
+    position: relative;
+    top: 50px;
+    display: grid;
+    grid-template-areas: 
+    
+    "boxRight boxLeft ";
+
+    grid-template-columns: 2fr 2fr ;
+    grid-template-rows: 100%; 
+    margin-left:70px;
+    grid-gap: 10px;
+    width: calc(90% - 80px);
+    
+    height: 100%;
+    background-color: white;
+    border-radius:20px;
+    color:rgb(0, 0, 0);
+    
+    box-shadow: 0 4px 8px rgba(126, 124, 124, 0.6);
+}
+
+
+
+}
+
+@media only screen and (max-width:870px) {
+    .box-header{
+        display: grid;
+        grid-template-areas: 
+        
+        "boxLeft"
+        "boxRight";
+    
+        grid-template-columns: 1fr ;
+        grid-template-rows: 200px 2fr; 
+       
+        grid-gap: 10px;
+        width: calc(90% - 100px);    
+        margin-left:70px;
+        height: auto;
+        background-color: white;
+        border-radius:40px;
+    
+}
+
+.box-header-right{
+    border-radius:30px;
+    }
+    .box-body{
+        position: relative;
+        top: 60px;
+        display: grid;
+        grid-template-areas: 
+        
+        "boxRight "
+        "boxLeft";
+    
+        grid-template-columns: 2fr ;
+        grid-template-rows: 100%; 
+        margin-left:70px;
+        grid-gap: 10px;
+        width: calc(90% - 100px); 
+        
+        height: 100%;
+        background-color: white;
+        border-radius:40px;
+        color:rgb(0, 0, 0);
+        
+        box-shadow: 0 4px 8px rgba(126, 124, 124, 0.6);
+    }
+
+    iframe{
+        position: absolute;
+        width: 100%;
+        height: 97%;
+       
+    
+    } 
+    .box-body-right{
+        grid-area:boxRight ;
+        border-radius:40px;
+        background-color:#5865F2;
+        display:grid;
+        grid-template-areas:
+        "tocipo1"
+        "tocipo2"
+        "tocipo3";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        height: auto;
+        gap:20px;
+       padding: 20px 20px 20px 20px;
+        
+        
+    }
+}
+@media only screen and (max-width:600px) {
+
+    .box{
+        padding:10px;
+
+    }
+    .box-header{
+        display: grid;
+        grid-template-areas: 
+        
+        "boxLeft"
+        "boxRight";
+    
+        grid-template-columns: 1fr ;
+        grid-template-rows: 200px 2fr; 
+        top: 5px;
+        grid-gap: 10px;
+        width: calc(100% - 0px);    
+        margin-left:0px;
+        height: 500px;
+        background-color: white;
+        border-radius:40px;
+    
+}
+
+.box-header-right{
+    grid-area:boxRight ;
+    border-radius:40px;
+    background-color:#5865F2;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.box-header-right h1{
+    font-size: 35px;
+    text-align: center;
+}
+.box-header-right h1 p{
+    font-size: 20px;
+    
+}
+.box-header-right h4{
+    color:white;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    
+}
+.box-header-right h1 span{
+    color:white;
+}
+
+  .box-body{
+        position: relative;
+        top: 60px;
+        display: grid;
+        grid-template-areas: 
+        
+        "boxRight "
+        "boxLeft";
+    
+        grid-template-columns: 2fr ;
+        grid-template-rows: 100%; 
+        margin-left:70px;
+        grid-gap: 10px;
+        width: calc(90% - 100px); 
+        
+        
+        background-color: white;
+        border-radius:40px;
+        color:rgb(0, 0, 0);
+        top: 15px;
+        grid-gap: 10px;
+        width: calc(100% - 0px);    
+        margin-left:0px;
+        height: auto;
+        background-color: white;
+        border-radius:40px;
+        
+        box-shadow: 0 4px 8px rgba(126, 124, 124, 0.6);
+    }
+
+    iframe{
+        position: absolute;
+        width: 100%;
+        height: 97%;
+       
+    
+    } 
+    .box-body-right{
+        grid-area:boxRight ;
+        border-radius:40px;
+        background-color:#5865F2;
+        display:grid;
+        grid-template-areas:
+        "tocipo1"
+        "tocipo2"
+        "tocipo3";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        height: auto;
+        gap:20px;
+       padding: 20px 20px 20px 20px;
+        
+        
+    }
+}
+
+
+
+
+
