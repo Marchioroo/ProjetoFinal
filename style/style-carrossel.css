@@ -100,12 +100,12 @@
 }
 
 /* INICIA O SWIPER BIG DE DESTAQUE */
-#slide-big{
+.slide-big{
     max-width: 65%;
     bottom:0;
     
 }
-#slide-big img{
+.slide-big img{
     height: 550px;
 }
 
@@ -162,7 +162,7 @@
 
 
 @media(max-width: 960px){
-    #slide-big img{
+    .slide-big img{
         height: 400px;
     }
     .container__card {
@@ -177,11 +177,11 @@
         left: 3%;
     }
 
-    #slide-big {
+    .slide-big {
         max-width: 500px;
     }
 
-    #slide-big img {
+    .slide-big img {
         width: 100%;
     }
 
