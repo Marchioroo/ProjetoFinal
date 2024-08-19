@@ -2,7 +2,6 @@
 
   // ====================AQUI COMEÇA O LOADING AO CLICAR NO BOTÃO SingUp ====================
   let SingUp = document.getElementById('SingUp');
-
   if (SingUp) {
     SingUp.addEventListener('click', () => {
       setTimeout(() => {
@@ -42,7 +41,17 @@
   if(botaoSuporte) {
     botaoSuporte.addEventListener('click', () => {
         setTimeout(() => {
-          window.location.href = "suporte.html";
+          window.location.href = "./suporte.html";
+        }, 600); // Tempo
+        loadLoadingScreen();
+      });
+    }
+             // ====================AQUI COMEÇA O LOADING AO CLICAR NO DISCORD ====================
+  let botaoDiscord = document.getElementById('botaoDiscord')
+  if(botaoDiscord) {
+    botaoDiscord.addEventListener('click', () => {
+        setTimeout(() => {
+          window.location.href = "./discord.html";
         }, 600); // Tempo
         loadLoadingScreen();
       });

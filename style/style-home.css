@@ -592,3 +592,43 @@ li {
         width: 24rem;
     }
 }
+
+/* cokies *//* cokies *//* cokies */
+.cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    z-index: 1000;
+    display: none; /* Oculta por padrão */
+  }
+  
+  .cookie-consent p {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .cookie-consent a {
+    color: #ffc107;
+    text-decoration: underline;
+  }
+  
+  .cookie-consent button {
+    background-color: #0471ff;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: all .1s ease;
+  }
+  
+  .cookie-consent button:hover {
+    background-color: #5098f5;
+  }
+  
