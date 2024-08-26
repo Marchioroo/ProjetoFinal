@@ -37,7 +37,7 @@ a{
     
     grid-area: boxLeft;
     border-radius: 10px;
-    background-image: url(/images/icons/discord.gif);
+    background-image: url(../images/icons/discord.gif);
     background-repeat: no-repeat;
     background-position: center; /* Centraliza a imagem */
     background-size: contain; /* Ajusta o tamanho da imagem para caber na div */
