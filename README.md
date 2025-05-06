@@ -1,4 +1,4 @@
-CODERGAME - Site de Jogos
+# CODERGAME - Site de Jogos
 Este é um projeto de um site de jogos desenvolvido com JavaScript, utilizando diversas técnicas para otimização, como lazy loading, cache, e localStorage. O objetivo principal é oferecer uma experiência rápida e fluida para os usuários, garantindo que o conteúdo seja carregado de forma eficiente.
 
 Tecnologias Utilizadas:
