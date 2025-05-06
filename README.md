@@ -1,35 +1,33 @@
 # CODERGAME - Site de Jogos
-Este é um projeto de um site de jogos desenvolvido com JavaScript, utilizando diversas técnicas para otimização, como lazy loading, cache, e localStorage. O objetivo principal é oferecer uma experiência rápida e fluida para os usuários, garantindo que o conteúdo seja carregado de forma eficiente.
 
-Tecnologias Utilizadas:
-HTML5 & CSS3 – Estrutura e estilo do site.
+Este projeto é um **site de jogos** desenvolvido com **JavaScript**, utilizando técnicas de otimização como **lazy loading**, **cache**, e **localStorage**. O objetivo é proporcionar uma experiência rápida e eficiente para os usuários, garantindo que o conteúdo seja carregado de forma otimizada.
 
-JavaScript (JS) – Lógica de interação do usuário e manipulação de dados.
+## Tecnologias Utilizadas
 
-Lazy Loading – Carregamento eficiente de imagens e recursos, apenas quando necessário.
+- **HTML5** & **CSS3** – Estrutura e estilo do site.
+- **JavaScript (JS)** – Lógica de interação e manipulação de dados.
+- **Lazy Loading** – Carregamento eficiente de imagens e recursos, apenas quando necessário.
+- **localStorage** – Armazenamento local para salvar preferências do usuário e o progresso no jogo.
+- **Cache** – Utilização de cache para otimizar o tempo de carregamento e reduzir a necessidade de requisições repetidas.
+- **API de Web Storage** – Para armazenar configurações e progresso do usuário.
 
-localStorage – Armazenamento local para persistir preferências do usuário e progresso em jogos.
+## Funcionalidades
 
-Cache – Utilização de cache para melhorar o tempo de carregamento e reduzir a necessidade de requisições de rede repetidas.
+1. **Listagem de Jogos:**
+   - Exibe uma lista de jogos disponíveis, com miniaturas e descrições.
+   - Utiliza **lazy loading** para carregar imagens e recursos à medida que o usuário rola a página.
 
-API de Web Storage – Para armazenar informações do usuário, como configurações de preferências ou status de jogos.
+2. **Armazenamento Local (localStorage):**
+   - Salva o progresso do usuário nos jogos utilizando **localStorage**, permitindo que o jogador continue de onde parou em futuras visitas.
 
-Funcionalidades:
-Listagem de Jogos:
+3. **Cache para Otimização:**
+   - Arquivos estáticos são armazenados em cache, melhorando o desempenho e reduzindo o tempo de carregamento nas visitas subsequentes.
 
-Uma página com a lista de jogos disponíveis, cada um com uma miniatura e descrição.
+4. **Interface Responsiva:**
+   - O design é **responsivo**, garantindo que o site seja acessível em dispositivos móveis, tablets e desktops.
 
-A utilização de lazy loading garante que as imagens dos jogos sejam carregadas apenas quando o usuário rolar até elas, economizando tempo e recursos.
+## Como Executar o Projeto
 
-Armazenamento Local (localStorage):
-
-O progresso do usuário nos jogos pode ser salvo no localStorage, permitindo que o jogador continue de onde parou em sessões futuras.
-
-Cache para Otimização:
-
-A página faz uso de cache para armazenar arquivos estáticos e melhorar o desempenho. Isso reduz o tempo de carregamento nas visitas subsequentes.
-
-Interface Responsiva:
-
-O design do site é totalmente responsivo, garantindo que o site funcione bem em dispositivos móveis, tablets e desktops.
-
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/jogo-web.git
